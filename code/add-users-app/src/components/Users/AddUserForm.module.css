@@ -1,0 +1,19 @@
+.form {
+    padding: 2rem;
+}
+
+.input {
+    width: 100%;
+    /* padding: 0.5rem 0; */
+    margin-bottom: 2rem;
+}
+
+.input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.input input {
+    width: 100%;
+}

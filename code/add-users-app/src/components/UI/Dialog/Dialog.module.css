@@ -1,0 +1,45 @@
+.backfade {
+    background-color: black;
+    opacity: 65%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.dialog {
+    background-color: white;
+    width: 25rem;
+    height: 9rem;
+    opacity: 100%;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 100;
+    border-radius: inherit;
+}
+
+.dialog header {
+    font-weight: bold;
+    text-align: center;
+    background-color: #222929;
+    color: white;
+    padding: 0.2rem;
+}
+
+.dialog div {
+    font-weight: bold;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.dialog footer {
+    position: absolute;
+    bottom: 0.8rem;
+    right: 1.2rem;
+}
