@@ -1,9 +1,13 @@
+import Header from './components/UI/Header/Header';
+import MealsSummary from './components/Meals/MealsSummary';
+
 function App() {
-  return (
-    <div>
-      <h2>Let's get started!</h2>
-    </div>
-  );
+    return (
+        <div>
+            <Header title="ReactMeals" />
+            <MealsSummary />
+        </div>
+    );
 }
 
 export default App;
