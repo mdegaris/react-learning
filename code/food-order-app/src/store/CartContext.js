@@ -9,8 +9,12 @@ const CartContext = React.createContext({
 export const CartContextProvider = ({}) => {
     const [cartItems, setCartItems] = useState([]);
 
-    const addItemHandler = ({ meal }) => {
+    const addMeal = ({ meal }) => {
         setCartItems([...cartItems, meal]);
+    };
+
+    const removeMeal = (id) => {
+        setCartItems();
     };
 };
 

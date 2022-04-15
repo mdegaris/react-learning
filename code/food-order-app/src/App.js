@@ -1,11 +1,11 @@
-import { useContext } from 'react';
+import { useState } from 'react';
+import DUMMY_CART_ITEMS from './store/dummy-cart';
 import Layout from './components/Layout/Layout';
-import CartContext from './store/CartContext';
 
 function App() {
-    const ctx = useContext(CartContext);
+    const [cartItems, setCartItems] = useState(DUMMY_CART_ITEMS);
 
-    return <Layout />;
+    return <Layout cartItems={cartItems} />;
 }
 
 export default App;

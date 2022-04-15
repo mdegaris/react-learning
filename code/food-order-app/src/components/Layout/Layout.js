@@ -4,12 +4,10 @@ import Header from '../Header/Header';
 import MealsSummary from '../MealsSummary/MealsSummary';
 import MealList from '../MealList/MealList';
 
-const Layout = () => {
-    const [cartItems, setCartItems] = useState([]);
-
+const Layout = ({ cartItems }) => {
     return (
         <div>
-            <Header title="ReactMeals" noOfCartItems={cartItems.length} />
+            <Header title="ReactMeals" cartItems={cartItems} />
             <MealsSummary />
             <MealList />
         </div>

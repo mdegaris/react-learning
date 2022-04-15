@@ -2,12 +2,12 @@ import React from 'react';
 import HeaderCartButton from './HeaderCartButton';
 import styles from './Header.module.css';
 
-const Header = ({ title, noOfCartItems }) => {
+const Header = ({ title, cartItems }) => {
     return (
         <div>
             <div className={styles.header}>
                 <h1>{title}</h1>
-                <HeaderCartButton noOfCartItems={noOfCartItems} />
+                <HeaderCartButton cartItems={cartItems} />
             </div>
             <div className={styles['main-image']}>
                 <img src="meals.jpg" alt="Meals" />

@@ -6,7 +6,12 @@ const MealItemForm = () => {
     return (
         <div className={styles.form}>
             <form action="">
-                <Input label="Amount" name="amount" value="1" className="" />
+                <Input
+                    label="Amount"
+                    name="amount"
+                    // value={defaultValue}
+                    className=""
+                />
                 <button>+Add</button>
             </form>
         </div>
