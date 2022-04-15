@@ -1,20 +1,11 @@
-import Header from './components/Header/Header';
-import MealsSummary from './components/MealsSummary/MealsSummary';
-import MealList from './components/MealList/MealList';
-import DUMMY_MEALS from './db/dummy-meals';
-import { useState } from 'react';
+import { useContext } from 'react';
+import Layout from './components/Layout/Layout';
+import CartContext from './store/CartContext';
 
 function App() {
-    const [mealItems, setMealItems] = useState(DUMMY_MEALS);
-    const [cartItems, setCartItems] = useState([]);
+    const ctx = useContext(CartContext);
 
-    return (
-        <div>
-            <Header title="ReactMeals" noOfCartItems={cartItems.length} />
-            <MealsSummary />
-            <MealList mealItems={mealItems} />
-        </div>
-    );
+    return <Layout />;
 }
 
 export default App;

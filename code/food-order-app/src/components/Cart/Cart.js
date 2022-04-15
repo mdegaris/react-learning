@@ -1,13 +1,12 @@
 import React from 'react';
-import CartIcon from '../UI/Header/CartIcon';
-// import styles from './Cart.module.css';
+import Modal from '../UI/Modal/Modal';
+import styles from './Cart.module.css';
 
 const Cart = () => {
     return (
-        <div>
-            Your Cart
-            <CartIcon />
-        </div>
+        <Modal>
+            <h3>Your Cart</h3>
+        </Modal>
     );
 };
 

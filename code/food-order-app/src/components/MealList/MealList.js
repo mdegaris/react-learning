@@ -1,9 +1,13 @@
 import React from 'react';
+import { useState } from 'react';
 import Card from '../UI/Card/Card';
 import MealItem from '../MealItem/MealItem';
+import DUMMY_MEALS from '../../store/dummy-meals';
 import styles from './AvailableMeals.module.css';
 
-const MealList = ({ mealItems }) => {
+const MealList = () => {
+    const [mealItems, setMealItems] = useState(DUMMY_MEALS);
+
     return (
         <Card className={styles.meals}>
             <ul>
