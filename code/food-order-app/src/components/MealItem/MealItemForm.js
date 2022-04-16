@@ -9,6 +9,8 @@ const MealItemForm = ({ meal }) => {
 
     const addMealClick = (event) => {
         event.preventDefault();
+        console.log('addMealClick');
+        console.log(ctx.cartItems);
         ctx.addMeal(meal, amount);
     };
 
@@ -16,7 +18,11 @@ const MealItemForm = ({ meal }) => {
         const amountValue = event.target.value;
 
         console.log(`amountValue: ${amountValue}`);
-        amountValue && setAmount(+amountValue);
+        if (amountValue && +amountValue < 1) {
+            setAmount(1);
+        } else {
+            setAmount(+amountValue);
+        }
     };
 
     return (

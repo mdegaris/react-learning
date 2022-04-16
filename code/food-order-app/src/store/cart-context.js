@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const CartContext = React.createContext({
     cartItems: [],
@@ -12,9 +12,18 @@ export const CartContextProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState([]);
     const [totalAmount, setTotalAmount] = useState(0);
 
-    const updateAmountInCart = (id, newAmount) => {
+    useEffect(() => {
+        if (cartItems.length > 0) {
+            setTotalAmount(cartItems.reduce((i1, i2) => i1.amount + i2.amount));
+        } else {
+            setTotalAmount(0);
+        }
+    }, [cartItems, setTotalAmount]);
+
+    const updateAmountInCart = (id, amountMod) => {
         const newCartItems = cartItems.map((item) => {
             if (item.id === id) {
+                const newAmount = item.amount + amountMod;
                 return { ...item, amount: newAmount };
             } else {
                 return item;
@@ -30,13 +39,10 @@ export const CartContextProvider = ({ children }) => {
 
         const addMeal = cartItems.find((m) => m.id === meal.id);
         if (addMeal) {
-            const newAmount = addMeal.amount + amountNumber;
-            setCartItems(updateAmountInCart(addMeal.id, newAmount));
+            setCartItems(updateAmountInCart(addMeal.id, amountNumber));
         } else {
-            setCartItems([...cartItems, meal]);
+            setCartItems([...cartItems, { ...meal, amount: amount }]);
         }
-
-        setTotalAmount(totalAmount + amountNumber);
     };
 
     const removeMealHandler = (mealId) => {
@@ -47,8 +53,6 @@ export const CartContextProvider = ({ children }) => {
                 setCartItems(cartItems.filter((m) => m.id !== removeMeal.id));
             }
         }
-
-        setTotalAmount(totalAmount - 1);
     };
 
     return (
