@@ -6,7 +6,17 @@ const CartItem = ({ item }) => {
     const ctx = useContext(CartContext);
     const displayPrice = `$${item.price.toFixed(2)}`;
 
-    console.log('Cart item: ' + JSON.stringify(item));
+    // console.log('Cart item: ' + JSON.stringify(item));
+
+    const increaseAmount = (event) => {
+        event.preventDefault();
+        ctx.adjustAmount(item.id, 1);
+    };
+
+    const decreaseAmount = (event) => {
+        event.preventDefault();
+        ctx.adjustAmount(item.id, -1);
+    };
 
     return (
         <li className={classes['cart-item']}>
@@ -18,8 +28,8 @@ const CartItem = ({ item }) => {
                 </div>
             </div>
             <div className={classes.actions}>
-                <button onClick={ctx.removeMeal(item.id)}>−</button>
-                <button onClick={ctx.addMeal(item)}>+</button>
+                <button onClick={decreaseAmount}>−</button>
+                <button onClick={increaseAmount}>+</button>
             </div>
         </li>
     );

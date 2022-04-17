@@ -1,11 +1,11 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const CartContext = React.createContext({
     cartItems: [],
     totalAmount: 0,
     addMeal: (meal) => {},
-    removeMeal: (id) => {},
+    // removeMeal: (id) => {},
+    adjustAmount: (id, amount) => {},
 });
 
 export const CartContextProvider = ({ children }) => {
@@ -13,15 +13,15 @@ export const CartContextProvider = ({ children }) => {
     const [totalAmount, setTotalAmount] = useState(0);
 
     useEffect(() => {
-        if (cartItems.length > 0) {
-            setTotalAmount(cartItems.reduce((i1, i2) => i1.amount + i2.amount));
-        } else {
-            setTotalAmount(0);
-        }
+        setTotalAmount(
+            cartItems
+                .map((item) => item.amount)
+                .reduce((amnt1, amnt2) => amnt1 + amnt2, 0)
+        );
     }, [cartItems, setTotalAmount]);
 
-    const updateAmountInCart = (id, amountMod) => {
-        const newCartItems = cartItems.map((item) => {
+    const buildUpdatedCart = (id, amountMod) => {
+        let newCartItems = cartItems.map((item) => {
             if (item.id === id) {
                 const newAmount = item.amount + amountMod;
                 return { ...item, amount: newAmount };
@@ -30,29 +30,24 @@ export const CartContextProvider = ({ children }) => {
             }
         });
 
+        newCartItems = newCartItems.filter((item) => item.amount > 0);
         return newCartItems;
     };
 
     const addMealHandler = (meal, amount) => {
-        console.log(`Add meal: ${meal} ${amount}`);
+        // console.log(`Add meal: ${meal} ${amount}`);
         const amountNumber = +amount;
 
         const addMeal = cartItems.find((m) => m.id === meal.id);
         if (addMeal) {
-            setCartItems(updateAmountInCart(addMeal.id, amountNumber));
+            setCartItems(buildUpdatedCart(addMeal.id, amountNumber));
         } else {
-            setCartItems([...cartItems, { ...meal, amount: amount }]);
+            setCartItems([...cartItems, { ...meal, amount: amountNumber }]);
         }
     };
 
-    const removeMealHandler = (mealId) => {
-        const index = cartItems.findIndex((m) => m.id === mealId);
-        if (index >= 0) {
-            const removeMeal = cartItems[index];
-            if (--removeMeal.amount === 0) {
-                setCartItems(cartItems.filter((m) => m.id !== removeMeal.id));
-            }
-        }
+    const adjustAmountHandler = (mealId, amount) => {
+        setCartItems(buildUpdatedCart(mealId, amount));
     };
 
     return (
@@ -61,7 +56,7 @@ export const CartContextProvider = ({ children }) => {
                 cartItems: cartItems,
                 totalAmount: totalAmount,
                 addMeal: addMealHandler,
-                removeMeal: removeMealHandler,
+                adjustAmount: adjustAmountHandler,
             }}
         >
             {children}
