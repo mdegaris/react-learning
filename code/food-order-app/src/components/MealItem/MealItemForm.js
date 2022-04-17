@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useRef } from 'react';
 import CartContext from '../../store/cart-context';
 import Input from '../UI/Input/Input';
 import styles from './MealItemForm.module.css';
@@ -6,11 +6,11 @@ import styles from './MealItemForm.module.css';
 const MealItemForm = ({ meal }) => {
     const ctx = useContext(CartContext);
     const [amount, setAmount] = useState(1);
+    const amountInput = useRef();
 
-    const addMealClick = (event) => {
+    const submitHandler = (event) => {
         event.preventDefault();
-        console.log('addMealClick');
-        console.log(ctx.cartItems);
+
         ctx.addMeal(meal, amount);
     };
 
@@ -29,12 +29,13 @@ const MealItemForm = ({ meal }) => {
         <div className={styles.form}>
             <form action="">
                 <Input
+                    ref={amountInput}
                     label="Amount"
                     name="amount"
                     value={amount}
                     onChange={amountChangeHandler}
                 />
-                <button type="submit" onClick={addMealClick}>
+                <button type="submit" onClick={submitHandler}>
                     +Add
                 </button>
             </form>

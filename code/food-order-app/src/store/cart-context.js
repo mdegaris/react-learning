@@ -4,14 +4,14 @@ const CartContext = React.createContext({
     cartItems: [],
     totalAmount: 0,
     addMeal: (meal) => {},
-    // removeMeal: (id) => {},
-    adjustAmount: (id, amount) => {},
+    adjustAmount: (mealId, amount) => {},
 });
 
 export const CartContextProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState([]);
     const [totalAmount, setTotalAmount] = useState(0);
 
+    // Calculate and set the total amount of items in the cart.
     useEffect(() => {
         setTotalAmount(
             cartItems
@@ -20,11 +20,11 @@ export const CartContextProvider = ({ children }) => {
         );
     }, [cartItems, setTotalAmount]);
 
-    const buildUpdatedCart = (id, amountMod) => {
+    // Update the amount of a given cart item.
+    const updateItemAmount = (id, amountMod) => {
         let newCartItems = cartItems.map((item) => {
             if (item.id === id) {
-                const newAmount = item.amount + amountMod;
-                return { ...item, amount: newAmount };
+                return { ...item, amount: item.amount + amountMod };
             } else {
                 return item;
             }
@@ -35,19 +35,20 @@ export const CartContextProvider = ({ children }) => {
     };
 
     const addMealHandler = (meal, amount) => {
-        // console.log(`Add meal: ${meal} ${amount}`);
         const amountNumber = +amount;
-
-        const addMeal = cartItems.find((m) => m.id === meal.id);
-        if (addMeal) {
-            setCartItems(buildUpdatedCart(addMeal.id, amountNumber));
+        // Ascertain if the meal is already in the cart.
+        const cartItem = cartItems.find((m) => m.id === meal.id);
+        if (cartItem) {
+            // Update amount if meal already in the cart.
+            setCartItems(updateItemAmount(cartItem.id, amountNumber));
         } else {
+            // Else add meal to the cart.
             setCartItems([...cartItems, { ...meal, amount: amountNumber }]);
         }
     };
 
     const adjustAmountHandler = (mealId, amount) => {
-        setCartItems(buildUpdatedCart(mealId, amount));
+        setCartItems(updateItemAmount(mealId, amount));
     };
 
     return (
