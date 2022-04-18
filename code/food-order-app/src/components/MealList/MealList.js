@@ -6,7 +6,7 @@ import DUMMY_MEALS from '../../store/dummy-meals';
 import styles from './AvailableMeals.module.css';
 
 const MealList = () => {
-    const [mealItems, setMealItems] = useState(DUMMY_MEALS);
+    const [mealItems] = useState(DUMMY_MEALS);
 
     return (
         <Card className={styles.meals}>

@@ -4,31 +4,28 @@ import CartContext from '../../store/cart-context';
 import styles from './MealItemForm.module.css';
 
 const MealItemForm = ({ meal }) => {
-    const ctx = useContext(CartContext);
+    const cartCtx = useContext(CartContext);
     const [amount, setAmount] = useState(1);
     const [validInput, setValidInput] = useState(true);
     const amountInput = useRef();
 
     const submitHandler = (event) => {
         event.preventDefault();
-
         const amountVal = +amountInput.current.value;
         if (amountVal < 0 || amountVal > 5) {
             setValidInput(false);
         } else {
             setValidInput(true);
-            ctx.addMeal(meal, amountVal);
+            cartCtx.addMeal(meal, amountVal);
         }
     };
 
-    const amountChangeHandler = (event) => {
-        const amountValue = event.target.value;
-
-        console.log(`amountValue: ${amountValue}`);
-        if (amountValue && +amountValue < 1) {
+    const amountChangeHandler = () => {
+        const amountVal = +amountInput.current.value;
+        if (amountVal && amountVal < 1) {
             setAmount(1);
         } else {
-            setAmount(+amountValue);
+            setAmount(amountVal);
         }
     };
 
@@ -40,6 +37,9 @@ const MealItemForm = ({ meal }) => {
                     label='Amount'
                     value={amount}
                     type='number'
+                    min='1'
+                    max='5'
+                    defaultValue='1'
                     onChange={amountChangeHandler}
                 />
                 {!validInput && <p className={styles.error}>Invalid amount</p>}
