@@ -1,18 +1,19 @@
 import React from 'react';
 import HeaderCartButton from './HeaderCartButton';
 import styles from './Header.module.css';
+import mealsImage from '../../assets/meals.jpg';
 
-const Header = ({ title, cartItems }) => {
+const Header = ({ title }) => {
     return (
-        <div>
-            <div className={styles.header}>
+        <>
+            <header className={styles.header}>
                 <h1>{title}</h1>
-                <HeaderCartButton cartItems={cartItems} />
-            </div>
+                <HeaderCartButton />
+            </header>
             <div className={styles['main-image']}>
-                <img src="meals.jpg" alt="Meals" />
+                <img src={mealsImage} alt='Meals' />
             </div>
-        </div>
+        </>
     );
 };
 

@@ -35,15 +35,14 @@ export const CartContextProvider = ({ children }) => {
     };
 
     const addMealHandler = (meal, amount) => {
-        const amountNumber = +amount;
         // Ascertain if the meal is already in the cart.
         const cartItem = cartItems.find((m) => m.id === meal.id);
         if (cartItem) {
             // Update amount if meal already in the cart.
-            setCartItems(updateItemAmount(cartItem.id, amountNumber));
+            setCartItems(updateItemAmount(cartItem.id, amount));
         } else {
             // Else add meal to the cart.
-            setCartItems([...cartItems, { ...meal, amount: amountNumber }]);
+            setCartItems([...cartItems, { ...meal, amount: amount }]);
         }
     };
 
