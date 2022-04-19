@@ -32,7 +32,7 @@ const HeaderCartButton = () => {
         <>
             {showCart && <Cart setShowCart={setShowCart} />}
             <div
-                className={bumpButton && styles.bump}
+                className={`${bumpButton ? styles.bump : ''}`}
                 onClick={cartClickHandler}
             >
                 <div className={styles.button}>
