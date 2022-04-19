@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from '../Header/Header';
-import MealsSummary from '../MealsSummary/MealsSummary';
-import MealList from '../MealList/MealList';
+import MealsSummary from '../Meals/MealsSummary/MealsSummary';
+import MealList from '../Meals/MealList/MealList';
 
 const Layout = ({ cartItems }) => {
     return (
         <div>
-            <Header title="ReactMeals" />
+            <Header title='ReactMeals' />
             <MealsSummary />
             <MealList />
         </div>

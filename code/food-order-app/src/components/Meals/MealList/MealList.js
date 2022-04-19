@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
-import Card from '../UI/Card/Card';
+import Card from '../../UI/Card/Card';
 import MealItem from '../MealItem/MealItem';
-import DUMMY_MEALS from '../../store/dummy-meals';
 import styles from './AvailableMeals.module.css';
+import DUMMY_MEALS from '../../../store/dummy-meals';
 
 const MealList = () => {
     const [mealItems] = useState(DUMMY_MEALS);

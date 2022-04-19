@@ -7,6 +7,7 @@ import styles from './Cart.module.css';
 const Cart = ({ setShowCart }) => {
     const cartCtx = useContext(CartContext);
     const displayTotalPrice = `£${cartCtx.totalPrice.toFixed(2)}`;
+    const isEmpty = cartCtx.totalAmount === 0;
 
     const exitCartHandler = () => {
         setShowCart(false);
@@ -14,6 +15,7 @@ const Cart = ({ setShowCart }) => {
 
     return (
         <Modal outsideHandler={exitCartHandler}>
+            {isEmpty && <div>Your cart is empty.</div>}
             <div className={styles['cart-items']}>
                 {cartCtx.cartItems.map((item) => (
                     <CartItem
