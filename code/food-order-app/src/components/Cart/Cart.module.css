@@ -36,6 +36,12 @@
   color: white;
 }
 
+.actions button.disabled {
+  background-color: #aaa;
+  border-color: darkgrey;
+  color: #eee;
+}
+
 .actions .button--alt {
   color: #8a2b06;
 }

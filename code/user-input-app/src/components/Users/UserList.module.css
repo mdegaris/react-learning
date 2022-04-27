@@ -1,0 +1,10 @@
+.container {
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.list {
+    padding-left: 0.4rem;
+}
