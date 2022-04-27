@@ -9,12 +9,25 @@ const Cart = ({ onClose }) => {
   const displayTotalPrice = `£${cartCtx.totalPrice.toFixed(2)}`;
   const isEmpty = cartCtx.totalAmount === 0;
 
+  const onAddHandler = (item) => {
+    cartCtx.adjustAmount(item.id, 1);
+  };
+
+  const onSubtractHandler = (item) => {
+    cartCtx.adjustAmount(item.id, -1);
+  };
+
+  const cartItems = (
+    <CartList onAdd={onAddHandler} onSubtract={onSubtractHandler} />
+  );
+
   return (
-    <Modal onClickOutside={onClose}>
-      <div className={styles['cart-items']}>
+    <Modal onBackdropClick={onClose}>
+      {/* <div className={styles['cart-items']}>
         {isEmpty && <div>Your cart is empty.</div>}
         {!isEmpty && <CartList />}
-      </div>
+      </div> */}
+      {cartItems}
       <div className={styles.total}>
         <span>Total Amount</span>
         <span>{displayTotalPrice}</span>

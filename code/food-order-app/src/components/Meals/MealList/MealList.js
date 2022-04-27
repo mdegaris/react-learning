@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
 import Card from '../../UI/Card/Card';
 import MealItem from '../MealItem/MealItem';
@@ -16,7 +15,7 @@ const MealList = () => {
       },
       setMenu
     );
-  }, []);
+  }, [fetchMeals]);
 
   return (
     <Card className={styles.meals}>

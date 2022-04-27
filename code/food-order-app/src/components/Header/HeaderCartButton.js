@@ -7,6 +7,8 @@ const HeaderCartButton = ({ onClick }) => {
   const cartCtx = useContext(CartContext);
   const [bumpButton, setBumpButton] = useState(false);
 
+  const buttonClasses = `${styles.button} ${bumpButton ? styles.bump : ''}`;
+
   useEffect(() => {
     if (cartCtx.cartItems.length === 0) {
       return;
@@ -24,15 +26,13 @@ const HeaderCartButton = ({ onClick }) => {
 
   return (
     <>
-      <div className={`${bumpButton ? styles.bump : ''}`} onClick={onClick}>
-        <div className={styles.button}>
-          <div className={styles.icon}>
-            <CartIcon />
-          </div>
-          <div>Your Cart</div>
-          <div className={styles.badge}>{cartCtx.totalAmount}</div>
+      <button className={buttonClasses} onClick={onClick}>
+        <div className={styles.icon}>
+          <CartIcon />
         </div>
-      </div>
+        <div>Your Cart</div>
+        <div className={styles.badge}>{cartCtx.totalAmount}</div>
+      </button>
     </>
   );
 };

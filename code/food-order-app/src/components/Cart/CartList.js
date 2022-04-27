@@ -3,7 +3,7 @@ import CartItem from './CartItem';
 import CartContext from '../../store/cart-context';
 import styles from './Cart.module.css';
 
-const CartList = () => {
+const CartList = ({ onAdd, onSubtract }) => {
   const cartCtx = useContext(CartContext);
 
   return (
@@ -12,8 +12,8 @@ const CartList = () => {
         <CartItem
           key={item.id}
           item={item}
-          onAdd={cartCtx.adjustAmount.bind(null, item.id, 1)}
-          onSubtract={cartCtx.adjustAmount.bind(null, item.id, -1)}
+          onAdd={onAdd}
+          onSubtract={onSubtract}
         />
       ))}
     </div>
