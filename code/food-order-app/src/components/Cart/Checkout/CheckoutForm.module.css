@@ -1,0 +1,11 @@
+label {
+  width: 6.2rem;
+}
+
+input {
+  width: 15rem;
+}
+
+.error input {
+  background-color: mistyrose;
+}

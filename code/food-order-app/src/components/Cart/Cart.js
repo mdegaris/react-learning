@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import Modal from '../UI/Modal/Modal';
 import CartList from './CartList';
+import CheckoutForm from './Checkout/CheckoutForm';
 import CartContext from '../../store/cart-context';
 import styles from './Cart.module.css';
 
@@ -17,21 +18,22 @@ const Cart = ({ onClose }) => {
     cartCtx.adjustAmount(item.id, -1);
   };
 
-  const cartItems = (
+  const cartItems = !isEmpty ? (
     <CartList onAdd={onAddHandler} onSubtract={onSubtractHandler} />
+  ) : (
+    <div className={styles.empty}>Your cart is empty.</div>
   );
+
+  const checkout = !isEmpty ? <CheckoutForm /> : '';
 
   return (
     <Modal onBackdropClick={onClose}>
-      {/* <div className={styles['cart-items']}>
-        {isEmpty && <div>Your cart is empty.</div>}
-        {!isEmpty && <CartList />}
-      </div> */}
       {cartItems}
       <div className={styles.total}>
         <span>Total Amount</span>
         <span>{displayTotalPrice}</span>
       </div>
+      {checkout}
       <div className={styles.actions}>
         <button className={styles['button--alt']} onClick={onClose}>
           Close
