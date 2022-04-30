@@ -4,7 +4,7 @@ const useHttp = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const sendRequest = useCallback(async (requestConfig, applyData) => {
+  const sendRequest = useCallback(async (requestConfig, applyData = null) => {
     setIsLoading(true);
     setError(null);
     try {
@@ -19,7 +19,7 @@ const useHttp = () => {
       }
 
       const data = await response.json();
-      applyData(data);
+      applyData && applyData(data);
     } catch (err) {
       setError(err.message || 'Something went wrong!');
     }

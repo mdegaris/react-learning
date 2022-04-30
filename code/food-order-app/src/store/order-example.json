@@ -1,0 +1,54 @@
+[
+  {
+    "id": 12345,
+    "customer": {
+      "fullName": "Marc",
+      "street": "14 Greg",
+      "postCode": "SK5 7LA",
+      "city": "Stockport"
+    },
+    "orderedItems":
+      [
+        {
+          "name": "Crisps",
+          "amount": 3,
+          "unitPrice": 90,
+          "totalPrice": 3.60
+        }
+        ,
+        {
+          "name": "Cake",
+          "amount": 1,
+          "unitPrice": 2.50,
+          "totalPrice": 2.50
+        }
+      ],
+    "totalPrice": 6.10
+  },
+  {
+    "id": 12345,
+    "customer": {
+      "fullName": "Marc",
+      "street": "14 Greg",
+      "postCode": "SK5 7LA",
+      "city": "Stockport"
+    },
+    "orderedItems":
+      [
+        {
+          "name": "Crisps",
+          "amount": 3,
+          "unitPrice": 90,
+          "totalPrice": 3.60
+        }
+        ,
+        {
+          "name": "Cake",
+          "amount": 1,
+          "unitPrice": 2.50,
+          "totalPrice": 2.50
+        }
+      ],
+    "totalPrice": 6.10
+  }
+]

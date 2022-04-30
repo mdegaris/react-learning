@@ -3,6 +3,7 @@ import Card from '../../UI/Card/Card';
 import MealItem from '../MealItem/MealItem';
 import styles from './AvailableMeals.module.css';
 import useHttp from '../../../hooks/use-http';
+import Config from '../../../config/config-options';
 
 const MealList = () => {
   const [menu, setMenu] = useState([]);
@@ -11,7 +12,7 @@ const MealList = () => {
   useEffect(() => {
     fetchMeals(
       {
-        url: 'https://react-food-app-2158c-default-rtdb.firebaseio.com/meals.json',
+        url: Config.MEAL_LIST_URL,
       },
       setMenu
     );
@@ -19,6 +20,7 @@ const MealList = () => {
 
   return (
     <Card className={styles.meals}>
+      {error && <p>{error}</p>}
       {isLoading && !error && <p>Loading meals...</p>}
       {!isLoading && !error && (
         <ul>
@@ -27,7 +29,6 @@ const MealList = () => {
           ))}
         </ul>
       )}
-      {error && <p>{error}</p>}
     </Card>
   );
 };
