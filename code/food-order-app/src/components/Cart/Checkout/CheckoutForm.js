@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { postcodeValidator } from 'postcode-validator';
 
+import { isNotEmpty, isValidPostcode } from '../../../lib/validators';
 import Input from '../../UI/Input/Input';
 import useInput from '../../../hooks/use-input';
 import useHttp from '../../../hooks/use-http';
@@ -8,36 +8,40 @@ import Config from '../../../config/config-options';
 import CartContext from '../../../store/cart-context';
 import styles from './CheckoutForm.module.css';
 
-const isNotEmpty = (value) => value.trim() !== '';
-const isValidPostcode = (value) => postcodeValidator(value, 'GB');
-
 const generateId = () => {
   return Math.floor(Math.random() * 1000000);
 };
 
-const buildOrder = (cartItems, customer, totalPrice) => {
-  return {
-    id: generateId(),
-    customer: {
-      fullName: customer.fullName,
-      street: customer.street,
-      postCode: customer.postCode,
-      city: customer.city,
-    },
-    orderedItems: cartItems.map((item) => {
-      return {
-        mealId: item.id,
-        name: item.name,
-        amount: item.amount,
-        unitPrice: item.price,
-      };
-    }),
-    orderPrice: totalPrice,
-  };
-};
-
 const CheckoutForm = ({ onCancel, completeOrder }) => {
   const cartCtx = useContext(CartContext);
+
+  const buildOrder = (customer) => {
+    return {
+      id: generateId(),
+      customer: {
+        fullName: customer.fullName,
+        street: customer.street,
+        postCode: customer.postCode,
+        city: customer.city,
+      },
+      orderedItems: cartCtx.cartItems.map((item) => {
+        return {
+          mealId: item.id,
+          name: item.name,
+          amount: item.amount,
+          unitPrice: item.price,
+        };
+      }),
+      orderPrice: cartCtx.totalPrice,
+    };
+  };
+
+  const resetForm = () => {
+    resetFullName();
+    resetStreet();
+    resetPostCode();
+    resetCity();
+  };
 
   const {
     value: fullNameValue,
@@ -86,13 +90,6 @@ const CheckoutForm = ({ onCancel, completeOrder }) => {
   const postCodeClasses = postCodeHasError ? styles.error : '';
   const cityClasses = cityHasError ? styles.error : '';
 
-  const resetForm = () => {
-    resetFullName();
-    resetStreet();
-    resetPostCode();
-    resetCity();
-  };
-
   const isFormValid =
     fullNameIsValid && streetIsValid && postCodeIsValid && cityIsValid;
 
@@ -103,12 +100,12 @@ const CheckoutForm = ({ onCancel, completeOrder }) => {
       return;
     }
 
-    const customer = {
+    const order = buildOrder({
       name: fullNameValue,
       street: streetValue,
       postCode: postCodeValue,
       city: cityValue,
-    };
+    });
 
     postOrder(
       {
@@ -118,7 +115,7 @@ const CheckoutForm = ({ onCancel, completeOrder }) => {
           Accept: 'application/json',
           'Content-type': 'application/json',
         },
-        body: buildOrder(cartCtx.cartItems, customer, cartCtx.totalPrice),
+        body: order,
       },
       (data) => {
         if (data) {

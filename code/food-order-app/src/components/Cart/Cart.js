@@ -68,19 +68,21 @@ const Cart = ({ onClose }) => {
     />
   );
 
+  const cartContent = (
+    <>
+      {cartItems}
+      <div className={styles.total}>
+        <span>Total Amount</span>
+        <span>{displayTotalPrice}</span>
+      </div>
+      {!showCheckout && cartActions}
+      {showCheckout && checkout}
+    </>
+  );
+
   return (
     <Modal onBackdropClick={onClose}>
-      {!orderComplete && (
-        <>
-          {cartItems}
-          <div className={styles.total}>
-            <span>Total Amount</span>
-            <span>{displayTotalPrice}</span>
-          </div>
-          {!showCheckout && cartActions}
-          {showCheckout && checkout}
-        </>
-      )}
+      {!orderComplete && cartContent}
       {orderComplete && (
         <div className={styles.message}>
           Order Complete
