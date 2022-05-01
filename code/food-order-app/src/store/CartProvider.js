@@ -1,9 +1,10 @@
 import { useReducer } from 'react';
 import CartContext from './cart-context';
 
-const CartActions = {
+const Actions = {
   ADD: 'ADD',
   UPDATE_AMOUNT: 'UPDATE_AMOUNT',
+  RESET: 'RESET',
 };
 
 const emptyCart = {
@@ -34,7 +35,7 @@ const cartReducer = (cartState, cartAction) => {
     return updatedCart;
   };
 
-  if (cartAction.type === CartActions.ADD) {
+  if (cartAction.type === Actions.ADD) {
     // Ascertain if the item is already in the cart.
     const existingItem = cartState.items.find(
       (item) => item.id === cartAction.item.id
@@ -60,7 +61,7 @@ const cartReducer = (cartState, cartAction) => {
   }
 
   // Nudge the item amount up or down.
-  if (cartAction.type === CartActions.UPDATE_AMOUNT) {
+  if (cartAction.type === Actions.UPDATE_AMOUNT) {
     const updatedCartItems = updateItemAmount(cartAction.id, cartAction.amount);
 
     return {
@@ -68,6 +69,11 @@ const cartReducer = (cartState, cartAction) => {
       totalAmount: tallyAmount(updatedCartItems),
       totalPrice: tallyPrice(updatedCartItems),
     };
+  }
+
+  if (cartAction.type === Actions.RESET) {
+    console.log('RESET CART');
+    return emptyCart;
   }
 
   return emptyCart;
@@ -78,16 +84,22 @@ const CartContextProvider = ({ children }) => {
 
   const addMealHandler = (meal, amount) => {
     dispatchCartAction({
-      type: CartActions.ADD,
+      type: Actions.ADD,
       item: { ...meal, amount: amount },
     });
   };
 
   const adjustAmountHandler = (id, amount) => {
     dispatchCartAction({
-      type: CartActions.UPDATE_AMOUNT,
+      type: Actions.UPDATE_AMOUNT,
       id: id,
       amount: amount,
+    });
+  };
+
+  const resetCart = () => {
+    dispatchCartAction({
+      type: Actions.RESET,
     });
   };
 
@@ -97,6 +109,7 @@ const CartContextProvider = ({ children }) => {
     totalPrice: cartState.totalPrice,
     addMeal: addMealHandler,
     adjustAmount: adjustAmountHandler,
+    reset: resetCart,
   };
 
   return (

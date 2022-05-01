@@ -36,7 +36,7 @@ const buildOrder = (cartItems, customer, totalPrice) => {
   };
 };
 
-const CheckoutForm = () => {
+const CheckoutForm = ({ onCancel, completeOrder }) => {
   const cartCtx = useContext(CartContext);
 
   const {
@@ -75,12 +75,23 @@ const CheckoutForm = () => {
     reset: resetCity,
   } = useInput(isNotEmpty);
 
-  const { isLoading, error: postError, sendRequest: postOrder } = useHttp();
+  const {
+    isLoading: postingOrder,
+    error: postError,
+    sendRequest: postOrder,
+  } = useHttp();
 
   const fullNameClasses = fullNameHasError ? styles.error : '';
   const streetClasses = streetHasError ? styles.error : '';
   const postCodeClasses = postCodeHasError ? styles.error : '';
   const cityClasses = cityHasError ? styles.error : '';
+
+  const resetForm = () => {
+    resetFullName();
+    resetStreet();
+    resetPostCode();
+    resetCity();
+  };
 
   const isFormValid =
     fullNameIsValid && streetIsValid && postCodeIsValid && cityIsValid;
@@ -92,8 +103,6 @@ const CheckoutForm = () => {
       return;
     }
 
-    console.log('Place Order...');
-
     const customer = {
       name: fullNameValue,
       street: streetValue,
@@ -101,19 +110,28 @@ const CheckoutForm = () => {
       city: cityValue,
     };
 
-    postOrder({
-      method: 'POST',
-      url: Config.ORDER_POST_URL,
-      headers: {
-        Accept: 'application/json',
-        'Content-type': 'application/json',
+    postOrder(
+      {
+        method: 'POST',
+        url: Config.ORDER_POST_URL,
+        headers: {
+          Accept: 'application/json',
+          'Content-type': 'application/json',
+        },
+        body: buildOrder(cartCtx.cartItems, customer, cartCtx.totalPrice),
       },
-      body: buildOrder(cartCtx.cartItems, customer, cartCtx.totalPrice),
-    });
+      (data) => {
+        if (data) {
+          resetForm();
+          completeOrder();
+          cartCtx.reset();
+        }
+      }
+    );
   };
 
   return (
-    <form onSubmit={onSubmitHandler}>
+    <form className={styles.form} onSubmit={onSubmitHandler}>
       <Input
         className={fullNameClasses}
         label='Full Name'
@@ -154,7 +172,20 @@ const CheckoutForm = () => {
           onBlur: cityBlurHandler,
         }}
       />
-      <button>Order</button>
+      <div className={styles.actions}>
+        <button
+          type='reset'
+          onClick={onCancel}
+          className={styles['button--alt']}
+        >
+          Cancel
+        </button>
+        <button type='submit' className={styles.button}>
+          Place Order
+        </button>
+      </div>
+      {postingOrder && <p>Processing Order...</p>}
+      {postError && <p>{postError}</p>}
     </form>
   );
 };
