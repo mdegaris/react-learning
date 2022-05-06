@@ -1,30 +1,31 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialCartState = { cartItems: [], showCart: false };
+const initialCartState = { cartItems: [], totalQuantity: 0, showCart: false };
 
 const cartSlice = createSlice({
   name: 'cart',
   initialState: initialCartState,
   reducers: {
     addItem(state, action) {
-      console.log(state);
-      console.log(state.cartItems);
-      const newItem = action.payload.item;
+      const newItem = {
+        id: action.payload.id,
+        title: action.payload.title,
+        price: action.payload.price,
+        total: action.payload.price,
+        quantity: 1,
+      };
       const itemIndex = state.cartItems.findIndex(
         (item) => item.id === newItem.id
       );
-
-      console.log(itemIndex);
 
       if (itemIndex > -1) {
         state.cartItems[itemIndex].quantity++;
         state.cartItems[itemIndex].total += newItem.price;
       } else {
-        state.cartItems = state.cartItems.concat({
-          ...newItem,
-          total: newItem.price,
-        });
+        state.cartItems = state.cartItems.concat(newItem);
       }
+
+      state.totalQuantity++;
     },
     incrementQuantity(state, action) {
       const itemId = action.payload;
@@ -34,6 +35,7 @@ const cartSlice = createSlice({
         console.log(state.cartItems[iIndex]);
         state.cartItems[iIndex].quantity++;
         state.cartItems[iIndex].total += state.cartItems[iIndex].price;
+        state.totalQuantity++;
       }
     },
     decrementQuantity(state, action) {
@@ -50,6 +52,7 @@ const cartSlice = createSlice({
         } else {
           state.cartItems[itemIndex].total -= state.cartItems[itemIndex].price;
         }
+        state.totalQuantity--;
       }
     },
     showCart(state) {
@@ -57,6 +60,9 @@ const cartSlice = createSlice({
     },
     hideCart(state) {
       state.showCart = false;
+    },
+    toggleCart(state) {
+      state.showCart = !state.showCart;
     },
   },
 });

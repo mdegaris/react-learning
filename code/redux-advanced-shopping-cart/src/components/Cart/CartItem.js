@@ -7,6 +7,8 @@ const CartItem = (props) => {
   const dispatch = useDispatch();
   const { id, title, quantity, total, price } = props.item;
 
+  console.log({ id, title, quantity, total, price });
+
   const incrementHandler = () => {
     dispatch(cartActions.incrementQuantity(id));
   };
