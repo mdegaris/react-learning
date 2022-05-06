@@ -1,13 +1,11 @@
 import { useDispatch } from 'react-redux';
-import { cartActions } from '../../store/cart';
+import { cartActions } from '../../store/cart-slice';
 
 import classes from './CartItem.module.css';
 
 const CartItem = (props) => {
   const dispatch = useDispatch();
   const { id, title, quantity, total, price } = props.item;
-
-  console.log({ id, title, quantity, total, price });
 
   const incrementHandler = () => {
     dispatch(cartActions.incrementQuantity(id));
