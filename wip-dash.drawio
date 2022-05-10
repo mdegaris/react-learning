@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T01:38:07.680Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="klt2sxJ19jN_zPHJOgOk" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T01:40:12.440Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="FipiEACfB8AxYJW21B5C" version="18.0.2" type="github">
   <diagram id="inhpslFRgeZznWk5Xytv" name="Page-1">
     <mxGraphModel dx="1550" dy="831" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -233,7 +233,7 @@
         <mxCell id="HOcWKpLbceG71wfPBprw-2" value="75 Total Active Rounds" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;labelBackgroundColor=none;fillColor=#b1ddf0;strokeColor=#10739e;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="350" y="170" width="440" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HOcWKpLbceG71wfPBprw-197" value="Expected compound receipts" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=15;fillColor=#fad9d5;strokeColor=#ae4132;verticalAlign=top;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="HOcWKpLbceG71wfPBprw-197" value="Upcoming compound inwards" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=15;fillColor=#fad9d5;strokeColor=#ae4132;verticalAlign=top;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="706" y="400" width="370" height="300" as="geometry" />
         </mxCell>
         <mxCell id="HOcWKpLbceG71wfPBprw-199" value="" style="shape=table;html=1;whiteSpace=wrap;startSize=0;container=1;collapsible=0;childLayout=tableLayout;rounded=0;labelBackgroundColor=none;fontSize=12;labelBorderColor=none;fillColor=#f9f7ed;strokeColor=#36393d;fontColor=#000000;shadow=0;swimlaneLine=0;sketch=0;" parent="1" vertex="1">
@@ -393,7 +393,7 @@
         <mxCell id="HOcWKpLbceG71wfPBprw-139" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;sketch=0;fontSize=24;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="40" y="770" width="220" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pDDyPRID0736S93xb8Xb-1" value="variable search" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;rounded=0;glass=0;dashPattern=1 4;labelBackgroundColor=none;labelBorderColor=none;sketch=0;" vertex="1" parent="1">
+        <mxCell id="pDDyPRID0736S93xb8Xb-1" value="variable search" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;rounded=0;glass=0;dashPattern=1 4;labelBackgroundColor=none;labelBorderColor=none;sketch=0;" parent="1" vertex="1">
           <mxGeometry x="977" y="70" width="263.5" height="30" as="geometry" />
         </mxCell>
       </root>
