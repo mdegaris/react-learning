@@ -1,0 +1,13 @@
+.header {
+  height: 7rem;
+  background-color: dodgerblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  font-size: 2.8rem;
+}

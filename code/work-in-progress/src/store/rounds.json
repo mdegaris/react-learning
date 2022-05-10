@@ -1,0 +1,77 @@
+[
+  {
+    "id": "CYP0323-R1A",
+    "studyId": "CYP0323",
+    "contractId": "CYP0323-R1",
+    "round": "R1A",
+    "compoundReceiptDate": "22-APR-2022",
+    "deadlineDates": ["01-MAY-2022", "05-MAY-2022"],
+    "services": [
+      {
+        "serviceNo": "1",
+        "serviceCode": "BP013",
+        "serviceName": "Met Stab",
+        "supplementalId": "BP013|Species=Human|",
+        "hashNumber": 1,
+        "noOfCompounds": 10,
+        "deliveredCompounds": 5
+      },
+      {
+        "serviceNo": "1",
+        "serviceCode": "BP013",
+        "serviceName": "Met Stab",
+        "supplementalId": "BP013|Species=Rat|",
+        "hashNumber": 1,
+        "noOfCompounds": 23,
+        "deliveredCompounds": 0
+      }
+    ]
+  },
+  {
+    "id": "CYP0323-R1B",
+    "studyId": "CYP0323",
+    "contractId": "CYP0323-R1",
+    "round": "R1B",
+    "compoundReceiptDate": "29-APR-2022",
+    "deadlineDates": ["13-MAY-2022", "18-MAY-2022"],
+    "services": [
+      {
+        "serviceNo": "2",
+        "serviceCode": "BP135",
+        "serviceName": "PPB",
+        "supplementalId": "BP135|Species=Rat|",
+        "hashNumber": 2,
+        "noOfCompounds": 8,
+        "deliveredCompounds": 8
+      }
+    ]
+  },
+  {
+    "id": "CYP1143-R120B",
+    "studyId": "CYP1143",
+    "contractId": "CYP1143-R120",
+    "round": "R120B",
+    "compoundReceiptDate": "01-APR-2022",
+    "deadlineDates": ["18-MAY-2022"],
+    "services": [
+      {
+        "serviceNo": "1",
+        "serviceCode": "BP111",
+        "serviceName": "Caco",
+        "supplementalId": "BP111|Design1=A2B|Design2=B2A|",
+        "hashNumber": 1,
+        "noOfCompounds": 34,
+        "deliveredCompounds": 32
+      },
+      {
+        "serviceNo": "2",
+        "serviceCode": "BP112",
+        "serviceName": "MDCK",
+        "supplementalId": "BP112|Design1=A2B|Design2=B2A|",
+        "hashNumber": 2,
+        "noOfCompounds": 29,
+        "deliveredCompounds": 29
+      }
+    ]
+  }
+]
