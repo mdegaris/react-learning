@@ -25,7 +25,10 @@ function App() {
       return;
     }
 
-    dispatch(saveCartData(cart));
+    if (cart.hasChanged) {
+      console.log('save data');
+      dispatch(saveCartData(cart));
+    }
   }, [cart, dispatch]);
 
   return (
