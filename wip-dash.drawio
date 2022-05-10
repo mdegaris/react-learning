@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T02:06:42.576Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="sSsrcvbgEkloftOTJL44" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T02:09:58.331Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="0bMu7j2BaLw-cT7MfNru" version="18.0.2" type="github">
   <diagram id="inhpslFRgeZznWk5Xytv" name="Page-1">
     <mxGraphModel dx="1824" dy="978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -30,6 +30,12 @@
             <mxPoint x="30" y="142.5" as="sourcePoint" />
             <mxPoint x="220" y="142.5" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="odDNTdoTcmx5lw315tLp-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.001;entryY=0.761;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#4D4D4D;" edge="1" parent="odDNTdoTcmx5lw315tLp-41" source="odDNTdoTcmx5lw315tLp-44" target="odDNTdoTcmx5lw315tLp-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="odDNTdoTcmx5lw315tLp-44" value="Allow contract round selection in Rounds List, e.g. R1 yields R1A, R1B, R1C, etc" style="text;html=1;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#4D4D4D;" vertex="1" parent="odDNTdoTcmx5lw315tLp-41">
+          <mxGeometry x="310" y="60" width="170" height="90" as="geometry" />
         </mxCell>
         <mxCell id="HOcWKpLbceG71wfPBprw-25" value="Upcoming deadlines" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=15;fillColor=#fad9d5;strokeColor=#ae4132;verticalAlign=top;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="320.75" y="400" width="370" height="300" as="geometry" />
