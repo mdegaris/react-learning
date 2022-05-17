@@ -2,6 +2,10 @@ import randomDateGenerator from 'random-date-generator';
 import dateFormat from 'dateformat';
 import fs from 'fs';
 
+// const randomDateGenerator = require('random-date-generator');
+// const dateFormat = require('dateformat');
+// const fs = require('fs');
+
 const year = 2022;
 
 const studies = [
@@ -140,6 +144,10 @@ const generateRoundId = () => {
   };
 };
 
+const generateCompleted = () => {
+  return randomInt({ min: 0, max: 20 }) === 0 ? true : false;
+};
+
 const generateRound = (month = null) => {
   const studyId = randomElement(studies);
   const roundId = generateRoundId();
@@ -152,8 +160,10 @@ const generateRound = (month = null) => {
     id,
     contractId,
     round: roundId.subRound,
+    studyId,
     expectedReceiptDate: formatDate(expectedReciptDate),
     services: roundServices,
+    isCompleted: generateCompleted(),
   };
 };
 
@@ -163,6 +173,9 @@ for (let i = 0; i < 40; i++) {
   allRounds.push(generateRound(4));
 }
 
-fs.writeFileSync('src/store/rounds.json', JSON.stringify(allRounds));
+fs.writeFileSync(
+  'src/store/rounds.json',
+  JSON.stringify({ rounds: allRounds })
+);
 
 console.log('Done.');

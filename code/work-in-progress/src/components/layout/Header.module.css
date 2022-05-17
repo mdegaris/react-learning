@@ -1,6 +1,6 @@
 .header {
-  height: 7rem;
-  background-color: dodgerblue;
+  height: 3rem;
+  background-color: var(--cornflower-blue);
   display: flex;
   flex-direction: column;
   align-items: center;

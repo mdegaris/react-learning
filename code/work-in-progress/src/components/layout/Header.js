@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <Fragment>
       <header className={classes.header}>
-        <div className={classes.title}>Work In Progress</div>
+        <div className={classes.title}></div>
       </header>
       <MainNav />
     </Fragment>

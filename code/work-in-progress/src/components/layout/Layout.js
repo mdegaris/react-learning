@@ -1,11 +1,14 @@
 import { Fragment } from 'react';
+import Dashboard from '../../pages/Dashboard';
 import Header from './Header';
 
 const Layout = () => {
   return (
     <Fragment>
       <Header />
-      <main>Layout</main>
+      <main>
+        <Dashboard />
+      </main>
     </Fragment>
   );
 };
