@@ -1,0 +1,13 @@
+.navbar {
+  background-color: blueviolet;
+  height: 100%;
+  padding: 3rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+
+.navbar li {
+  background-color: aquamarine;
+  height: 2.75rem;
+}

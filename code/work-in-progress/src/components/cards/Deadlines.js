@@ -1,36 +1,57 @@
 import Card from '../UI/Card';
-import { useSelector } from 'react-redux';
-
 import Table from '../UI/Table';
+import { useMemo } from 'react';
+// import { useSelector } from 'react-redux';
+
+// import Table from '../UI/Table';
 
 const Deadlines = () => {
-  const deadlines = useSelector((state) => state.dashboard.upcomingDeadlines);
-  // console.log('deadlines', deadlines);
+  // const allDeadlines = useSelector((state) => state.deadlines.deadlineItems);
+
+  const columns = useMemo(
+    () => [
+      {
+        Header: 'Upcoming deadlines',
+
+        columns: [
+          {
+            Header: 'Study',
+            accessor: 'studyId',
+          },
+          {
+            Header: 'Round',
+            accessor: 'round',
+          },
+          {
+            Header: 'Service',
+            accessor: 'service',
+          },
+          {
+            Header: 'Deadline Date',
+            accessor: 'date',
+          },
+        ],
+      },
+    ],
+    []
+  );
+
+  // const data = useMemo(
+  //   () =>
+  //     allDeadlines.map((deadline) => {
+  //       return {
+  //         studyId: deadline.studyId,
+  //         round: deadline.round,
+  //         service: deadline.service,
+  //         date: deadline.date,
+  //       };
+  //     }),
+  //   [allDeadlines]
+  // );
 
   return (
     <Card>
-      <Table
-        headers={['Study', 'Round', 'Deadline', 'Service', 'Actions']}
-        tableData={deadlines}
-      />
-      {/* <Table
-        headers={['Study', 'Round', 'Deadline', 'Service', 'Actions']}
-        tableData={[
-          ['CYP0323', 'R2A', '12-MAY-2022', 'Metabolic Stability', ''],
-          ['CYP0323', 'R2A', '12-MAY-2022', 'Metabolic Stability', ''],
-          ['CYP0323', 'R2A', '12-MAY-2022', 'Metabolic Stability', ''],
-          ['CYP0323', 'R2A', '12-MAY-2022', 'Metabolic Stability', ''],
-          ['CYP0323', 'R2A', '12-MAY-2022', 'Metabolic Stability', ''],
-          ['CYP0323', 'R2A', '12-MAY-2022', 'Metabolic Stability', ''],
-          ['CYP0323', 'R2A', '12-MAY-2022', 'Metabolic Stability', ''],
-          ['CYP0323', 'R2A', '12-MAY-2022', 'Metabolic Stability', ''],
-          ['CYP0323', 'R2A', '12-MAY-2022', 'Metabolic Stability', ''],
-          ['CYP0323', 'R2A', '12-MAY-2022', 'Metabolic Stability', ''],
-          ['CYP0323', 'R2A', '12-MAY-2022', 'Metabolic Stability', ''],
-          ['CYP0323', 'R2A', '12-MAY-2022', 'Metabolic Stability', ''],
-          ['CYP0323', 'R2A', '12-MAY-2022', 'Metabolic Stability', ''],
-        ]}
-      /> */}
+      <Table />
     </Card>
   );
 };

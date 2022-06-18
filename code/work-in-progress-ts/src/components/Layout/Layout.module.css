@@ -1,0 +1,11 @@
+.main {
+  display: grid;
+  grid-template-columns: 9rem auto;
+  grid-template-rows: 3.5rem auto 4rem;
+  grid-template-areas:
+    'header header'
+    'sidebar content'
+    'footer footer';
+  height: 100vh;
+  background-color: lightgrey;
+}

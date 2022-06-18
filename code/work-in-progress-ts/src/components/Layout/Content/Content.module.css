@@ -1,0 +1,5 @@
+.content {
+  background-color: lightgreen;
+  /* grid-row: 2 / -1; */
+  grid-area: content;
+}

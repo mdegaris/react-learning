@@ -1,0 +1,21 @@
+.header {
+  /* grid-column: 1 / -1; */
+  grid-area: header;
+  color: white;
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .title {
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  min-height: fit-content;
+}
+
+.header .user {
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  min-height: fit-content;
+}
