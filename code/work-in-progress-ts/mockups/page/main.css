@@ -29,8 +29,14 @@ input {
   height: 1.8rem;
   text-align: center;
   font-size: 1rem;
-  background-color: var(--wip-pink);
-  border-style: solid;
+  background-color: var(--wip-blue-grey);
+  border: 1px solid var(--wip-accent-grey);
+  outline: none;
+}
+
+input:focus {
+  border: solid 1px var(--wip-bright-blue);
+  outline: none;
 }
 
 label {
@@ -114,11 +120,11 @@ label {
 }
 
 .dashboard {
-  padding: 2rem 0;
+  padding: 1rem 2rem;
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: auto;
-  justify-items: center;
+  justify-items: left;
 }
 
 .services {
@@ -134,26 +140,26 @@ label {
   width: 100%;
 }
 
-.table-container {
-  /* height: auto; */
-}
-
 .table-container table {
   width: max-content;
-  /* height: fit-content; */
-  /* table-layout: fixed; */
+  table-layout: fixed;
 }
 
-.table-container thead {
+.table-container thead tr {
   background-color: var(--wip-blue-grey);
   display: block;
+  width: 100%;
   position: relative;
 }
 
 .table-container tbody {
   height: 33rem;
+  width: 100%;
   display: block;
+  /*  Hack to force overlay scrollbar in Chromium browsers.
+      Overlay not supported in Firefox, so also sepcify auto. */
   overflow: auto;
+  overflow-y: overlay;
 }
 
 .table-container th,
@@ -164,10 +170,6 @@ label {
   text-align: center;
   white-space: nowrap;
 }
-
-/* .table-container col:nth-child(1) {
-  width: 6rem;
-} */
 
 .table-container th:nth-child(1),
 .table-container td:nth-child(1) {
