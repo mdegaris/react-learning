@@ -8,12 +8,13 @@
 :root {
   --wip-pink: #fce6df;
   --wip-heavy-blue: #04347c;
-  --wip-smooth-blue: #04347c;
+  --wip-smooth-blue: #0052cc;
   --wip-bright-blue: #0065ff;
   --wip-sky-blue: #d9eff9;
   --wip-offwhite-grey: #fafafa;
   --wip-blue-grey: #f4f5f7;
   --wip-accent-grey: #dfe1e6;
+  --wip-highlight-grey: #ecedf0;
 }
 
 ::placeholder {
@@ -58,7 +59,7 @@ label {
 
 .header {
   grid-area: header;
-  background-color: var(--wip-smooth-blue);
+  background-color: var(--wip-heavy-blue);
   color: white;
   display: flex;
   flex-direction: row;
@@ -97,11 +98,6 @@ label {
   /* justify-content: space-between; */
   gap: 4rem;
   padding: 1.7rem 6rem;
-}
-
-.filter input {
-  /* height: 2rem;
-  width: fit-content; */
 }
 
 .month-year {
@@ -153,7 +149,7 @@ label {
 }
 
 .table-container tbody {
-  height: 33rem;
+  height: 41rem;
   width: 100%;
   display: block;
   /*  Hack to force overlay scrollbar in Chromium browsers.
@@ -220,11 +216,29 @@ label {
   border-radius: 10px;
   width: min-content;
   height: min-content;
+}
+
+.card-content {
   padding: 0.8rem;
+}
+
+.card header {
+  font-size: 1rem;
+  height: 1.7rem;
+  background-color: var(--wip-smooth-blue);
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.card header div {
+  margin: auto 0;
 }
 
 .footer {
   grid-area: footer;
-  background-color: var(--wip-smooth-blue);
+  background-color: var(--wip-heavy-blue);
   color: white;
 }
