@@ -69,11 +69,11 @@
           </div>
         </section>
         <section class="dashboard">
-          <div class="card services-list">
+          <div class="card">
             <header>
-              <div>Services for May 2022</div>
+              <div>Work for May 2022</div>
             </header>
-            <div class="card-content">
+            <div class="card-content work-list">
               <div class="service-filter">
                 <input
                   type="search"
@@ -745,6 +745,26 @@
                   </tbody>
                 </table>
               </div>
+              <div class="gauges-container">
+                <div class="gauge-labels">
+                  <div>28 Completed</div>
+                  <div>Rounds</div>
+                  <div>21 Active</div>
+                </div>
+                <div class="gauges-rounds">
+                  <div class="done"></div>
+                  <div class="todo"></div>
+                </div>
+                <div class="gauge-labels">
+                  <div>324 Delivered</div>
+                  <div>Compounds</div>
+                  <div>278 Undelivered</div>
+                </div>
+                <div class="gauges-compounds">
+                  <div class="done"></div>
+                  <div class="todo"></div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="card service-details">
@@ -752,9 +772,8 @@
             <div class="card-content service-details">
               <div class="service-info">
                 <div class="deadline">Deadline: 17-May-2022</div>
-
                 <div class="grid-section">
-                  <table class="variables-table">
+                  <table class="scrollable-table variables-table">
                     <thead>
                       <tr>
                         <th colspan="2">Metabolic Stability (BP013)</th>
@@ -789,6 +808,30 @@
                         <td>SubstrateConc</td>
                         <td>1</td>
                       </tr>
+                      <tr>
+                        <td>FinalTimePoint</td>
+                        <td>60</td>
+                      </tr>
+                      <tr>
+                        <td>Cofactor</td>
+                        <td>NADPH</td>
+                      </tr>
+                      <tr>
+                        <td>BufferType</td>
+                        <td>KPO4/MgC12</td>
+                      </tr>
+                      <tr>
+                        <td>TerminationSolution</td>
+                        <td>ACN</td>
+                      </tr>
+                      <tr>
+                        <td>SingleIncubation</td>
+                        <td>True</td>
+                      </tr>
+                      <tr>
+                        <td>Method</td>
+                        <td>Cofactor Incubation</td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -822,12 +865,10 @@
                 <div class="grid-section">
                   <table class="scrollable-table tasks-table">
                     <thead>
-                      <!-- <tr>
-                        <th colspan="3">Labsys</th>
-                      </tr> -->
                       <tr>
                         <th>Labsys Task</th>
                         <th>SOP</th>
+                        <th>Compounds</th>
                         <th>Locked?</th>
                       </tr>
                     </thead>
@@ -835,36 +876,31 @@
                       <tr>
                         <td>11345</td>
                         <td>P078</td>
+                        <td>5</td>
                         <td>Yes</td>
                       </tr>
                       <tr>
                         <td>11342</td>
                         <td>P078</td>
+                        <td>10</td>
                         <td>No</td>
                       </tr>
                       <tr>
                         <td>11325</td>
                         <td>P078</td>
+                        <td>15</td>
                         <td>No</td>
                       </tr>
                       <tr>
                         <td>11313</td>
                         <td>P078</td>
+                        <td>15</td>
                         <td>No</td>
                       </tr>
                       <tr>
                         <td>11213</td>
                         <td>P078</td>
-                        <td>No</td>
-                      </tr>
-                      <tr>
-                        <td>11113</td>
-                        <td>P078</td>
-                        <td>No</td>
-                      </tr>
-                      <tr>
-                        <td>11013</td>
-                        <td>P078</td>
+                        <td>15</td>
                         <td>No</td>
                       </tr>
                     </tbody>
@@ -874,7 +910,7 @@
                   <button id="service-matrix">Service Matrix</button>
                   <button id="ful-matrix">Fulfilment Matrix</button>
                   <button id="details">Round Details</button>
-                  <button id="extract">Extract</button>
+                  <button id="extract">Result Extraction</button>
                 </div>
               </div>
             </div>
