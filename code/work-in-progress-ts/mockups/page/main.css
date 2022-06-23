@@ -62,7 +62,7 @@ button {
 .layout-container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 10rem auto;
+  grid-template-columns: 12rem auto;
   grid-template-rows: 3rem auto 3rem;
   grid-template-areas:
     'header header'
@@ -129,6 +129,35 @@ button {
   grid-area: navbar;
   background-color: var(--wip-blue-grey);
   border-right: 1px solid var(--wip-accent-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar ul {
+  /* margin-top: 9rem; */
+  /* min-height: auto; */
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: space-between;
+}
+
+.navbar li {
+  height: 4rem;
+  width: 100%;
+  background-color: var(--wip-smooth-blue);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar li div {
+  /* max-width: fit-content; */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .content {
@@ -138,6 +167,7 @@ button {
 }
 
 .filter {
+  width: 60rem;
   background-color: white;
   border-bottom: 1px solid var(--wip-accent-grey);
   display: flex;
