@@ -15,6 +15,8 @@
   --wip-blue-grey: #f4f5f7;
   --wip-accent-grey: #dfe1e6;
   --wip-highlight-grey: #ecedf0;
+  --wip-strong-grey: #acacac;
+  --wip-card-border-radius: 10px;
 }
 
 ::placeholder {
@@ -27,11 +29,11 @@ html {
 
 input {
   width: 17rem;
-  height: 1.8rem;
+  min-height: 1.8rem;
   text-align: center;
   font-size: 1rem;
-  background-color: var(--wip-blue-grey);
-  border: 1px solid var(--wip-accent-grey);
+  background-color: var(--wip-offwhite-grey);
+  border: 1px solid var(--wip-strong-grey);
   outline: none;
 }
 
@@ -48,6 +50,7 @@ label {
 button {
   border-style: solid 1px var(--wip-accent-grey);
   font-size: 1rem;
+  font-weight: bold;
   border-radius: 3px;
   background-color: var(--wip-smooth-blue);
   color: white;
@@ -60,7 +63,7 @@ button {
 } */
 
 .layout-container {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 12rem auto;
   grid-template-rows: 3rem auto 3rem;
@@ -72,30 +75,66 @@ button {
 
 .card {
   background-color: white;
-  border: 1px solid var(--wip-accent-grey);
-  border-radius: 10px;
-  height: min-content;
+  border: 2px solid var(--wip-accent-grey);
+  border-radius: var(--wip-card-border-radius);
+  width: fit-content;
+  box-shadow: 2px 2px 5px var(--wip-accent-grey);
 }
 
-.card-content {
-  padding: 0.8rem;
-}
-
-.card header {
+.card-header {
   font-size: 1rem;
   font-weight: bold;
-  padding: 0 2rem;
-  height: 2rem;
+  min-height: 2.2rem;
   background-color: var(--wip-smooth-blue);
   color: white;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: var(--wip-card-border-radius);
+  border-top-right-radius: var(--wip-card-border-radius);
   display: flex;
   justify-content: center;
 }
 
-.card header div {
+.card-header div {
   margin: auto 0;
+}
+
+.card-content {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content div {
+  flex-grow: 1;
+}
+
+.main-work {
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  grid-template-areas:
+    'main-filter main-filter'
+    'service-list service-detail';
+}
+
+.main-filter {
+  grid-area: main-filter;
+  width: fit-content;
+  background-color: var(--wip-highlight-grey);
+  border-bottom: 1px solid var(--wip-accent-grey);
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 1.5rem 6rem;
+}
+
+.service-list {
+  grid-area: service-list;
+}
+
+.service-detail {
+  grid-area: service-detail;
 }
 
 .footer {
@@ -144,7 +183,7 @@ button {
 }
 
 .navbar li {
-  height: 4rem;
+  min-height: 4rem;
   width: 100%;
   background-color: var(--wip-smooth-blue);
   list-style: none;
@@ -162,18 +201,9 @@ button {
 
 .content {
   grid-area: content;
+  padding: 1rem;
   background-color: var(--wip-offwhite-grey);
   font-size: 0.85rem;
-}
-
-.filter {
-  width: 60rem;
-  background-color: white;
-  border-bottom: 1px solid var(--wip-accent-grey);
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  padding: 1.7rem 6rem;
 }
 
 .dashboard {
@@ -184,15 +214,10 @@ button {
   justify-items: left;
 }
 
-.work-list {
+/* .work-list {
   min-height: 20rem;
   align-self: flex-start;
-}
-
-.service-details {
-  min-height: 20rem;
-  align-self: flex-start;
-}
+} */
 
 .service-filter {
   width: auto;
@@ -243,7 +268,7 @@ table th {
 }
 
 .gauges-rounds {
-  height: 10px;
+  min-height: 10px;
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: auto;
@@ -252,7 +277,7 @@ table th {
 }
 
 .gauges-compounds {
-  height: 10px;
+  min-height: 10px;
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: auto;
@@ -292,7 +317,7 @@ table th {
 }
 
 .services-table tbody {
-  height: 31rem;
+  max-height: 31rem;
 }
 
 .services-table th,
@@ -340,12 +365,12 @@ table th {
 }
 
 .service-info {
-  max-width: 27rem;
-  display: grid;
-  grid-auto-rows: auto;
-  grid-template-columns: auto;
-  align-items: start;
-  gap: 1rem;
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
 }
 
 .service-info .deadline {
@@ -360,6 +385,7 @@ table th {
 .grid-section {
   margin: 0 auto;
   width: 100%;
+  justify-content: stretch;
 }
 
 .grid-section table {
@@ -372,7 +398,7 @@ table th {
 }
 
 .variables-table tbody {
-  height: 12.5rem;
+  max-height: 11rem;
   /* max-width: 100%; */
 }
 
@@ -406,7 +432,7 @@ table th {
 }
 
 .tasks-table tbody {
-  height: 8rem;
+  max-height: 8rem;
 }
 
 .tasks-table th,
@@ -416,7 +442,7 @@ table th {
 
 .tasks-table th:nth-child(1),
 .tasks-table td:nth-child(1) {
-  width: 8rem;
+  width: 10rem;
 }
 
 .tasks-table th:nth-child(2),

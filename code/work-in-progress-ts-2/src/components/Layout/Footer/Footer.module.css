@@ -1,0 +1,15 @@
+.footer {
+  grid-area: footer;
+  background-color: var(--wip-heavy-blue);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 4.2rem;
+}
+
+.footer div {
+  margin: auto 0;
+  font-weight: 600;
+}

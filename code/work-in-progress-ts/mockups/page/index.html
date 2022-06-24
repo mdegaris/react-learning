@@ -24,64 +24,66 @@
         </ul>
       </nav>
       <main class="content">
-        <section class="filter card">
-          <div class="month-year">
-            <label for="month">Month / Year</label>
-            <input
-              name="month"
-              type="text"
-              list="monthYear"
-              placeholder="Month"
-            />
-            <datalist id="monthYear">
-              <option value="March 2022" />
-              <option value="April 2022" />
-              <option value="May 2022" />
-              <option value="June 2022" />
-            </datalist>
+        <section class="main-work">
+          <div class="card main-filter">
+            <div class="card-content">
+              <div class="month-year">
+                <label for="month">Month / Year</label>
+                <input
+                  name="month"
+                  type="text"
+                  list="monthYear"
+                  placeholder="Month"
+                />
+                <datalist id="monthYear">
+                  <option value="March 2022" />
+                  <option value="April 2022" />
+                  <option value="May 2022" />
+                  <option value="June 2022" />
+                </datalist>
+              </div>
+              <div class="service-group">
+                <label for="service">Service Group</label>
+                <input
+                  name="service"
+                  type="text"
+                  list="serviceGroup"
+                  placeholder="Service Group"
+                />
+                <datalist id="serviceGroup">
+                  <option value="ALL" />
+                  <option value="PhysChem" />
+                  <option value="Transporters" />
+                  <option value="Permeability" />
+                  <option value="Other" />
+                </datalist>
+              </div>
+              <div class="study-pm">
+                <label for="study">Study / PM</label>
+                <input
+                  name="study"
+                  type="text"
+                  list="studyPM"
+                  placeholder="Study / PM"
+                />
+                <datalist id="studyPM">
+                  <option value="ALL" />
+                  <option value="James Harrison" />
+                  <option value="Adrian Walker" />
+                  <option value="CYP0174" />
+                  <option value="CYP0244" />
+                  <option value="CYP0694" />
+                  <option value="CYP1676" />
+                  <option value="CYP1822" />
+                </datalist>
+              </div>
+            </div>
           </div>
-          <div class="service-group">
-            <label for="service">Service Group</label>
-            <input
-              name="service"
-              type="text"
-              list="serviceGroup"
-              placeholder="Service Group"
-            />
-            <datalist id="serviceGroup">
-              <option value="ALL" />
-              <option value="PhysChem" />
-              <option value="Transporters" />
-              <option value="Permeability" />
-              <option value="Other" />
-            </datalist>
-          </div>
-          <div class="study-pm">
-            <label for="study">Study / PM</label>
-            <input
-              name="study"
-              type="text"
-              list="studyPM"
-              placeholder="Study / PM"
-            />
-            <datalist id="studyPM">
-              <option value="ALL" />
-              <option value="James Harrison" />
-              <option value="Adrian Walker" />
-              <option value="CYP0174" />
-              <option value="CYP0244" />
-              <option value="CYP0694" />
-              <option value="CYP1676" />
-              <option value="CYP1822" />
-            </datalist>
-          </div>
-        </section>
-        <section class="dashboard">
-          <div class="card">
-            <header>
+          <div class="card service-list">
+            <header class="card-header">
               <div>Work for May 2022</div>
             </header>
-            <div class="card-content work-list">
+            <div class="card-content">
               <div class="service-filter">
                 <input
                   type="search"
@@ -775,9 +777,11 @@
               </div>
             </div>
           </div>
-          <div class="card service-details">
-            <header><div>Metabolic Stability - CYP0323 R100A</div></header>
-            <div class="card-content service-details">
+          <div class="card service-detail">
+            <header class="card-header">
+              <div>Metabolic Stability - CYP0323 R100A</div>
+            </header>
+            <div class="card-content">
               <div class="service-info">
                 <div class="deadline">Deadline: 17-May-2022</div>
                 <div class="grid-section">
@@ -914,7 +918,7 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="nav-links">
+                <div class="grid-section nav-links">
                   <button id="service-matrix">Service Matrix</button>
                   <button id="ful-matrix">Fulfilment Matrix</button>
                   <button id="details">Round Details</button>
@@ -923,6 +927,7 @@
               </div>
             </div>
           </div>
+          <!-- </section> -->
         </section>
       </main>
       <footer class="footer">footer</footer>
