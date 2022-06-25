@@ -21,9 +21,7 @@ const Card = ({
           <div>{title}</div>
         </header>
       )}
-      <div className={classes['card-content']}>
-        <div>{children}</div>
-      </div>
+      <div className={classes['card-content']}>{children}</div>
     </div>
   );
 };
