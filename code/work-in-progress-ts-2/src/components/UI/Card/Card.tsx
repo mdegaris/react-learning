@@ -12,16 +12,16 @@ const Card = ({
   className = null,
   children = null,
 }: CardProps) => {
-  const cardClasses =
-    classes.card + ' ' + (className !== null ? className : '');
+  const cardContentClasses =
+    classes['card-content'] + ' ' + (className !== null ? className : '');
   return (
-    <div className={cardClasses}>
+    <div className={classes.container}>
       {title !== null && (
         <header className={classes.title}>
           <div>{title}</div>
         </header>
       )}
-      <div className={classes['card-content']}>{children}</div>
+      <div className={cardContentClasses}>{children}</div>
     </div>
   );
 };

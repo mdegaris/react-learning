@@ -8,9 +8,9 @@ type Props = {};
 const WorkFilter = (props: Props) => {
   return (
     <Card className={classes.container}>
-      <Input />
-      <Input />
-      <Input />
+      <Input label='Month: ' />
+      <Input label='Service Group: ' />
+      <Input label='Study/PM: ' />
     </Card>
   );
 };

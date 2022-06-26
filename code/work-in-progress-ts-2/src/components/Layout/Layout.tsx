@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from './Header';
-import Content from './Content/Content';
+import Content from './Content';
 import Footer from './Footer';
-import classes from './Layout.module.css';
 import Navbar from './Navbar';
+import classes from './Layout.module.css';
 
 type LayoutProps = {};
 

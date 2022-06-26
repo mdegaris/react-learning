@@ -1,10 +1,27 @@
 .container {
-  grid-area: main-filter;
-  min-width: fit-content;
-  background-color: var(--wip-highlight-grey);
-  border-bottom: 1px solid var(--wip-accent-grey);
+  grid-area: work-filter;
+  /* min-width: fit-content; */
+  /* min-width: 100%; */
+  /* background-color: var(--wip-highlight-grey);
+  border-bottom: 1px solid var(--wip-accent-grey); */
+  /* align-items: center; */
+  /* gap: 4rem; */
+  /* padding: 1.5rem 6rem; */
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8rem;
+  padding: 2rem 10rem;
+  background-color: var(--wip-highlight-grey);
+  /* border-bottom: 1px solid var(--wip-accent-grey); */
+}
+
+/* .filters {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 4rem;
   padding: 1.5rem 6rem;
-}
+  background-color: var(--wip-highlight-grey);
+  border-bottom: 1px solid var(--wip-accent-grey);
+} */
