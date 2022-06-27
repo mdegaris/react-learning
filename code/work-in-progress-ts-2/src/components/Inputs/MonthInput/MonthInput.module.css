@@ -1,0 +1,13 @@
+.container {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+}
+
+.month {
+  min-width: 8rem;
+}
+
+.year {
+  min-width: 6rem;
+}

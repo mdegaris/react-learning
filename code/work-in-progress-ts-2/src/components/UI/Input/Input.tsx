@@ -1,6 +1,6 @@
 import React from 'react';
 import Select from 'react-select';
-import { isClassExpression } from 'typescript';
+import { AppProps, SelectOptionType } from '../../../types/types';
 import classes from './Input.module.css';
 
 type StudyOption = {
@@ -8,52 +8,46 @@ type StudyOption = {
   readonly label: string;
 };
 
-const studyOptions: StudyOption[] = [
+const testOptions: StudyOption[] = [
   {
-    value: 'CYP0694',
-    label: 'CYP0694',
+    value: 'option1',
+    label: 'option1',
   },
   {
-    value: 'CYP1822',
-    label: 'CYP1822',
+    value: 'option2',
+    label: 'option2',
   },
   {
-    value: 'CYP1676',
-    label: 'CYP1676',
+    value: 'option3',
+    label: 'option3',
   },
   {
-    value: 'CYP0244',
-    label: 'CYP0244',
+    value: 'option4',
+    label: 'option4',
   },
   {
-    value: 'CYP0323',
-    label: 'CYP0323',
+    value: 'option5',
+    label: 'option5',
   },
 ];
 
-type Props = {
-  label?: string | null;
-};
+interface Props extends AppProps {
+  label: string;
+  options?: SelectOptionType[] | null;
+}
 
-const Input = ({ label = null }: Props) => {
+const Input = ({ label, className = '', options = null }: Props) => {
+  const inputClass = classes.input + ' ' + className;
+
   return (
-    <div className={classes.container}>
-      {label != null ? (
-        <>
-          <label htmlFor='select' className={classes.label}>
-            {label}
-          </label>
-          <div className={classes.input}>
-            <Select id='select' options={studyOptions} />
-          </div>
-        </>
-      ) : (
-        <Select id='select' options={studyOptions} />
-        // <Select options={studyOptions} />
-      )}
-      {/* <label htmlFor='namedInput'>Name:</label>
-      <input id='namedInput' type='text' name='name' /> */}
-    </div>
+    <React.Fragment>
+      <label htmlFor={label} className={classes.label}>
+        {label}
+      </label>
+      <div className={inputClass}>
+        {options && <Select id={label} options={options} />}
+      </div>
+    </React.Fragment>
   );
 };
 

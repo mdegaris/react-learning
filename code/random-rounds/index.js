@@ -8,13 +8,23 @@ import fs from 'fs';
 
 const year = 2022;
 
-const studies = [
-  'CYP0244',
-  'CYP0323',
-  'CYP0694',
-  'CYP1143',
-  'CYP1676',
-  'CYP1822',
+const studeisPM = [
+  {
+    pm: 'Darren Jones',
+    studies: ['CYP0244', 'CYP0323'],
+  },
+  {
+    pm: 'Adrian Walker',
+    studies: ['CYP0694', 'CYP1676'],
+  },
+  {
+    pm: 'James Harrison',
+    studies: ['CYP1827', 'CYP1143'],
+  },
+  {
+    pm: 'Rosie Scaril',
+    studies: ['CYP0267', 'CYP1822'],
+  },
 ];
 
 const services = [
@@ -149,7 +159,9 @@ const generateCompleted = () => {
 };
 
 const generateRound = (month = null) => {
-  const studyId = randomElement(studies);
+  const pmStudies = randomElement(studeisPM);
+  const pm = pmStudies.pm;
+  const studyId = randomElement(pmStudies.studies);
   const roundId = generateRoundId();
   const expectedReciptDate = generateDate(month, 1, 12);
   const roundServices = generateSetofServices(month, expectedReciptDate);
@@ -161,6 +173,7 @@ const generateRound = (month = null) => {
     contractId,
     round: roundId.subRound,
     studyId,
+    projectManager: pm,
     expectedReceiptDate: formatDate(expectedReciptDate),
     services: roundServices,
     isCompleted: generateCompleted(),
@@ -174,8 +187,8 @@ for (let i = 0; i < 40; i++) {
 }
 
 fs.writeFileSync(
-  'src/store/rounds.json',
-  JSON.stringify({ rounds: allRounds })
+  'test-data.json',
+  JSON.stringify({ rounds: allRounds, studies: studeisPM })
 );
 
 console.log('Done.');
