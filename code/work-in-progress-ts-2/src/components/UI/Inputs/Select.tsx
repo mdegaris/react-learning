@@ -1,14 +1,9 @@
 import React from 'react';
-import Select from 'react-select';
-import { AppProps, SelectOptionType } from '../../../types/types';
-import classes from './Input.module.css';
+import ReactSelect from 'react-select';
+import { AppProps, SelectOptionType } from '../../../types';
+import classes from './Select.module.css';
 
-type StudyOption = {
-  readonly value: string;
-  readonly label: string;
-};
-
-const testOptions: StudyOption[] = [
+const testOptions: SelectOptionType[] = [
   {
     value: 'option1',
     label: 'option1',
@@ -31,12 +26,16 @@ const testOptions: StudyOption[] = [
   },
 ];
 
-interface Props extends AppProps {
+interface SelectProps extends AppProps {
   label: string;
-  options?: SelectOptionType[] | null;
+  options?: SelectOptionType[];
 }
 
-const Input = ({ label, className = '', options = null }: Props) => {
+const Select = ({
+  label,
+  options = testOptions,
+  className = '',
+}: SelectProps) => {
   const inputClass = classes.input + ' ' + className;
 
   return (
@@ -45,10 +44,10 @@ const Input = ({ label, className = '', options = null }: Props) => {
         {label}
       </label>
       <div className={inputClass}>
-        {options && <Select id={label} options={options} />}
+        <ReactSelect id={label} options={options} />
       </div>
     </React.Fragment>
   );
 };
 
-export default Input;
+export default Select;

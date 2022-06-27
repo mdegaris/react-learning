@@ -1,0 +1,26 @@
+.input {
+  font-size: 1rem;
+  min-height: auto;
+  background-color: var(--wip-offwhite-grey);
+  border: 1px solid var(--wip-blue-grey);
+  border-radius: 5px;
+  outline: none;
+}
+
+/* min-height: 1.8rem; */
+/* width: 10rem; */
+/* text-align: center; */
+
+.input:focus {
+  border: solid 1px var(--wip-strong-grey);
+  outline: none;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+.label {
+  position: absolute;
+  top: -1000px;
+}

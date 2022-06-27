@@ -1,60 +1,90 @@
 import React from 'react';
-import { SelectOptionType } from '../../../types/types';
-import Input from '../../UI/Input';
+import { MonthOptionType, SelectOptionType } from '../../../types';
+import Select from '../../UI/Inputs/Select';
 import classes from './MonthInput.module.css';
 
 type Props = {};
 
-const monthOptions: SelectOptionType[] = [
+const buildYearOptions = (year: number): SelectOptionType[] => {
+  const yearList = new Array(10).fill(year).map((y, index) => y - index);
+  const yearOptions = yearList.map((y): SelectOptionType => {
+    return {
+      label: y.toString(),
+      value: y,
+    };
+  });
+
+  return yearOptions;
+};
+
+const monthOptions: MonthOptionType[] = [
   {
+    value: 'January',
     label: 'January',
-    value: 'JAN',
   },
   {
     label: 'February',
-    value: 'FEB',
+    value: 'February',
   },
   {
     label: 'March',
-    value: 'MAR',
+    value: 'March',
   },
   {
     label: 'April',
-    value: 'APR',
+    value: 'April',
   },
   {
     label: 'May',
-    value: 'MAY',
+    value: 'May',
+  },
+  {
+    label: 'June',
+    value: 'June',
+  },
+  {
+    label: 'July',
+    value: 'June',
+  },
+  {
+    label: 'August',
+    value: 'August',
+  },
+  {
+    label: 'September',
+    value: 'September',
+  },
+  {
+    label: 'October',
+    value: 'October',
+  },
+  {
+    label: 'November',
+    value: 'November',
+  },
+  {
+    label: 'December',
+    value: 'December',
   },
 ];
 
 const MonthInput = (props: Props) => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className={classes.container}>
-      <Input
+      <Select
         options={monthOptions}
         className={classes.month}
         label='Month'
-      ></Input>
-      <Input className={classes.year} label='Year'></Input>
+      ></Select>
+      <Select
+        options={buildYearOptions(currentYear)}
+        className={classes.year}
+        label='Year'
+      ></Select>
     </div>
   );
 };
 
 export default MonthInput;
-
-/*
-<div className={classes.container}>
-{label != null ? (
-  <>
-    <label htmlFor='select' className={classes.label}>
-      {label}
-    </label>
-    <div className={classes.input}>
-      <Select id='select' options={studyOptions} />
-    </div>
-  </>
-) : (
-  <Select id='select' options={studyOptions} />
-)}
-*/
