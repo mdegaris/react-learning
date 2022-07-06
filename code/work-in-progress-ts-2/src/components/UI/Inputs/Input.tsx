@@ -1,6 +1,6 @@
 import React from 'react';
-import { AppProps, SelectOptionType } from '../../../types';
-import classes from './Input.module.css';
+import { AppProps } from '../../../types';
+import styles from './Input.module.css';
 
 interface InputProps extends AppProps {
   name: string;
@@ -8,11 +8,11 @@ interface InputProps extends AppProps {
 }
 
 const Input = ({ name, label, className = '' }: InputProps) => {
-  const inputClass = classes.input + ' ' + className;
+  const inputClass = styles.input + ' ' + className;
 
   return (
     <React.Fragment>
-      <label htmlFor={label} className={classes.label}>
+      <label htmlFor={label} className={styles.label}>
         {label}
       </label>
       <div className={inputClass}>

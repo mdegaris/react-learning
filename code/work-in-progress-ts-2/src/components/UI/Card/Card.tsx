@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Card.module.css';
+import styles from './Card.module.css';
 
 type CardProps = {
   title?: string | null;
@@ -12,16 +12,16 @@ const Card = ({
   className = null,
   children = null,
 }: CardProps) => {
-  const cardContentClasses =
-    classes['card-content'] + ' ' + (className !== null ? className : '');
+  const cardContentstyles =
+    styles['card-content'] + ' ' + (className !== null ? className : '');
   return (
-    <div className={classes.container}>
+    <div className={styles.container}>
       {title !== null && (
-        <header className={classes.title}>
+        <header className={styles.title}>
           <div>{title}</div>
         </header>
       )}
-      <div className={cardContentClasses}>{children}</div>
+      <div className={cardContentstyles}>{children}</div>
     </div>
   );
 };

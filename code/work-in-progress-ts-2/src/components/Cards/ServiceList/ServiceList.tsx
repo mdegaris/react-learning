@@ -1,12 +1,12 @@
 import React from 'react';
 import Card from '../../UI/Card';
-import classes from './ServiceList.module.css';
+import styles from './ServiceList.module.css';
 
 type Props = {};
 
 const ServiceList = (props: Props) => {
   return (
-    <div className={classes.container}>
+    <div className={styles.container}>
       <Card>ServiceList</Card>
     </div>
     // <div className='card service-list'>

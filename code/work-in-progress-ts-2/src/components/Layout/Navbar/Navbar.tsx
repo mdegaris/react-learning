@@ -1,11 +1,11 @@
 import React from 'react';
-import classes from './Navbar.module.css';
+import styles from './Navbar.module.css';
 
 type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <nav className={classes.navbar}>
+    <nav className={styles.navbar}>
       <ul>
         <li>
           <div>Monthly Work</div>

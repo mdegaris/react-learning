@@ -6,28 +6,30 @@ import fs from 'fs';
 // const dateFormat = require('dateformat');
 // const fs = require('fs');
 
-const year = 2022;
+const YEAR = new Date().getFullYear();
 
-const studeisPM = [
+const SUB_ROUNDS = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+const STUDIES_PM = [
   {
-    pm: 'Darren Jones',
-    studies: ['CYP0244', 'CYP0323'],
+    studyManager: 'Darren Jones',
+    studies: ['CYP0244', 'CYP0323', 'CYP0750'],
   },
   {
-    pm: 'Adrian Walker',
-    studies: ['CYP0694', 'CYP1676'],
+    studyManager: 'Adrian Walker',
+    studies: ['CYP0694', 'CYP1676', 'CYP1454'],
   },
   {
-    pm: 'James Harrison',
-    studies: ['CYP1827', 'CYP1143'],
+    studyManager: 'James Harrison',
+    studies: ['CYP1827', 'CYP1143', 'CYP0864'],
   },
   {
-    pm: 'Rosie Scaril',
-    studies: ['CYP0267', 'CYP1822'],
+    studyManager: 'Rosie Scaril',
+    studies: ['CYP0267', 'CYP1822', 'CYP1921'],
   },
 ];
 
-const services = [
+const SERVICES = [
   {
     code: 'BP013',
     name: 'Metabolic Stability',
@@ -80,7 +82,7 @@ const formatDate = (date) => {
 };
 
 const maxMonthDays = (month) => {
-  const monthDate = new Date(year, month, 0);
+  const monthDate = new Date(YEAR, month, 0);
   return monthDate.getDate();
 };
 
@@ -110,7 +112,7 @@ const generateCompounds = () => {
 };
 
 const generateService = (receiptDate) => {
-  const randService = randomElement(services);
+  const randService = randomElement(SERVICES);
   const randSuppId = randomElement(randService.suppIds);
   const deadlineDate = generateDate(
     receiptDate.getMonth(),
@@ -144,9 +146,7 @@ const generateSetofServices = (month, receiptDate) => {
 const generateRoundId = () => {
   const roundNumber = randomInt({ min: 10, max: 100 });
   const roundLetter =
-    randomInt({ min: 0, max: 10 }) !== 0
-      ? randomElement(['A', 'B', 'C', 'D', 'E', 'F'])
-      : '';
+    randomInt({ min: 0, max: 10 }) !== 0 ? randomElement(SUB_ROUNDS) : '';
 
   return {
     wholeRound: 'R' + roundNumber,
@@ -159,8 +159,8 @@ const generateCompleted = () => {
 };
 
 const generateRound = (month = null) => {
-  const pmStudies = randomElement(studeisPM);
-  const pm = pmStudies.pm;
+  const pmStudies = randomElement(STUDIES_PM);
+  const studyManager = pmStudies.studyManager;
   const studyId = randomElement(pmStudies.studies);
   const roundId = generateRoundId();
   const expectedReciptDate = generateDate(month, 1, 12);
@@ -173,22 +173,22 @@ const generateRound = (month = null) => {
     contractId,
     round: roundId.subRound,
     studyId,
-    projectManager: pm,
+    studyManager,
     expectedReceiptDate: formatDate(expectedReciptDate),
     services: roundServices,
     isCompleted: generateCompleted(),
   };
 };
 
-// console.log('Start...');
+console.log('Start...');
 const allRounds = [];
-for (let i = 0; i < 40; i++) {
-  allRounds.push(generateRound(4));
+for (let i = 0; i < 50; i++) {
+  allRounds.push(generateRound(new Date().getMonth()));
 }
 
 fs.writeFileSync(
   'test-data.json',
-  JSON.stringify({ rounds: allRounds, studies: studeisPM })
+  JSON.stringify({ rounds: allRounds, studies: STUDIES_PM })
 );
 
 console.log('Done.');

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Header.module.css';
+import styles from './Header.module.css';
 
 type HeaderProps = {
   title: string;
@@ -8,8 +8,8 @@ type HeaderProps = {
 
 const Header = ({ title, user }: HeaderProps) => {
   return (
-    <header className={classes.header}>
-      <div className={classes.title}>{title}</div>
+    <header className={styles.header}>
+      <div className={styles.title}>{title}</div>
       <div>{user}</div>
     </header>
   );

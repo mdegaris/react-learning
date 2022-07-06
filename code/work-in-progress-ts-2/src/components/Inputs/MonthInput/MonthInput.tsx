@@ -1,16 +1,16 @@
 import React from 'react';
-import { MonthOptionType, SelectOptionType } from '../../../types';
+import { MonthOptionType, YearOptionType } from '../../../types';
 import Select from '../../UI/Inputs/Select';
-import classes from './MonthInput.module.css';
+import styles from './MonthInput.module.css';
 
 type Props = {};
 
-const buildYearOptions = (year: number): SelectOptionType[] => {
-  const yearList = new Array(10).fill(year).map((y, index) => y - index);
-  const yearOptions = yearList.map((y): SelectOptionType => {
+const buildYearOptions = (year: number): YearOptionType[] => {
+  const yearList = new Array(12).fill(year).map((y, index) => y - index + 1);
+  const yearOptions = yearList.map((year): YearOptionType => {
     return {
-      label: y.toString(),
-      value: y,
+      label: year.toString(),
+      value: year,
     };
   });
 
@@ -72,15 +72,17 @@ const MonthInput = (props: Props) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className={classes.container}>
+    <div className={styles.container}>
       <Select
+        id='month-select'
         options={monthOptions}
-        className={classes.month}
+        className={styles.month}
         label='Month'
       ></Select>
       <Select
+        id='year-select'
         options={buildYearOptions(currentYear)}
-        className={classes.year}
+        className={styles.year}
         label='Year'
       ></Select>
     </div>

@@ -5,6 +5,21 @@
   margin: 0;
 }
 
+:root {
+  --wip-pink: #fce6df;
+  --wip-heavy-blue: #04347c;
+  --wip-smooth-blue: #3462a7;
+  --wip-bright-blue: #3a5d91;
+  --wip-sky-blue: #d9eff9;
+  --wip-offwhite-grey: #fafafa;
+  --wip-blue-grey: #f4f5f7;
+  --wip-accent-grey: #dfe1e6;
+  --wip-highlight-grey: #ecedf0;
+  --wip-strong-grey: #808080;
+
+  --card-border-radius: 10px;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

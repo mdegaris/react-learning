@@ -1,6 +1,5 @@
 .container {
   width: auto;
-  /* width: 100rem; */
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto;
@@ -9,4 +8,23 @@
     'work-filter work-filter'
     'service-list service-detail';
   padding: 1.5rem;
+}
+
+.header {
+  background-color: var(--wip-blue-grey);
+  border-bottom: 1px solid var(--wip-accent-grey);
+  padding: 0.8rem 3rem;
+  display: grid;
+  justify-content: left;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-style: italic;
+  line-height: 1.7rem;
+  color: var(--wip-strong-grey);
 }

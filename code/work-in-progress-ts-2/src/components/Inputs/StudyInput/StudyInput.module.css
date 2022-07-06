@@ -1,0 +1,7 @@
+.container {
+  width: max-content;
+}
+
+.select {
+  min-width: 12rem;
+}
