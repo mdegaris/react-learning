@@ -8,6 +8,7 @@ interface SelectProps extends AppProps {
   id: string;
   label: string;
   options: OptionType[] | GroupType[];
+  loadOptions?: Promise<any>;
 }
 
 const Select = ({ id, label, options, className = '' }: SelectProps) => {

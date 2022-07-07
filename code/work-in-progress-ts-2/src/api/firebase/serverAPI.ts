@@ -1,14 +1,18 @@
-import { StudyManagerType, StudyType } from '../types';
-import { StudyManagerJson } from '../types';
-import urls from './urls';
+import { StudyManagerType, StudyType } from '../../types';
+import urls from './remoteUrls';
 
-export interface AllStudyDataType {
+type StudiesJson = {
+  studyManager: string;
+  studies: StudyType[];
+};
+
+export type APIStudyDataType = {
   studyList: StudyType[];
   studyManagerList: StudyManagerType[];
-}
+};
 
-const fetchAllStudyData = async (): Promise<AllStudyDataType> => {
-  const fetchData = async (): Promise<StudyManagerJson[]> => {
+const fetchAllStudyData = async (): Promise<APIStudyDataType> => {
+  const fetchData = async (): Promise<StudiesJson[]> => {
     const response = await fetch(urls.STUDIES_URL, {
       headers: {
         'Content-Type': 'application/json',
@@ -16,7 +20,7 @@ const fetchAllStudyData = async (): Promise<AllStudyDataType> => {
     });
 
     if (!response.ok) {
-      throw new Error('SERVER ERROR: Could not fetch Study Manager data.');
+      throw new Error('SERVER ERROR: Could not fetch Study data.');
     }
 
     return response.json();
@@ -24,11 +28,11 @@ const fetchAllStudyData = async (): Promise<AllStudyDataType> => {
 
   const jsonObjects = await fetchData();
   const allStudyManagers: StudyManagerType[] = jsonObjects.map(
-    (sm: StudyManagerJson) => sm.studyManager
+    (sm: StudiesJson) => sm.studyManager
   );
 
   const allStudies = jsonObjects.reduce<StudyType[]>(
-    (acc: StudyType[], prev: StudyManagerJson) => {
+    (acc: StudyType[], prev: StudiesJson) => {
       return [...acc, ...prev.studies];
     },
     []

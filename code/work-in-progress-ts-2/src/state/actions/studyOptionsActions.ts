@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import api, { AllStudyDataType } from '../../api/serverAPI';
+import api from '../../api/firebase/serverAPI';
 import { StudyManagerOptionType, StudyIdOptionType } from '../../types';
 
 export interface AllStudyOptions {
@@ -7,16 +7,15 @@ export interface AllStudyOptions {
   studyIdOptions: StudyIdOptionType[];
 }
 
-// just using StudyOptionType to make types match
 export const fetchAllStudyData = createAsyncThunk<AllStudyOptions>(
   'filterLists/fetchStudyData',
-  async (thunkAPI) => {
-    const studyData: AllStudyDataType = await api.fetchAllStudyData();
+  async () => {
+    const studyData = await api.fetchAllStudyData();
     const studyManagerOptions: StudyManagerOptionType[] =
-      studyData.studyManagerList.map<StudyManagerOptionType>((sm) => {
+      studyData.studyManagerList.map<StudyManagerOptionType>((studyManager) => {
         return {
-          value: sm,
-          label: sm,
+          value: studyManager,
+          label: studyManager,
         };
       });
 

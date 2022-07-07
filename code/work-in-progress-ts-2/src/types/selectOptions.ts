@@ -1,6 +1,13 @@
 type AllType = 'All';
 
 type StudyManagerType = string;
+
+// type StudyManagerType = {
+//   name: string;
+//   username: string;
+//   guid: string;
+// };
+
 type StudyType = `CYP${number}${number}${number}${number}`;
 
 type ServiceType = string;
@@ -38,6 +45,11 @@ interface GroupType {
   options: OptionType[];
 }
 
+interface AllOptionType extends OptionType {
+  label: AllType;
+  value: AllType;
+}
+
 interface MonthOptionType extends OptionType {
   label: Month;
   value: Month;
@@ -49,8 +61,8 @@ interface YearOptionType extends OptionType {
 }
 
 interface ServiceOptionType extends OptionType {
-  label: ServiceGroupType | ServiceType | AllType;
-  value: ServiceGroupType | ServiceCodeType | AllType;
+  label: ServiceGroupType | ServiceType;
+  value: ServiceGroupType | ServiceCodeType;
 }
 
 interface StudyOptionType extends OptionType {
@@ -59,16 +71,17 @@ interface StudyOptionType extends OptionType {
 }
 
 interface StudyManagerOptionType extends StudyOptionType {
-  label: StudyManagerType | AllType;
-  value: StudyManagerType | AllType;
+  label: StudyManagerType;
+  value: StudyManagerType;
 }
 
 interface StudyIdOptionType extends StudyOptionType {
-  label: StudyType | AllType;
-  value: StudyType | AllType;
+  label: StudyType;
+  value: StudyType;
 }
 
 export type {
+  AllOptionType,
   OptionType,
   GroupType,
   StudyType,

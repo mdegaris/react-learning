@@ -6,8 +6,8 @@ import { StudyIdOptionType, StudyManagerOptionType } from '../../types';
 const initialState = {
   loading: false,
   studyOptions: {
-    studyManager: [] as StudyManagerOptionType[],
-    studyId: [] as StudyIdOptionType[],
+    studyManagerOptions: [] as StudyManagerOptionType[],
+    studyIdOptions: [] as StudyIdOptionType[],
   },
 };
 
@@ -24,12 +24,9 @@ export const studyOptionsSlice = createSlice({
         state.loading = false;
       })
       .addCase(fetchAllStudyData.fulfilled, (state, { payload }) => {
-        console.log('payload');
-        console.log(payload);
-
         state.loading = false;
-        state.studyOptions.studyManager = payload.studyManagerOptions;
-        state.studyOptions.studyId = payload.studyIdOptions;
+        state.studyOptions.studyManagerOptions = payload.studyManagerOptions;
+        state.studyOptions.studyIdOptions = payload.studyIdOptions;
       });
   },
 });

@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { useAppSelector } from '../../../state/hooks';
-import { StudyManagerOptionType, StudyIdOptionType } from '../../../types';
+import {
+  StudyManagerOptionType,
+  StudyIdOptionType,
+  AllOptionType,
+} from '../../../types';
 import Select from '../../UI/Inputs/Select';
 import styles from './StudyInput.module.css';
 
@@ -11,13 +15,29 @@ const StudyInput = (props: Props) => {
     StudyManagerOptionType[]
   >([]);
 
-  const [studyList, setStudyList] = useState<StudyIdOptionType[]>([]);
-
   const { loading, studyOptions } = useAppSelector(
     (state) => state.allStudyOptions
   );
 
-  console.log(loading);
+  const allOption: AllOptionType = {
+    label: 'All',
+    value: 'All',
+  };
+
+  const studySelectOptions = [
+    {
+      label: '',
+      options: [allOption],
+    },
+    {
+      label: 'Study Manager',
+      options: studyOptions.studyManagerOptions,
+    },
+    {
+      label: 'Studies',
+      options: studyOptions.studyIdOptions,
+    },
+  ];
 
   return (
     <div className={styles.container}>
@@ -25,25 +45,7 @@ const StudyInput = (props: Props) => {
       {!loading && (
         <Select
           id='study-select'
-          options={[
-            {
-              label: '',
-              options: [
-                {
-                  label: 'All',
-                  value: 'All',
-                },
-              ],
-            },
-            {
-              label: 'Study Manager',
-              options: studyOptions.studyManager,
-            },
-            {
-              label: 'Studies',
-              options: studyOptions.studyId,
-            },
-          ]}
+          options={studySelectOptions}
           className={styles.select}
           label='Service Group'
         ></Select>

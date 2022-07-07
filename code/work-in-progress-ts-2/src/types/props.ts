@@ -1,3 +1,6 @@
+import React from 'react';
+
 export interface AppProps {
-  className: string;
+  className?: string;
+  children?: React.ReactNode;
 }
