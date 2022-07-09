@@ -373,7 +373,8 @@ table th {
   gap: 0.7rem;
 }
 
-.service-info .deadline {
+.service-info .deadline,
+.service-info .study-manager {
   border: 1px solid var(--wip-accent-grey);
   background-color: var(--wip-offwhite-grey);
   padding: 0.35rem;

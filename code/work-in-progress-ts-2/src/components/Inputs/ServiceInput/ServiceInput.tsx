@@ -1,13 +1,9 @@
 import React from 'react';
-import { ServiceOptionType } from '../../../types';
+import { ServiceOption } from '../../../types';
 import Select from '../../UI/Inputs/Select';
 import styles from './ServiceInput.module.css';
 
-const serviceGroupOptions: ServiceOptionType[] = [
-  {
-    value: 'All',
-    label: 'All',
-  },
+const serviceGroupOptions: ServiceOption[] = [
   {
     value: 'Analytics',
     label: 'Analytics',

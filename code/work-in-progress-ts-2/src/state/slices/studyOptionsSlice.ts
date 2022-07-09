@@ -1,13 +1,13 @@
 import type { RootState } from '../store';
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchAllStudyData } from '../actions/studyOptionsActions';
-import { StudyIdOptionType, StudyManagerOptionType } from '../../types';
+import { StudyIdOption, StudyManagerOption } from '../../types';
 
 const initialState = {
   loading: false,
   studyOptions: {
-    studyManagerOptions: [] as StudyManagerOptionType[],
-    studyIdOptions: [] as StudyIdOptionType[],
+    studyManagerOptions: [] as StudyManagerOption[],
+    studyIdOptions: [] as StudyIdOption[],
   },
 };
 

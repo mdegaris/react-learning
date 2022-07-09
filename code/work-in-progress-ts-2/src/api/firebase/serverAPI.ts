@@ -1,39 +1,43 @@
-import { StudyManagerType, StudyType } from '../../types';
+import axios from 'axios';
+import { Study, StudyManager } from '../../types/study';
+// import { StudyManagerType, StudyType } from '../../types';
 import urls from './remoteUrls';
 
-type StudiesJson = {
-  studyManager: string;
-  studies: StudyType[];
+const server = axios.create({
+  baseURL: urls.SERVER_URL,
+  timeout: 1000,
+  headers: { 'Content-Type': 'application/json' },
+});
+
+const fetchData = async <T>(dataUrn: string): Promise<T> => {
+  const response = await server.get(dataUrn);
+
+  if (response.status !== 200) {
+    throw new Error('SERVER ERROR: Could not fetch data.');
+  }
+
+  return response.data;
 };
 
 export type APIStudyDataType = {
-  studyList: StudyType[];
-  studyManagerList: StudyManagerType[];
+  studyList: Study[];
+  studyManagerList: StudyManager[];
+};
+
+type StudiesJson = {
+  studyManager: string;
+  studies: Study[];
 };
 
 const fetchAllStudyData = async (): Promise<APIStudyDataType> => {
-  const fetchData = async (): Promise<StudiesJson[]> => {
-    const response = await fetch(urls.STUDIES_URL, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-
-    if (!response.ok) {
-      throw new Error('SERVER ERROR: Could not fetch Study data.');
-    }
-
-    return response.json();
-  };
-
-  const jsonObjects = await fetchData();
-  const allStudyManagers: StudyManagerType[] = jsonObjects.map(
+  const jsonObjects = await fetchData<StudiesJson[]>(urls.STUDIES_DATA);
+  const allStudyManagers: StudyManager[] = jsonObjects.map(
     (sm: StudiesJson) => sm.studyManager
   );
 
-  const allStudies = jsonObjects.reduce<StudyType[]>(
-    (acc: StudyType[], prev: StudiesJson) => {
-      return [...acc, ...prev.studies];
+  const allStudies = jsonObjects.reduce<Study[]>(
+    (accumulator: Study[], prev: StudiesJson) => {
+      return [...accumulator, ...prev.studies];
     },
     []
   );
@@ -44,6 +48,20 @@ const fetchAllStudyData = async (): Promise<APIStudyDataType> => {
   };
 };
 
+export type APIServiceListType = {
+  serviceList: [];
+};
+
+type RoundsJson = {
+  studyManager: string;
+  studies: Study[];
+};
+
+// const fetchServiceData = async (): Promise<APIServiceListType> => {
+//   const jsonObjects = await fetchData<RoundsJson[]>();
+// };
+
 export default {
   fetchAllStudyData,
+  // fetchServiceData,
 };

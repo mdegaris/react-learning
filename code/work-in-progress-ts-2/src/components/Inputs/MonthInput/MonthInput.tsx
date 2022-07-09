@@ -1,70 +1,71 @@
 import React from 'react';
-import { MonthOptionType, YearOptionType } from '../../../types';
+import { MonthOption, YearOption, Year } from '../../../types';
 import Select from '../../UI/Inputs/Select';
 import styles from './MonthInput.module.css';
 
 type Props = {};
 
-const buildYearOptions = (year: number): YearOptionType[] => {
+const buildYearOptions = (year: number): YearOption[] => {
   const yearList = new Array(12).fill(year).map((y, index) => y - index + 1);
-  const yearOptions = yearList.map((year): YearOptionType => {
+  const yearOptions = yearList.map((year): YearOption => {
+    const yearStr: Year = year.toString() as Year;
     return {
-      label: year.toString(),
-      value: year,
+      label: yearStr,
+      value: yearStr,
     };
   });
 
   return yearOptions;
 };
 
-const monthOptions: MonthOptionType[] = [
+const monthOptions: MonthOption[] = [
   {
-    value: 'January',
     label: 'January',
+    value: 'JAN',
   },
   {
     label: 'February',
-    value: 'February',
+    value: 'FEB',
   },
   {
     label: 'March',
-    value: 'March',
+    value: 'MAR',
   },
   {
     label: 'April',
-    value: 'April',
+    value: 'APR',
   },
   {
     label: 'May',
-    value: 'May',
+    value: 'MAY',
   },
   {
     label: 'June',
-    value: 'June',
+    value: 'JUN',
   },
   {
     label: 'July',
-    value: 'June',
+    value: 'JUL',
   },
   {
     label: 'August',
-    value: 'August',
+    value: 'AUG',
   },
   {
     label: 'September',
-    value: 'September',
+    value: 'SEP',
   },
   {
     label: 'October',
-    value: 'October',
+    value: 'OCT',
   },
   {
     label: 'November',
-    value: 'November',
+    value: 'NOV',
   },
   {
     label: 'December',
-    value: 'December',
+    value: 'DEC',
   },
 ];
 
