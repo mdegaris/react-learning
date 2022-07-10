@@ -1,6 +1,6 @@
 import React from 'react';
 import { ServiceOption } from '../../../types';
-import Select from '../../UI/Inputs/Select';
+import Select from '../../UI/Inputs/Select/Select';
 import styles from './ServiceInput.module.css';
 
 const serviceGroupOptions: ServiceOption[] = [

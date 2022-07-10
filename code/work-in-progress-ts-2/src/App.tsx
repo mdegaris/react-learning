@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import Layout from './components/Layout';
 import './App.css';
 import { useAppDispatch } from './state/hooks';
-import { fetchAllStudyData } from './state/actions/studyOptionsActions';
+import { fetchAllStudyOptions } from './state/actions/studyOptionsActions';
 
 function App() {
   const dispatch = useAppDispatch();
   useEffect(() => {
-    dispatch(fetchAllStudyData());
+    dispatch(fetchAllStudyOptions());
   }, []);
 
   return (

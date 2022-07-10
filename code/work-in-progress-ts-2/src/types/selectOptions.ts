@@ -2,60 +2,64 @@ import { MonthFull, MonthShort, Year } from './date';
 import { ServiceCode, ServiceGroup, ServiceName } from './service';
 import { Study, StudyManager } from './study';
 
-type AllType = 'All';
+type AllStudies = 'All Studies';
+type AllServices = 'All Services';
 
 interface OptionType {
-  label: string;
-  value: string;
+  readonly label: string;
+  readonly value: string;
 }
 
 interface GroupType {
-  label: string;
-  options: OptionType[];
+  readonly label: string;
+  readonly options: OptionType[];
 }
 
-interface AllOption extends OptionType {
-  label: AllType;
-  value: AllType;
+interface AllStudiesOption extends OptionType {
+  readonly label: AllStudies;
+  readonly value: AllStudies;
 }
 
 interface MonthOption extends OptionType {
-  label: MonthFull;
-  value: MonthShort;
+  readonly label: MonthFull;
+  readonly value: MonthShort;
 }
 
 interface YearOption extends OptionType {
-  label: Year;
-  value: Year;
+  readonly label: Year;
+  readonly value: Year;
 }
 
 interface ServiceOption extends OptionType {
-  label: ServiceGroup | ServiceName;
-  value: ServiceGroup | ServiceCode;
+  readonly label: ServiceGroup | ServiceName;
+  readonly value: ServiceGroup | ServiceCode;
 }
 
 interface StudyOption extends OptionType {
-  label: string;
-  value: string;
+  readonly label: string;
+  readonly value: string;
 }
 
 interface StudyManagerOption extends StudyOption {
-  label: StudyManager;
-  value: StudyManager;
+  readonly label: StudyManager;
+  readonly value: StudyManager;
 }
 
 interface StudyIdOption extends StudyOption {
-  label: Study;
-  value: Study;
+  readonly label: Study;
+  readonly value: Study;
 }
 
+type OptionsAndGroupsType = (OptionType | GroupType)[];
+
 export type {
-  AllOption,
   OptionType,
   GroupType,
+  OptionsAndGroupsType,
   MonthOption,
   YearOption,
   ServiceOption,
   StudyIdOption,
   StudyManagerOption,
+  AllStudiesOption,
 };

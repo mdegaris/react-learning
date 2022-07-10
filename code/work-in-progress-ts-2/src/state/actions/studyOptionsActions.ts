@@ -7,7 +7,7 @@ export interface AllStudyOptions {
   studyIdOptions: StudyIdOption[];
 }
 
-export const fetchAllStudyData = createAsyncThunk<AllStudyOptions>(
+export const fetchAllStudyOptions = createAsyncThunk<AllStudyOptions>(
   'filterLists/fetchStudyData',
   async () => {
     const studyData = await api.fetchAllStudyData();

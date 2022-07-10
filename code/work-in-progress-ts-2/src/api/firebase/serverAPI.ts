@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { Study, StudyManager } from '../../types/study';
-// import { StudyManagerType, StudyType } from '../../types';
 import urls from './remoteUrls';
 
 const server = axios.create({
@@ -8,6 +7,10 @@ const server = axios.create({
   timeout: 1000,
   headers: { 'Content-Type': 'application/json' },
 });
+
+const sleep = (ms: number) => {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+};
 
 const fetchData = async <T>(dataUrn: string): Promise<T> => {
   const response = await server.get(dataUrn);
@@ -31,6 +34,7 @@ type StudiesJson = {
 
 const fetchAllStudyData = async (): Promise<APIStudyDataType> => {
   const jsonObjects = await fetchData<StudiesJson[]>(urls.STUDIES_DATA);
+
   const allStudyManagers: StudyManager[] = jsonObjects.map(
     (sm: StudiesJson) => sm.studyManager
   );
@@ -41,6 +45,8 @@ const fetchAllStudyData = async (): Promise<APIStudyDataType> => {
     },
     []
   );
+
+  // await new Promise((r) => setTimeout(r, 5000));
 
   return {
     studyList: [...new Set(allStudies)],

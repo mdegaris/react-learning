@@ -1,14 +1,16 @@
 import type { RootState } from '../store';
 import { createSlice } from '@reduxjs/toolkit';
-import { fetchAllStudyData } from '../actions/studyOptionsActions';
-import { StudyIdOption, StudyManagerOption } from '../../types';
+import { fetchAllStudyOptions } from '../actions/studyOptionsActions';
+import { AllStudiesOption, OptionsAndGroupsType } from '../../types';
+
+const allOption: AllStudiesOption = {
+  label: 'All Studies',
+  value: 'All Studies',
+};
 
 const initialState = {
   loading: false,
-  studyOptions: {
-    studyManagerOptions: [] as StudyManagerOption[],
-    studyIdOptions: [] as StudyIdOption[],
-  },
+  studyOptions: [] as OptionsAndGroupsType,
 };
 
 export const studyOptionsSlice = createSlice({
@@ -17,16 +19,26 @@ export const studyOptionsSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchAllStudyData.pending, (state) => {
+      .addCase(fetchAllStudyOptions.pending, (state) => {
         state.loading = true;
       })
-      .addCase(fetchAllStudyData.rejected, (state) => {
+      .addCase(fetchAllStudyOptions.rejected, (state) => {
         state.loading = false;
+        throw new Error('ERROR!!');
       })
-      .addCase(fetchAllStudyData.fulfilled, (state, { payload }) => {
+      .addCase(fetchAllStudyOptions.fulfilled, (state, { payload }) => {
         state.loading = false;
-        state.studyOptions.studyManagerOptions = payload.studyManagerOptions;
-        state.studyOptions.studyIdOptions = payload.studyIdOptions;
+        state.studyOptions = [
+          allOption,
+          {
+            label: 'Study Manager',
+            options: payload.studyManagerOptions,
+          },
+          {
+            label: 'Study ID',
+            options: payload.studyIdOptions,
+          },
+        ];
       });
   },
 });
