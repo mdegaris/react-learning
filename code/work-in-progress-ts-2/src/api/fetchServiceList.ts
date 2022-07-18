@@ -1,6 +1,5 @@
-import axios from 'axios';
-import urls from '../remoteUrls';
-import { fetchJsonData } from './fetchJson';
+import urls from './remoteUrls';
+import { fetchJsonData } from './firebase/fetchJson';
 import {
   Study,
   StudyManager,
@@ -12,37 +11,7 @@ import {
   Year,
   MonthAbbreviation,
   ServiceItem,
-} from '../../types';
-
-export type APIStudyDataType = {
-  studyList: Study[];
-  studyManagerList: StudyManager[];
-};
-
-type StudiesJson = {
-  studyManager: StudyManager;
-  studies: Study[];
-};
-
-const fetchAllStudyData = async (): Promise<APIStudyDataType> => {
-  const jsonObjects = await fetchJsonData<StudiesJson[]>(urls.STUDIES_DATA);
-
-  const allStudyManagers: StudyManager[] = jsonObjects.map(
-    (sm: StudiesJson) => sm.studyManager
-  );
-
-  const allStudies = jsonObjects.reduce<Study[]>(
-    (accumulator: Study[], prev: StudiesJson) => {
-      return [...accumulator, ...prev.studies];
-    },
-    []
-  );
-
-  return {
-    studyList: [...new Set(allStudies)],
-    studyManagerList: allStudyManagers,
-  };
-};
+} from '../types';
 
 export type APIServiceListType = {
   serviceList: [];
@@ -107,7 +76,4 @@ const fetchServiceData = async (
   return filteredList;
 };
 
-export default {
-  fetchAllStudyData,
-  fetchServiceData,
-};
+export default fetchServiceData;

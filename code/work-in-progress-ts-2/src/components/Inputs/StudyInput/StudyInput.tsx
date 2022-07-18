@@ -1,14 +1,16 @@
 import React from 'react';
-import { useAppSelector } from '../../../state/hooks';
+import { useAppSelector } from '../../../store/hooks';
 import Select from '../../UI/Inputs/Select/Select';
 import styles from './StudyInput.module.css';
 
 type Props = {};
 
-const StudyInput = (props: Props) => {
+const StudyInput = () => {
   const { loading, studyOptions } = useAppSelector(
     (state) => state.allStudyOptions
   );
+
+  const props = { isLoading: loading, placeholder: 'Study / Study Manager' };
 
   return (
     <div className={styles.container}>
@@ -16,9 +18,8 @@ const StudyInput = (props: Props) => {
         id='study-select'
         label='Study'
         options={studyOptions}
-        isLoading={loading}
-        placeholder='Study / Study Manager'
         className={styles.select}
+        props={props}
       ></Select>
     </div>
   );

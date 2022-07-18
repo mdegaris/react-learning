@@ -4,7 +4,8 @@
   border-right: 1px solid var(--wip-accent-grey);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+  padding-top: 8rem;
 }
 
 .navbar ul {

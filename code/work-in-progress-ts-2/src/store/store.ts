@@ -1,9 +1,13 @@
 import { Action, ThunkAction, configureStore } from '@reduxjs/toolkit';
-import studyOptionsSlice from './slices/studyOptionsSlice';
+import { serivceListSlice } from './serviceList/slice';
+import studyOptionsSlice from './studyOptions/slice';
+import workFilterSlice from './workFilter/slice';
 
 export const store = configureStore({
   reducer: {
     allStudyOptions: studyOptionsSlice.reducer,
+    serviceList: serivceListSlice.reducer,
+    workFilter: workFilterSlice.reducer,
   },
 });
 

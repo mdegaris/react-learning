@@ -1,18 +1,13 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import api from '../../api/firebase/serverAPI';
+import api from '../../api';
 import { StudyManagerOption, StudyIdOption } from '../../types';
 
-export interface AllStudyOptions {
-  studyManagerOptions: StudyManagerOption[];
-  studyIdOptions: StudyIdOption[];
-}
-
-export const fetchAllStudyOptions = createAsyncThunk<AllStudyOptions>(
+export const fetchAllStudyOptions = createAsyncThunk(
   'filterLists/fetchStudyData',
   async () => {
-    const studyData = await api.fetchAllStudyData();
+    const studyOptions = await api.fetchStudiesAndManagers();
     const studyManagerOptions: StudyManagerOption[] =
-      studyData.studyManagerList.map<StudyManagerOption>((studyManager) => {
+      studyOptions.studyManagerList.map<StudyManagerOption>((studyManager) => {
         return {
           value: studyManager,
           label: studyManager,
@@ -20,14 +15,14 @@ export const fetchAllStudyOptions = createAsyncThunk<AllStudyOptions>(
       });
 
     const studyIdOptions: StudyIdOption[] =
-      studyData.studyList.map<StudyIdOption>((study) => {
+      studyOptions.studyList.map<StudyIdOption>((study) => {
         return {
           value: study,
           label: study,
         };
       });
 
-    const fetchedStudyOptions: AllStudyOptions = {
+    const fetchedStudyOptions = {
       studyManagerOptions: studyManagerOptions,
       studyIdOptions: studyIdOptions,
     };

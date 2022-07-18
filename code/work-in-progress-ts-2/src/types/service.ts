@@ -1,5 +1,6 @@
+import { DateString } from './date';
 import type { Round } from './round';
-import type { Study } from './study';
+import type { Study, StudyManager } from './study';
 
 export type ServiceName = string;
 export type ServiceCode = `BP${number}${number}${number}`;
@@ -12,13 +13,18 @@ export type ServiceGroup =
   | 'Transporters'
   | 'Other';
 
-export type Service = {
+export type ServiceItem = {
+  id: string;
+  studyManager: StudyManager;
   study: Study;
   round: Round;
-  serviceName: string;
-  receiptDate: string;
-  deadlineDate: string;
+  serviceName: ServiceName;
+  serviceCode: ServiceCode;
+  supplementalId: string;
+  receiptDate: DateString;
+  deadlineDate: DateString;
   compounds: number;
   delivered: number;
-  serviceCode: ServiceCode;
 };
+
+export type ServiceList = ServiceItem[];

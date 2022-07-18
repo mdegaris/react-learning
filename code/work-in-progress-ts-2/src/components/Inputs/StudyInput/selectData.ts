@@ -16,50 +16,50 @@ export const buildYearOptions = (year: number): YearOption[] => {
 export const monthOptions: MonthOption[] = [
   {
     label: 'January',
-    value: 'JAN',
+    value: 'Jan',
   },
   {
     label: 'February',
-    value: 'FEB',
+    value: 'Feb',
   },
   {
     label: 'March',
-    value: 'MAR',
+    value: 'Mar',
   },
   {
     label: 'April',
-    value: 'APR',
+    value: 'Apr',
   },
   {
     label: 'May',
-    value: 'MAY',
+    value: 'May',
   },
   {
     label: 'June',
-    value: 'JUN',
+    value: 'Jun',
   },
   {
     label: 'July',
-    value: 'JUL',
+    value: 'Jul',
   },
   {
     label: 'August',
-    value: 'AUG',
+    value: 'Aug',
   },
   {
     label: 'September',
-    value: 'SEP',
+    value: 'Sep',
   },
   {
     label: 'October',
-    value: 'OCT',
+    value: 'Oct',
   },
   {
     label: 'November',
-    value: 'NOV',
+    value: 'Nov',
   },
   {
     label: 'December',
-    value: 'DEC',
+    value: 'Dec',
   },
 ];

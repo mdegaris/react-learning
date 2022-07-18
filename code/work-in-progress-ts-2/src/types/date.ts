@@ -14,20 +14,20 @@ export type MonthFull =
   | 'November'
   | 'December';
 
-export type MonthShort =
-  | 'JAN'
-  | 'FEB'
-  | 'MAR'
-  | 'APR'
-  | 'MAY'
-  | 'JUN'
-  | 'JUL'
-  | 'AUG'
-  | 'SEP'
-  | 'OCT'
-  | 'NOV'
-  | 'DEC';
+export type MonthAbbreviation =
+  | 'Jan'
+  | 'Feb'
+  | 'Mar'
+  | 'Apr'
+  | 'May'
+  | 'Jun'
+  | 'Jul'
+  | 'Aug'
+  | 'Sep'
+  | 'Oct'
+  | 'Nov'
+  | 'Dec';
 
 export type Day = `${number}${number}`;
 
-export type DateDisplay = `${Day}-${MonthShort}-${Year}`;
+export type DateString = `${Day}-${MonthAbbreviation}-${Year}`;

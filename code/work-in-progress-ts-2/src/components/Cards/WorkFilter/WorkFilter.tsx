@@ -1,5 +1,5 @@
 import React from 'react';
-import MonthInput from '../../Inputs/MonthInput';
+import DateInput from '../../Inputs/DateInput';
 import ServiceInput from '../../Inputs/ServiceInput';
 import StudyInput from '../../Inputs/StudyInput';
 import Card from '../../UI/Card';
@@ -10,7 +10,7 @@ type Props = {};
 const WorkFilter = (props: Props) => {
   return (
     <Card className={styles.container}>
-      <MonthInput />
+      <DateInput />
       <ServiceInput />
       <StudyInput />
     </Card>

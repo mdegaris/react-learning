@@ -1,4 +1,4 @@
-import { MonthFull, MonthShort, Year } from './date';
+import { MonthFull, MonthAbbreviation, Year } from './date';
 import { ServiceCode, ServiceGroup, ServiceName } from './service';
 import { Study, StudyManager } from './study';
 
@@ -22,7 +22,7 @@ interface AllStudiesOption extends OptionType {
 
 interface MonthOption extends OptionType {
   readonly label: MonthFull;
-  readonly value: MonthShort;
+  readonly value: MonthAbbreviation;
 }
 
 interface YearOption extends OptionType {

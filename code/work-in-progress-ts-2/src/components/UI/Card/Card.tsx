@@ -1,19 +1,14 @@
 import React from 'react';
+import { AppProps } from '../../../types';
 import styles from './Card.module.css';
 
-type CardProps = {
+interface CardProps extends AppProps {
   title?: string | null;
-  className?: string | null;
   children?: React.ReactNode | null;
-};
+}
 
-const Card = ({
-  title = null,
-  className = null,
-  children = null,
-}: CardProps) => {
-  const cardContentstyles =
-    styles['card-content'] + ' ' + (className !== null ? className : '');
+const Card = ({ title = null, className = '', children = null }: CardProps) => {
+  const cardContentstyles = styles['card-content'] + ' ' + className;
   return (
     <div className={styles.container}>
       {title !== null && (

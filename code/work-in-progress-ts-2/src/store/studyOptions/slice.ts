@@ -1,6 +1,6 @@
 import type { RootState } from '../store';
 import { createSlice } from '@reduxjs/toolkit';
-import { fetchAllStudyOptions } from '../actions/studyOptionsActions';
+import { fetchAllStudyOptions } from './actions';
 import { AllStudiesOption, OptionsAndGroupsType } from '../../types';
 
 const allOption: AllStudiesOption = {
@@ -13,7 +13,7 @@ const initialState = {
   studyOptions: [] as OptionsAndGroupsType,
 };
 
-export const studyOptionsSlice = createSlice({
+const studyOptionsSlice = createSlice({
   name: 'studyOptions',
   initialState,
   reducers: {},
@@ -24,7 +24,7 @@ export const studyOptionsSlice = createSlice({
       })
       .addCase(fetchAllStudyOptions.rejected, (state) => {
         state.loading = false;
-        throw new Error('ERROR!!');
+        throw new Error('Study Load ERROR!!');
       })
       .addCase(fetchAllStudyOptions.fulfilled, (state, { payload }) => {
         state.loading = false;

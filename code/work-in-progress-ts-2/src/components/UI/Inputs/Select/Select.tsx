@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactSelect from 'react-select';
-import { OptionsAndGroupsType } from '../../../../types';
+import ReactSelect, { ActionMeta, SingleValue } from 'react-select';
+import { OptionsAndGroupsType, OptionType } from '../../../../types';
 import { AppProps } from '../../../../types/props';
 import styles from './Select.module.css';
 
@@ -11,12 +11,16 @@ interface SelectProps extends AppProps {
   isClearable?: boolean;
   isLoading?: boolean;
   placeholder?: string;
+  value?: OptionType[];
+  onChange?: (val: SingleValue<any>, action: ActionMeta<any>) => void;
 }
 
 const Select = ({
   id,
   label,
   options,
+  onChange,
+  value,
   isClearable = false,
   isLoading = false,
   placeholder = 'Select...',
@@ -37,6 +41,8 @@ const Select = ({
           isLoading={isLoading}
           isSearchable={true}
           placeholder={placeholder}
+          onChange={onChange}
+          value={value}
         />
       </div>
     </React.Fragment>

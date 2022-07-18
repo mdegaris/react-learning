@@ -2,10 +2,6 @@ import randomDateGenerator from 'random-date-generator';
 import dateFormat from 'dateformat';
 import fs from 'fs';
 
-// const randomDateGenerator = require('random-date-generator');
-// const dateFormat = require('dateformat');
-// const fs = require('fs');
-
 const YEAR = new Date().getFullYear();
 
 const SUB_ROUNDS = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -78,7 +74,7 @@ const SERVICES = [
 ];
 
 const formatDate = (date) => {
-  return dateFormat(date, 'dd-mmm-yy');
+  return dateFormat(date, 'dd-mmm-yyyy');
 };
 
 const maxMonthDays = (month) => {
@@ -95,10 +91,10 @@ const randomElement = (list) => {
   return list[randomIndex];
 };
 
-const generateDate = (month, fromDay = 1, toDay = 30) => {
+const generateDate = (fromDay, fromMonth, toDay, toMonth = null) => {
   return randomDateGenerator.getRandomDateInRange(
-    new Date(2022, month, fromDay),
-    new Date(2022, month, toDay)
+    new Date(2022, fromMonth, fromDay),
+    new Date(2022, toMonth === null ? fromMonth : toMonth, toDay)
   );
 };
 
@@ -115,8 +111,8 @@ const generateService = (receiptDate) => {
   const randService = randomElement(SERVICES);
   const randSuppId = randomElement(randService.suppIds);
   const deadlineDate = generateDate(
-    receiptDate.getMonth(),
     receiptDate.getDate() + 5,
+    receiptDate.getMonth(),
     maxMonthDays(receiptDate.getMonth())
   );
   const compounds = generateCompounds();
@@ -163,7 +159,7 @@ const generateRound = (month = null) => {
   const studyManager = pmStudies.studyManager;
   const studyId = randomElement(pmStudies.studies);
   const roundId = generateRoundId();
-  const expectedReciptDate = generateDate(month, 1, 12);
+  const expectedReciptDate = generateDate(1, month, 12, month + 4);
   const roundServices = generateSetofServices(month, expectedReciptDate);
   const id = studyId + '-' + roundId.subRound;
   const contractId = studyId + '-' + roundId.wholeRound;
@@ -182,7 +178,7 @@ const generateRound = (month = null) => {
 
 console.log('Start...');
 const allRounds = [];
-for (let i = 0; i < 50; i++) {
+for (let i = 0; i < 100; i++) {
   allRounds.push(generateRound(new Date().getMonth()));
 }
 
