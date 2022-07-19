@@ -2,15 +2,9 @@ import React, { useMemo, useCallback } from 'react';
 import { useTable, useBlockLayout, Column } from 'react-table';
 import { useAppSelector } from '../../../store/hooks';
 import { FixedSizeList } from 'react-window';
-import { ServiceList, ServiceItem, ServiceName, Study } from '../../../types';
+import { ServiceItem } from '../../../types';
 import styles from './ServiceListTable.module.css';
 
-interface TableProps<T extends object> {
-  columns: Column<T>[];
-  data: T[];
-}
-
-// const ServiceListTable = <T extends { id: string }>(): TableProps<T> => {
 const ServiceListTable = () => {
   const { loading, serviceList } = useAppSelector((state) => state.serviceList);
 
@@ -29,32 +23,44 @@ const ServiceListTable = () => {
       {
         Header: 'Study',
         accessor: 'study',
-        id: 'studyID',
-        className: 'studyStyle'
+        width: '90',
+        id: 'col-study',
       },
       {
         Header: 'Round',
         accessor: 'round',
+        width: '75',
+        id: 'col-round',
       },
       {
         Header: 'Service',
         accessor: 'serviceName',
+        width: '185',
+        id: 'col-service',
       },
       {
         Header: 'Arrived',
         accessor: 'receiptDate',
+        width: '105',
+        id: 'col-receipt',
       },
       {
         Header: 'Deadline',
         accessor: 'deadlineDate',
+        width: '105',
+        id: 'col-deadline',
       },
       {
         Header: 'Compounds',
         accessor: 'compounds',
+        width: '95',
+        id: 'col-compounds',
       },
       {
         Header: 'Delivered',
         accessor: 'delivered',
+        width: '95',
+        id: 'col-delivered',
       },
     ],
     []
@@ -76,7 +82,9 @@ const ServiceListTable = () => {
         {headerGroups.map((headerGroup) => (
           <div {...headerGroup.getHeaderGroupProps()}>
             {headerGroup.headers.map((column) => (
-              <div {...column.getHeaderProps()}>{column.render('Header')}</div>
+              <div id={column.id} {...column.getHeaderProps()}>
+                {column.render('Header')}
+              </div>
             ))}
           </div>
         ))}
