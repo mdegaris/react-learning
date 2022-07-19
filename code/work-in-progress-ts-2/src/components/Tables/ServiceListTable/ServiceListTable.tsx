@@ -29,6 +29,8 @@ const ServiceListTable = () => {
       {
         Header: 'Study',
         accessor: 'study',
+        id: 'studyID',
+        className: 'studyStyle'
       },
       {
         Header: 'Round',
