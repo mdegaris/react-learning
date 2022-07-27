@@ -9,7 +9,7 @@ const allOption: AllStudiesOption = {
 };
 
 const initialState = {
-  loading: false,
+  isLoading: false,
   studyOptions: [] as OptionsAndGroupsType,
 };
 
@@ -20,14 +20,14 @@ const studyOptionsSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchAllStudyOptions.pending, (state) => {
-        state.loading = true;
+        state.isLoading = true;
       })
       .addCase(fetchAllStudyOptions.rejected, (state) => {
-        state.loading = false;
+        state.isLoading = false;
         throw new Error('Study Load ERROR!!');
       })
       .addCase(fetchAllStudyOptions.fulfilled, (state, { payload }) => {
-        state.loading = false;
+        state.isLoading = false;
         state.studyOptions = [
           allOption,
           {

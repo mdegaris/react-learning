@@ -4,30 +4,32 @@ import { ServiceList } from '../../types';
 import { fetchServiceList } from './actions';
 
 type InitialStateType = {
-  loading: boolean;
+  isLoading: boolean;
   serviceList: ServiceList;
 };
 
 const initialState: InitialStateType = {
-  loading: false,
+  isLoading: false,
   serviceList: [],
 };
 
 export const serivceListSlice = createSlice({
   name: 'serviceList',
   initialState,
-  reducers: {},
+  reducers: {
+    
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchServiceList.pending, (state) => {
-        state.loading = true;
+        state.isLoading = true;
       })
       .addCase(fetchServiceList.rejected, (state) => {
-        state.loading = false;
+        state.isLoading = false;
         throw new Error('ServiceList Load ERROR!!');
       })
       .addCase(fetchServiceList.fulfilled, (state, { payload }) => {
-        state.loading = false;
+        state.isLoading = false;
         state.serviceList = payload;
       });
   },

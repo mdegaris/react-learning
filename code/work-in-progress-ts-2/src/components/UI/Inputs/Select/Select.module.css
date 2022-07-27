@@ -1,17 +1,17 @@
-.input {
-  font-size: 1rem;
-  min-height: auto;
+.container {
+  font-size: 0.85rem;
+  /* min-height: auto; */
   background-color: var(--wip-offwhite-grey);
   border: 1px solid var(--wip-blue-grey);
   border-radius: 5px;
-  outline: none;
 }
 
-/* min-height: 1.8rem; */
-/* width: 10rem; */
-/* text-align: center; */
+/* .container input {
+  min-height: 1.7rem;
+  padding: 0;
+} */
 
-.input:focus {
+.container:focus {
   border: solid 1px var(--wip-strong-grey);
   outline: none;
 }

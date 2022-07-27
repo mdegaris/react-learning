@@ -14,8 +14,9 @@
   background-color: var(--wip-blue-grey);
   border-bottom: 1px solid var(--wip-accent-grey);
   padding: 0.8rem 3rem;
-  display: grid;
-  justify-content: left;
+  display: flex;
+  /* justify-content: left; */
+  gap: 1rem;
 }
 
 .title {

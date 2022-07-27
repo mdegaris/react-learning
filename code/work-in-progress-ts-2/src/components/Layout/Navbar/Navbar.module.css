@@ -1,11 +1,26 @@
+:root {
+  --wip-pink: #fce6df;
+  --wip-heavy-blue: #04347c;
+  --wip-smooth-blue: #3462a7;
+  --wip-bright-blue: #3a5d91;
+  --wip-sky-blue: #d9eff9;
+  --wip-offwhite-grey: #fafafa;
+  --wip-blue-grey: #f4f5f7;
+  --wip-accent-grey: #dfe1e6;
+  --wip-highlight-grey: #ecedf0;
+  --wip-strong-grey: #808080;
+
+  --card-border-radius: 10px;
+}
+
 .navbar {
   grid-area: navbar;
-  background-color: var(--wip-blue-grey);
+  background-color: var(--wip-offwhite-grey);
   border-right: 1px solid var(--wip-accent-grey);
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding-top: 8rem;
+  padding-top: 6rem;
 }
 
 .navbar ul {
@@ -16,9 +31,11 @@
 }
 
 .navbar li {
+  border-top: 1px solid var(--wip-bright-blue);
+  border-bottom: 1px solid var(--wip-bright-blue);
   min-height: 4rem;
   width: 100%;
-  background-color: var(--wip-smooth-blue);
+  background-color: var(--wip-sky-blue);
   list-style: none;
   display: flex;
   align-items: center;
@@ -26,7 +43,13 @@
 }
 
 .navbar li div {
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
+  color: black;
+  font-size: 1rem;
+  height: 3.75rem;
+}
+
+.navbar li div img {
+  height: 100%;
+  padding: 0.5rem;
+  opacity: 0.6;
 }
