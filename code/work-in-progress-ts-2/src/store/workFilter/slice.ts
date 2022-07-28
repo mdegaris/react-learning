@@ -5,8 +5,8 @@ import { MonthAbbreviation, Study, StudyManager, Year } from '../../types';
 type FilterState = {
   month: MonthAbbreviation;
   year: Year;
-  // study?: Study;
-  // studyManager?: StudyManager;
+  study?: Study;
+  studyManager?: StudyManager;
 };
 
 const initialState: FilterState = {

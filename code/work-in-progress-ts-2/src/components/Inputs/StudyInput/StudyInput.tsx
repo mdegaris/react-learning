@@ -6,7 +6,7 @@ import styles from './StudyInput.module.css';
 type Props = {};
 
 const StudyInput = () => {
-  const { loading, studyOptions } = useAppSelector(
+  const { isLoading: loading, studyOptions } = useAppSelector(
     (state) => state.allStudyOptions
   );
 

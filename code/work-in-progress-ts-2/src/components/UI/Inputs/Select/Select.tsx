@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactSelect, { ActionMeta, SingleValue } from 'react-select';
-import { OptionsAndGroupsType, OptionType } from '../../../../types';
-import { AppProps } from '../../../../types/props';
-import styles from './Select.module.css';
+import React, { CSSProperties } from "react";
+import ReactSelect, { ActionMeta, SingleValue } from "react-select";
+import { OptionsAndGroupsType, OptionType } from "../../../../types";
+import { AppProps } from "../../../../types/props";
+import styles from "./Select.module.css";
 
 interface SelectProps extends AppProps {
   id: string;
@@ -23,10 +23,27 @@ const Select = ({
   value,
   isClearable = false,
   isLoading = false,
-  placeholder = 'Select...',
-  className = '',
+  placeholder = "Select...",
+  className = "",
 }: SelectProps) => {
-  const inputClass = styles.input + ' ' + className;
+  const inputClass = styles.container + " " + className;
+
+  // const selectStyle: StylesConfig<MyOptionType, IsMulti> = {
+  //   control: (provided, state) => {
+  //     const { selectProps } = state;
+  //     // provided has CSSObject type
+  //     // state has ControlProps type
+
+  //     // return type is CSSObject which means this line will throw
+  //     // error if uncommented
+  //     // return false;
+
+  //     return {
+  //       ...provided,
+  //       ...customControlStyles,
+  //     };
+  //   },
+  // };
 
   return (
     <React.Fragment>
@@ -43,6 +60,16 @@ const Select = ({
           placeholder={placeholder}
           onChange={onChange}
           value={value}
+          theme={(theme) => ({
+            ...theme,
+            borderRadius: 5,
+            colors: {
+              ...theme.colors,
+              primary: "red",
+              neutral20: "pink",
+              neutral80: "lime",
+            },
+          })}
         />
       </div>
     </React.Fragment>

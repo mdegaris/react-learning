@@ -1,6 +1,6 @@
 export type Year = `${number}${number}${number}${number}`;
 
-export type MonthFull =
+export type MonthFullName =
   | 'January'
   | 'February'
   | 'March'
@@ -27,6 +27,11 @@ export type MonthAbbreviation =
   | 'Oct'
   | 'Nov'
   | 'Dec';
+
+export type Month = {
+  name: MonthFullName,
+  abbr: MonthAbbreviation
+}
 
 export type Day = `${number}${number}`;
 

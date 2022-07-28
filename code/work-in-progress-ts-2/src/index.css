@@ -25,10 +25,20 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input {
+  width: 17rem;
+  min-height: 1.7rem;
+  text-align: center;
+  font-size: 0.85rem;
+  background-color: var(--wip-offwhite-grey);
+  border: 1px solid var(--wip-strong-grey);
+  outline: none;
 }

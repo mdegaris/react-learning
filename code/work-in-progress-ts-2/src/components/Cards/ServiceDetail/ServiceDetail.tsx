@@ -1,10 +1,13 @@
-import React from 'react';
-import Card from '../../UI/Card';
-import styles from './ServiceDetail.module.css';
+import React from "react";
+import { AppProps, ServiceItem } from "../../../types";
+import Card from "../../UI/Card";
+import styles from "./ServiceDetail.module.css";
 
-type Props = {};
+interface ServiceDetailsProps extends AppProps {
+  service: ServiceItem;
+}
 
-const ServiceDetail = (props: Props) => {
+const ServiceDetail = (props: ServiceDetailsProps) => {
   return (
     <div className={styles.container}>
       <Card>ServiceDetail</Card>
