@@ -16,9 +16,7 @@ const initialState: InitialStateType = {
 export const serivceListSlice = createSlice({
   name: 'serviceList',
   initialState,
-  reducers: {
-    
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchServiceList.pending, (state) => {

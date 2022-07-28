@@ -1,4 +1,3 @@
-import axios from 'axios';
 import urls from '../remoteUrls';
 import { fetchJsonData } from './fetchJson';
 import {

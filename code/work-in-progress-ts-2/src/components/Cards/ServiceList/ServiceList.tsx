@@ -1,17 +1,19 @@
-import React, { ChangeEvent, useEffect, useState } from "react";
-import { useAppSelector } from "../../../store/hooks";
-import { AppProps } from "../../../types";
-import ServiceListTable from "../../Tables/ServiceListTable/ServiceListTable";
-import Card from "../../UI/Card";
-import styles from "./ServiceList.module.css";
+import React, { ChangeEvent, useEffect, useState } from 'react';
+import { useAppSelector } from '../../../store/hooks';
+import { AppProps, ServiceItem } from '../../../types';
+import ServiceListTable from '../../Tables/ServiceListTable/ServiceListTable';
+import Card from '../../UI/Card';
+import styles from './ServiceList.module.css';
 
-type Props = AppProps;
+interface ServiceListProps extends AppProps {
+  selectService: (service: ServiceItem) => void;
+}
 
-const ServiceList = (props: Props) => {
+const ServiceList = (props: ServiceListProps) => {
+  const [inputText, setInputText] = useState('');
+  const [queryValue, setQueryValue] = useState('');
+
   const { month, year } = useAppSelector((state) => state.workFilter);
-
-  const [inputText, setInputText] = useState("");
-  const [queryValue, setQueryValue] = useState("");
 
   useEffect(() => {
     const timeout = setTimeout(() => setQueryValue(inputText), 500);
@@ -22,7 +24,7 @@ const ServiceList = (props: Props) => {
     setInputText(event.target.value);
   };
 
-  const title: string = "Work for " + month + " " + year;
+  const title: string = 'Work for ' + month + ' ' + year;
 
   return (
     <div className={styles.container}>
@@ -30,13 +32,16 @@ const ServiceList = (props: Props) => {
         <div className={styles.content}>
           <div className={styles.filter}>
             <input
-              type="search"
-              placeholder="Filter, e.g. 694 stability rat"
+              type='search'
+              placeholder='Filter, e.g. 694 stability rat'
               value={inputText}
               onChange={filterChangeHandler}
             />
           </div>
-          <ServiceListTable queryValue={queryValue} />
+          <ServiceListTable
+            queryValue={queryValue}
+            selectService={props.selectService}
+          />
         </div>
       </Card>
     </div>

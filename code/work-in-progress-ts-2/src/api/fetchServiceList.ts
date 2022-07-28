@@ -29,6 +29,7 @@ type RoundJson = {
 };
 
 type ServiceJson = {
+  serviceNo: number;
   serviceCode: ServiceCode;
   serviceName: ServiceName;
   supplementalId: string;
@@ -52,7 +53,7 @@ const fetchServiceData = async (
       rnd.services.map((serv: ServiceJson) => {
         serviceId++;
         return {
-          id: serviceId.toString(),
+          id: rnd.id + ' ' + serv.serviceNo,
           studyManager: rnd.studyManager,
           study: rnd.studyId,
           round: rnd.round,

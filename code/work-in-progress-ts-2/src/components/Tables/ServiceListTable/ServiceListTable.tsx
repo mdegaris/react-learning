@@ -1,16 +1,18 @@
-import React, { useMemo } from "react";
-import { useTable, Column, useFlexLayout } from "react-table";
-import { useAppSelector } from "../../../store/hooks";
-import { AppProps, ServiceItem, ServiceList } from "../../../types";
-import styles from "./ServiceListTable.module.css";
+import React, { useMemo } from 'react';
+import { Link, Router } from 'react-router-dom';
+import { useTable, Column, useFlexLayout } from 'react-table';
+import { useAppSelector } from '../../../store/hooks';
+import { AppProps, ServiceItem, ServiceList } from '../../../types';
+import styles from './ServiceListTable.module.css';
 
 interface ServiceListTableProps extends AppProps {
   queryValue: string;
+  selectService: (s: ServiceItem) => void;
 }
 
 const isMatch = (val: string, f: string) => {
   const subs = f
-    .split(" ")
+    .split(' ')
     .map((s) => s.trim().toLowerCase())
     .filter((s) => s.length > 0);
 
@@ -28,71 +30,77 @@ const applyInteractiveFilter = (
   return services.filter((s: ServiceItem) => {
     const searchString: string = [
       s.study + s.round + s.serviceCode + s.serviceName + s.supplementalId,
-    ].join(" ");
+    ].join(' ');
     return isMatch(searchString, queryString);
   });
 };
 
 const ServiceListTable = (props: ServiceListTableProps) => {
-  const { isLoading: loading, serviceList } = useAppSelector(
+  const { isLoading, serviceList } = useAppSelector(
     (state) => state.serviceList
   );
 
   const tableColumns: Column<ServiceItem>[] = useMemo(
     () => [
       {
-        Header: "Study",
-        accessor: "study",
-        width: "90",
-        id: "col-study",
+        Header: 'Study',
+        accessor: 'study',
+        width: '90',
+        id: 'col-study',
       },
       {
-        Header: "Round",
-        accessor: "round",
-        width: "75",
-        id: "col-round",
+        Header: 'Round',
+        accessor: 'round',
+        width: '75',
+        id: 'col-round',
       },
       {
-        Header: "Service",
-        accessor: "serviceName",
-        width: "185",
-        id: "col-service",
+        Header: 'Service',
+        accessor: 'serviceName',
+        width: '185',
+        id: 'col-service',
       },
       {
-        Header: "Arrived",
-        accessor: "receiptDate",
-        width: "105",
-        id: "col-receipt",
+        Header: 'Arrived',
+        accessor: 'receiptDate',
+        width: '105',
+        id: 'col-receipt',
       },
       {
-        Header: "Deadline",
-        accessor: "deadlineDate",
-        width: "105",
-        id: "col-deadline",
+        Header: 'Deadline',
+        accessor: 'deadlineDate',
+        width: '105',
+        id: 'col-deadline',
       },
       {
-        Header: "Compounds",
-        accessor: "compounds",
-        width: "100",
-        id: "col-compounds",
+        Header: 'Compounds',
+        accessor: 'compounds',
+        width: '100',
+        id: 'col-compounds',
       },
       {
-        Header: "Delivered",
-        accessor: "delivered",
-        width: "95",
-        id: "col-delivered",
+        Header: 'Delivered',
+        accessor: 'delivered',
+        width: '95',
+        id: 'col-delivered',
       },
     ],
     []
   );
 
-  const rowSelectHandler = () => {};
+  const handleServiceSelect = (selectedId: string) => {
+    const foundService = serviceList.filter(
+      (s: ServiceItem) => s.id === selectedId
+    );
+    props.selectService(foundService[0]);
+  };
 
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     useTable<ServiceItem>(
       {
         columns: tableColumns,
         data: applyInteractiveFilter(serviceList, props.queryValue),
+        getRowId: (row, index) => row.id,
       },
       useFlexLayout
     );
@@ -100,8 +108,8 @@ const ServiceListTable = (props: ServiceListTableProps) => {
   // Render the UI for your table
   return (
     <React.Fragment>
-      {loading && <div>Loading...</div>}
-      {!loading && (
+      {isLoading && <div>Loading...</div>}
+      {!isLoading && (
         <div className={styles.table} {...getTableProps()}>
           <div className={styles.thead}>
             {headerGroups.map((headerGroup) => (
@@ -115,7 +123,7 @@ const ServiceListTable = (props: ServiceListTableProps) => {
                     id={column.id}
                     {...column.getHeaderProps()}
                   >
-                    {column.render("Header")}
+                    {column.render('Header')}
                   </div>
                 ))}
               </div>
@@ -126,14 +134,14 @@ const ServiceListTable = (props: ServiceListTableProps) => {
               prepareRow(row);
               return (
                 <div
-                  onClick={() => console.log(row.id)}
+                  onClick={handleServiceSelect.bind(null, row.id)}
                   className={styles.row}
                   {...row.getRowProps()}
                 >
                   {row.cells.map((cell) => {
                     return (
                       <div className={styles.td} {...cell.getCellProps()}>
-                        {cell.render("Cell")}
+                        {cell.render('Cell')}
                       </div>
                     );
                   })}
