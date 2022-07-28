@@ -1,15 +1,15 @@
-import React, { useMemo } from 'react';
-import { ActionMeta, SingleValue } from 'react-select';
-import { buildYearOptions, monthOptions } from './selectData';
-import { MonthOption, OptionType, YearOption } from '../../../types';
-import Select from '../../UI/Inputs/Select/Select';
-import { useAppDispatch, useAppSelector } from '../../../store/hooks';
-import { workFilterActions } from '../../../store/workFilter/slice';
-import styles from './DateInput.module.css';
+import React, { useMemo } from "react";
+import { ActionMeta, SingleValue } from "react-select";
+import { buildYearOptions, monthOptions } from "./selectData";
+import { AppProps, MonthOption, OptionType, YearOption } from "../../../types";
+import { useAppDispatch, useAppSelector } from "../../../store/hooks";
+import { workFilterActions } from "../../../store/workFilter/slice";
+import Select from "../../UI/Inputs/Select/Select";
+import styles from "./DateInput.module.css";
 
-type Props = {};
+type DateInputProps = AppProps;
 
-const DateInput = (props: Props) => {
+const DateInput = (props: DateInputProps) => {
   const dispatch = useAppDispatch();
 
   const currentYear = new Date().getFullYear();
@@ -22,7 +22,7 @@ const DateInput = (props: Props) => {
     newValue: SingleValue<MonthOption>,
     { action }: ActionMeta<OptionType>
   ) => {
-    if (action === 'select-option' && newValue !== null) {
+    if (action === "select-option" && newValue !== null) {
       dispatch(workFilterActions.replaceMonth(newValue.value));
     }
   };
@@ -31,7 +31,7 @@ const DateInput = (props: Props) => {
     newValue: SingleValue<YearOption>,
     { action }: ActionMeta<OptionType>
   ) => {
-    if (action === 'select-option' && newValue !== null) {
+    if (action === "select-option" && newValue !== null) {
       dispatch(workFilterActions.replaceYear(newValue.value));
     }
   };
@@ -39,19 +39,19 @@ const DateInput = (props: Props) => {
   return (
     <div className={styles.container}>
       <Select
-        id='month-select'
-        label='Month'
+        id="month-select"
+        label="Month"
         options={months}
-        placeholder='Month'
+        placeholder="Month"
         className={styles.month}
         onChange={handleMonthChange}
         value={monthOptions.filter((m) => month === m.value)}
       ></Select>
       <Select
-        id='year-select'
-        label='Year'
+        id="year-select"
+        label="Year"
         options={years}
-        placeholder='Year'
+        placeholder="Year"
         className={styles.year}
         onChange={handleYearChange}
         value={years.filter((y) => year === y.value)}
