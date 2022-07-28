@@ -133,7 +133,7 @@ const generateSetofServices = (month, receiptDate) => {
   const services = [];
 
   for (let i = 0; i < numberOfServices; i++) {
-    services.push(generateService(receiptDate));
+    services.push({ serviceNo: i, ...generateService(receiptDate) });
   }
 
   return services;
