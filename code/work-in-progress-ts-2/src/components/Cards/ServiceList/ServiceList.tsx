@@ -5,9 +5,14 @@ import ServiceListTable from '../../Tables/ServiceListTable/ServiceListTable';
 import Card from '../../UI/Card';
 import styles from './ServiceList.module.css';
 
+// ========================================================
+
 interface ServiceListProps extends AppProps {
   selectService: (service: ServiceItem) => void;
+  selectedService?: ServiceItem;
 }
+
+// ========================================================
 
 const ServiceList = (props: ServiceListProps) => {
   const [inputText, setInputText] = useState('');
@@ -41,6 +46,7 @@ const ServiceList = (props: ServiceListProps) => {
           <ServiceListTable
             queryValue={queryValue}
             selectService={props.selectService}
+            selectedService={props.selectedService}
           />
         </div>
       </Card>

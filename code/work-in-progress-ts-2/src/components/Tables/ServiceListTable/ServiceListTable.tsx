@@ -1,14 +1,10 @@
-import React, { useMemo } from 'react';
-import { Link, Router } from 'react-router-dom';
+import React, { useEffect, useMemo } from 'react';
 import { useTable, Column, useFlexLayout } from 'react-table';
 import { useAppSelector } from '../../../store/hooks';
 import { AppProps, ServiceItem, ServiceList } from '../../../types';
 import styles from './ServiceListTable.module.css';
 
-interface ServiceListTableProps extends AppProps {
-  queryValue: string;
-  selectService: (s: ServiceItem) => void;
-}
+// ========================================================
 
 const isMatch = (val: string, f: string) => {
   const subs = f
@@ -35,10 +31,26 @@ const applyInteractiveFilter = (
   });
 };
 
+// ========================================================
+
+interface ServiceListTableProps extends AppProps {
+  queryValue: string;
+  selectService: (s: ServiceItem) => void;
+  selectedService?: ServiceItem;
+}
+
+// ========================================================
+
 const ServiceListTable = (props: ServiceListTableProps) => {
   const { isLoading, serviceList } = useAppSelector(
     (state) => state.serviceList
   );
+
+  useEffect(() => {
+    if (!isLoading) {
+      props.selectService(serviceList[0]);
+    }
+  }, [isLoading]);
 
   const tableColumns: Column<ServiceItem>[] = useMemo(
     () => [
@@ -95,12 +107,16 @@ const ServiceListTable = (props: ServiceListTableProps) => {
     props.selectService(foundService[0]);
   };
 
+  if (!props.selectedService) {
+    props.selectService(serviceList[0]);
+  }
+
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     useTable<ServiceItem>(
       {
         columns: tableColumns,
         data: applyInteractiveFilter(serviceList, props.queryValue),
-        getRowId: (row, index) => row.id,
+        getRowId: (row) => row.id,
       },
       useFlexLayout
     );
@@ -130,12 +146,18 @@ const ServiceListTable = (props: ServiceListTableProps) => {
             ))}
           </div>
           <div className={styles.tbody} {...getTableBodyProps()}>
-            {rows.map((row, i) => {
+            {rows.map((row) => {
               prepareRow(row);
+              let rowStyle = styles.row;
+              if (row.id === props.selectedService?.id) {
+                rowStyle += ' ' + styles.selected;
+              } else {
+                rowStyle += ' ' + styles['not-selected'];
+              }
               return (
                 <div
                   onClick={handleServiceSelect.bind(null, row.id)}
-                  className={styles.row}
+                  className={rowStyle}
                   {...row.getRowProps()}
                 >
                   {row.cells.map((cell) => {

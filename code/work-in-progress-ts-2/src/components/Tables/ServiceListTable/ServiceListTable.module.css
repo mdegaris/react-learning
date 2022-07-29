@@ -1,60 +1,72 @@
 ::-webkit-scrollbar {
-    height: 10px;
-    width: 10px;
-    
-    /* background: var(--wip-offwhite-grey); */
+  height: 10px;
+  width: 10px;
+
+  /* background: var(--wip-offwhite-grey); */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--wip-accent-grey);
-    -webkit-border-radius: 1ex;
-    -webkit-box-shadow: 0px 1px 1px var(--wip-accent-grey);
+  background: var(--wip-accent-grey);
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 1px var(--wip-accent-grey);
 }
 
 ::-webkit-scrollbar-corner {
-     background-color: var(--wip-accent-grey);
-    
+  background-color: var(--wip-accent-grey);
 }
 
 .table {
-    width: max-content;    
+  width: max-content;
 }
 
 .tbody {
-    height: 28rem;
-    overflow-x: clip;
-    overflow-y: auto;
-    overflow: overlay;    
-    scrollbar-color: var(--wip-blue-grey);
-    scrollbar-width: thin;
+  height: 28rem;
+  overflow-x: clip;
+  overflow-y: auto;
+  overflow: overlay;
+  scrollbar-color: var(--wip-blue-grey);
+  scrollbar-width: thin;
 }
 
-.th {    
-    font-size: 0.85rem;
-    font-weight: 500;
-    background-color: var(--wip-blue-grey);
-    border: 1px solid var(--wip-accent-grey);
+.th {
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: var(--wip-blue-grey);
+  border: 1px solid var(--wip-accent-grey);
 }
 
 .row {
-    height: fit-content;
-    cursor: pointer;
-}
-
-.row:hover {
-    background-color: var(--wip-offwhite-grey);
+  height: fit-content;
+  cursor: pointer;
 }
 
 .td {
-    font-size: 0.79rem;
-    font-weight: normal;
-    border: 1px solid var(--wip-accent-grey);
+  font-size: 0.79rem;
+  font-weight: normal;
+  border: 1px solid var(--wip-accent-grey);
 }
 
-.td, .th {
-    padding: 0.35rem;
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-    text-align: center;
+.td,
+.th {
+  padding: 0.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.selected {
+  box-shadow: 3px -5px 18px #c4ecff inset;
+}
+
+.not-selected {
+  background-color: var(--wip-offwhite-grey);
+}
+
+.selected:hover {
+  box-shadow: 3px -5px 18px #c4ecff inset;
+}
+
+.not-selected:hover {
+  box-shadow: 3px -5px 18px #ecedf0 inset;
 }

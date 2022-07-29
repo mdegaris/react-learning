@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import api from '../../api/firebase/serverAPI';
+import api from '../../api';
 import { MonthAbbreviation, Year } from '../../types';
 
 export interface PayloadArg {

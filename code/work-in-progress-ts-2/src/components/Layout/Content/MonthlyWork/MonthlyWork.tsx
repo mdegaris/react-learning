@@ -20,7 +20,10 @@ const MonthlyWork = (props: Props) => {
       {/* <Header /> */}
       <div className={styles.container}>
         <WorkFilter />
-        <ServiceList selectService={selectService} />
+        <ServiceList
+          selectService={selectService}
+          selectedService={selectedService}
+        />
         <ServiceDetail service={selectedService} />
       </div>
     </React.Fragment>

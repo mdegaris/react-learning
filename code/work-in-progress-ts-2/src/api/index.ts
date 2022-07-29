@@ -1,4 +1,4 @@
-import fetchStudiesAndManagers from '../api/fetchStudyOptions';
+import fetchStudiesAndManagers from './fetchStudyOptions';
 import fetchServiceData from './fetchServiceList';
 
 export default { fetchStudiesAndManagers, fetchServiceData };

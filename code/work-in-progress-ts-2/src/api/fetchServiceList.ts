@@ -53,7 +53,7 @@ const fetchServiceData = async (
       rnd.services.map((serv: ServiceJson) => {
         serviceId++;
         return {
-          id: rnd.id + ' ' + serv.serviceNo,
+          id: rnd.id + '-' + serv.serviceNo,
           studyManager: rnd.studyManager,
           study: rnd.studyId,
           round: rnd.round,

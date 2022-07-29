@@ -161,11 +161,11 @@ const generateRound = (month = null) => {
   const roundId = generateRoundId();
   const expectedReciptDate = generateDate(1, month, 12, month + 4);
   const roundServices = generateSetofServices(month, expectedReciptDate);
-  // const id = studyId + '-' + roundId.subRound;
+  const id = studyId + '-' + roundId.subRound;
   const contractId = studyId + '-' + roundId.wholeRound;
 
   return {
-    // id,
+    id,
     contractId,
     round: roundId.subRound,
     studyId,
@@ -179,7 +179,8 @@ const generateRound = (month = null) => {
 console.log('Start...');
 const allRounds = [];
 for (let i = 0; i < 100; i++) {
-  allRounds.push({ id: i, ...generateRound(new Date().getMonth()) });
+  allRounds.push(generateRound(new Date().getMonth()));
+  // allRounds.push({ id: i, ...generateRound(new Date().getMonth()) });
 }
 
 fs.writeFileSync(
