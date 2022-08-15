@@ -1,0 +1,23 @@
+.container {
+  grid-area: service-detail;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.deadline, .manager {
+  border: 1px solid  var(--wip-highlight-grey);;  
+  width: 100%;
+  padding: 0.4rem;
+  background-color: var(--wip-blue-grey);
+  display: flex;
+  justify-content: center;  
+}
+
+.deadline {
+  font-weight: 500;
+}
+

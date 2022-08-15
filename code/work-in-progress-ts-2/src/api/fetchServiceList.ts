@@ -6,11 +6,11 @@ import {
   Round,
   ServiceCode,
   ServiceName,
-  ServiceList,
   DateString,
   Year,
   MonthAbbreviation,
   ServiceItem,
+  ServiceVariable,
 } from '../types';
 
 export type APIServiceListType = {
@@ -39,19 +39,30 @@ type ServiceJson = {
   deadlineDate: DateString;
 };
 
+const buildVariablesList = (supplementalId: string) :  ServiceVariable[] => {
+  const nameValues = supplementalId.split('|').filter(s => s.match(/.+=.+/g));
+  const variablesList  : ServiceVariable[] = nameValues.map(nv => {
+    const nameValuePair = nv.split('=');
+    return {
+      name: nameValuePair[0],
+      value: nameValuePair[1]
+    }
+   });
+
+   return variablesList;
+}
+
 const fetchServiceData = async (
   month: MonthAbbreviation,
   year: Year,
   studyId?: Study,
   studyManager?: StudyManager
-): Promise<ServiceList> => {
+): Promise<ServiceItem[]> => {
   const roundJsonObjects = await fetchJsonData<RoundJson[]>(urls.ROUNDS_DATA);
 
-  let serviceId = 0;
-  const services: ServiceList = roundJsonObjects
+  const services: ServiceItem[] = roundJsonObjects
     .map((rnd: RoundJson) =>
       rnd.services.map((serv: ServiceJson) => {
-        serviceId++;
         return {
           id: rnd.id + '-' + serv.serviceNo,
           studyManager: rnd.studyManager,
@@ -64,6 +75,7 @@ const fetchServiceData = async (
           deadlineDate: serv.deadlineDate,
           compounds: serv.noOfCompounds,
           delivered: serv.deliveredCompounds,
+          variables: buildVariablesList(serv.supplementalId)
         };
       })
     )

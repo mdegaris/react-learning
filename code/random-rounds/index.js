@@ -30,18 +30,18 @@ const SERVICES = [
     code: 'BP013',
     name: 'Metabolic Stability',
     suppIds: [
-      'BP013|Species=Human|',
-      'BP013|Species=Rat|',
-      'BP013|Species=Mouse|',
+      'BP013|Species=Human|Sex=MALE|Strain=Mixed|',
+      'BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|',
+      'BP013|Species=Mouse|Sex=MALE|Strain=CD1|',
     ],
   },
   {
     code: 'BP007',
     name: 'Hepatocyte Stability',
     suppIds: [
-      'BP007|Species=Human|',
-      'BP007|Species=Rat|',
-      'BP007|Species=Mouse|',
+      'BP007|Species=Human|Sex=MALE|Strain=Mixed|',
+      'BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|',
+      'BP007|Species=Mouse|Sex=MALE|Strain=CD1|',
     ],
   },
   {
@@ -66,9 +66,9 @@ const SERVICES = [
     code: 'BP135',
     name: 'Matrix Matched Protein Binding',
     suppIds: [
-      'BP135|Species=Human|',
-      'BP135|Species=Rat|',
-      'BP135|Species=Mouse|',
+      'BP135|Species=Human|Sex=MALE|Strain=Mixed|',
+      'BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|',
+      'BP135|Species=Mouse|Sex=MALE|Strain=CD1|',
     ],
   },
 ];

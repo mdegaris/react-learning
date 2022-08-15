@@ -1,5 +1,6 @@
 .container {
   grid-area: service-list;
+  width: fit-content;
 }
 
 .filter {

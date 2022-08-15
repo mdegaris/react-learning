@@ -13,6 +13,11 @@ export type ServiceGroup =
   | 'Transporters'
   | 'Other';
 
+export type ServiceVariable = {
+  name: string,
+  value: string
+}
+
 export type ServiceItem = {
   id: string;
   studyManager: StudyManager;
@@ -25,6 +30,7 @@ export type ServiceItem = {
   deadlineDate: DateString;
   compounds: number;
   delivered: number;
+  variables: ServiceVariable[];
 };
 
-export type ServiceList = ServiceItem[];
+// export type ServiceList = ServiceItem[];

@@ -1,15 +1,11 @@
 .container {
   font-size: 0.85rem;
-  /* min-height: auto; */
-  background-color: var(--wip-offwhite-grey);
-  border: 1px solid var(--wip-blue-grey);
   border-radius: 5px;
 }
 
-/* .container input {
-  min-height: 1.7rem;
-  padding: 0;
-} */
+.container input {
+  min-height: auto;
+}
 
 .container:focus {
   border: solid 1px var(--wip-strong-grey);

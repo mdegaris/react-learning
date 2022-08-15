@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
-import Layout from './components/Layout';
-import { useAppDispatch, useAppSelector } from './store/hooks';
-import { fetchAllStudyOptions } from './store/studyOptions/actions';
-import { fetchServiceList } from './store/serviceList/actions';
-import './App.css';
+import React, { useEffect } from "react";
+import Layout from "./components/Layout";
+import { useAppDispatch, useAppSelector } from "./store/hooks";
+import { fetchAllStudyOptions } from "./store/studyOptions/actions";
+import { fetchServiceList } from "./store/serviceList/actions";
+import "./App.css";
 
 function App() {
   const dispatch = useAppDispatch();
@@ -11,14 +11,23 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchAllStudyOptions());
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     dispatch(fetchServiceList({ month, year }));
-  }, [month, year]);
+
+    let interval = setInterval(() => {
+      console.log("Periodically fetching data...");
+      dispatch(fetchServiceList({ month, year }));
+    }, 10000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [month, year, dispatch]);
 
   return (
-    <div className='App'>
+    <div className="App">
       <Layout />
     </div>
   );

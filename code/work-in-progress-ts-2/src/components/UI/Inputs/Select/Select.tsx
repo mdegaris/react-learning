@@ -28,23 +28,6 @@ const Select = ({
 }: SelectProps) => {
   const inputClass = styles.container + " " + className;
 
-  // const selectStyle: StylesConfig<MyOptionType, IsMulti> = {
-  //   control: (provided, state) => {
-  //     const { selectProps } = state;
-  //     // provided has CSSObject type
-  //     // state has ControlProps type
-
-  //     // return type is CSSObject which means this line will throw
-  //     // error if uncommented
-  //     // return false;
-
-  //     return {
-  //       ...provided,
-  //       ...customControlStyles,
-  //     };
-  //   },
-  // };
-
   return (
     <React.Fragment>
       <label htmlFor={label} className={styles.label}>
@@ -62,12 +45,17 @@ const Select = ({
           value={value}
           theme={(theme) => ({
             ...theme,
-            borderRadius: 5,
-            colors: {
-              ...theme.colors,
-              primary: "red",
-              neutral20: "pink",
-              neutral80: "lime",
+            // colors: {
+            //   ...theme.colors,
+            //   primary: "red",
+            //   neutral20: "pink",
+            //   neutral80: "lime",
+            // },
+            spacing: {
+              ...theme.spacing,
+              menuGutter: 4,
+              controlHeight: 30,
+              baseUnit: 2,
             },
           })}
         />

@@ -1,11 +1,12 @@
 import type { RootState } from '../store';
 import { createSlice } from '@reduxjs/toolkit';
-import { ServiceList } from '../../types';
+import { ServiceItem,} from '../../types';
 import { fetchServiceList } from './actions';
+import hash from 'object-hash';
 
 type InitialStateType = {
   isLoading: boolean;
-  serviceList: ServiceList;
+  serviceList: ServiceItem[];
 };
 
 const initialState: InitialStateType = {
@@ -28,7 +29,13 @@ export const serivceListSlice = createSlice({
       })
       .addCase(fetchServiceList.fulfilled, (state, { payload }) => {
         state.isLoading = false;
-        state.serviceList = payload;
+
+        console.log("payload: " + hash(payload));
+        console.log("serviceList: " + hash(state.serviceList));
+
+        if (hash(state.serviceList) !== hash(payload)) { 
+          state.serviceList = payload;
+        }
       });
   },
 });

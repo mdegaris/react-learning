@@ -1,55 +1,73 @@
-:root {
-  --wip-pink: #fce6df;
-  --wip-heavy-blue: #04347c;
-  --wip-smooth-blue: #3462a7;
-  --wip-bright-blue: #3a5d91;
-  --wip-sky-blue: #d9eff9;
-  --wip-offwhite-grey: #fafafa;
-  --wip-blue-grey: #f4f5f7;
-  --wip-accent-grey: #dfe1e6;
-  --wip-highlight-grey: #ecedf0;
-  --wip-strong-grey: #808080;
 
-  --card-border-radius: 10px;
-}
 
 .navbar {
   grid-area: navbar;
-  background-color: var(--wip-offwhite-grey);
+  /* background-color: var(--wip-offwhite-grey); */
+  background-color: #5b8dd7;
   border-right: 1px solid var(--wip-accent-grey);
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  padding-top: 6rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  padding-top: 7rem;
+  /* padding-left: 0.2rem; */
+  /* padding-right: 0.2rem; */
 }
 
 .navbar ul {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  justify-content: space-between;
+  gap: 3rem;
+  padding-left: 0.5rem;
 }
 
-.navbar li {
-  border-top: 1px solid var(--wip-bright-blue);
-  border-bottom: 1px solid var(--wip-bright-blue);
+.navbar li {  
   min-height: 4rem;
-  width: 100%;
-  background-color: var(--wip-sky-blue);
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
-.navbar li div {
-  color: black;
-  font-size: 1rem;
-  height: 3.75rem;
+.navbar li:hover {
+  cursor: pointer;
 }
 
-.navbar li div img {
+.text {  
+  font-size: 0.83rem;
+  color: white;
+}
+
+.selected .text,
+.selected .image {
+  opacity: 1;
+}
+
+.not-selected .text, 
+.not-selected .image {
+  opacity: 0.5;
+}
+
+.image  {
+  height: 3rem;
+  padding: 0.4rem;  
+  filter: invert(100%);
+}
+
+.image img {
   height: 100%;
-  padding: 0.5rem;
-  opacity: 0.6;
 }
+
+.navbar li:hover .image, 
+.navbar li:hover .text {
+  opacity: 1;
+}
+
+
+.saturate { filter: saturate(3); }
+.grayscale { filter: grayscale(100%); }
+.contrast { filter: contrast(160%); }
+.brightness { filter: brightness(0.25); }
+.blur { filter: blur(3px); }
+.invert { filter: invert(100%); }
+.sepia { filter: sepia(100%); }
+.huerotate { filter: hue-rotate(180deg); }
+.rss.opacity { filter: opacity(50%); }

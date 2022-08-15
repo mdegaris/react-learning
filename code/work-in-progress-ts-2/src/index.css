@@ -15,11 +15,12 @@
   --wip-blue-grey: #f4f5f7;
   --wip-accent-grey: #dfe1e6;
   --wip-highlight-grey: #ecedf0;
-  --wip-strong-grey: #808080;
-  --card-border-radius: 10px;
+  --wip-strong-grey: #808080;  
 
   --rgb-highlight-grey: 50, 50, 50;
   --rgb-offwhite-grey: 250, 250, 250;
+
+  --card-border-radius: 10px;
 }
 
 body {

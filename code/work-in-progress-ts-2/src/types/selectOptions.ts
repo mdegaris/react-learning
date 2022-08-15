@@ -3,7 +3,7 @@ import { ServiceCode, ServiceGroup, ServiceName } from './service';
 import { Study, StudyManager } from './study';
 
 type AllStudies = 'All Studies';
-type AllServices = 'All Services';
+// type AllServices = 'All Services';
 
 interface OptionType {
   readonly label: string;
