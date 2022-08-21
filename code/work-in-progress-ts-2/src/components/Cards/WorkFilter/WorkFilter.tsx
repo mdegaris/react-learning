@@ -10,10 +10,12 @@ type Props = {};
 const WorkFilter = (props: Props) => {
   return (
     <div className={styles.container}>
-      <Card className={styles.card}>
-        <DateInput />
-        <ServiceInput />
-        <StudyInput />
+      <Card>
+        <div className={styles.content}>
+          <DateInput />
+          <ServiceInput />
+          <StudyInput />
+        </div>
       </Card>
     </div>
   );

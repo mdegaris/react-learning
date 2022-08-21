@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { useTable, Column, useFlexLayout } from "react-table";
+import { useTable, Column, useFlexLayout, useBlockLayout } from "react-table";
 import { AppProps, ServiceItem } from "../../../types";
 import styles from "./ServiceListTable.module.css";
 

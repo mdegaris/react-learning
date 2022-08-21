@@ -1,6 +1,8 @@
 import React, { useMemo } from "react";
 import { AppProps, ServiceItem } from "../../../types";
+import CompoundCountTable from "../../Tables/CompoundCountTable";
 import ServiceVariablesTable from "../../Tables/ServiceVariablesTable";
+import TaskTable from "../../Tables/TaskTable";
 import Card from "../../UI/Card";
 import styles from "./ServiceDetail.module.css";
 
@@ -10,10 +12,7 @@ interface SelectedServiceProps extends AppProps {
 }
 
 function SelectedService(props: SelectedServiceProps) {
-  const variablesTitle = useMemo(
-    () => props.service.serviceName + " " + props.service.serviceCode,
-    [props.service]
-  );
+  const variablesTitle = useMemo(() => "Variables", []);
 
   return (
     <Card title={props.title}>
@@ -24,12 +23,12 @@ function SelectedService(props: SelectedServiceProps) {
         <div className={styles.manager}>
           Study Manager: {props.service.studyManager}
         </div>
-        <div>
-          <ServiceVariablesTable
-            title={variablesTitle}
-            variables={props.service.variables}
-          />
-        </div>
+        <ServiceVariablesTable
+          title={variablesTitle}
+          variables={props.service.variables}
+        />
+        <CompoundCountTable service={props.service} />
+        <TaskTable />
       </div>
     </Card>
   );

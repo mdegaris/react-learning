@@ -1,21 +1,19 @@
 ::-webkit-scrollbar {
-    height: 10px;
-    width: 10px;
-  
-    /* background: var(--wip-offwhite-grey); */
-  }
-  
+  height: 10px;
+  width: 10px;
+
+  /* background: var(--wip-offwhite-grey); */
+}
+
 ::-webkit-scrollbar-thumb {
   background: var(--wip-accent-grey);
   -webkit-border-radius: 1ex;
   -webkit-box-shadow: 0px 1px 1px var(--wip-accent-grey);
 }
-  
+
 ::-webkit-scrollbar-corner {
   background-color: var(--wip-accent-grey);
 }
-
-
 
 .table {
   width: 100%;
@@ -26,7 +24,7 @@
 }
 
 .tbody {
-  height: 28rem;
+  max-height: 11rem;
   overflow-x: clip;
   overflow-y: auto;
   overflow: overlay;
@@ -43,7 +41,6 @@
 
 .row {
   height: fit-content;
-  cursor: pointer;
 }
 
 .td {
@@ -58,6 +55,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
-

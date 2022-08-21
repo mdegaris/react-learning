@@ -1,10 +1,10 @@
 .container {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 10rem auto;
+  grid-template-columns: 10.5rem auto;
   grid-template-rows: 3rem auto 2.5rem;
   grid-template-areas:
-    'navbar header'
-    'navbar content'
-    'navbar footer';
+    "navbar header"
+    "navbar content"
+    "navbar footer";
 }

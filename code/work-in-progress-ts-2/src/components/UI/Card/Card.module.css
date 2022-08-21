@@ -1,31 +1,31 @@
-:root {
-  --card-border-radius: 10px;
-}
-
 .container {
   background-color: white;
   border: 1px solid var(--wip-accent-grey);
   border-radius: var(--card-border-radius);
   box-shadow: 1px 1px 12px var(--wip-blue-grey);
   box-shadow: -1px -1px 12px var(--wip-blue-grey);
+  height: inherit;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   min-height: 2.2rem;
-  background-color: var(--wip-smooth-blue);
   color: white;
+  background-color: var(--wip-smooth-blue);
   border-top-left-radius: var(--card-border-radius);
   border-top-right-radius: var(--card-border-radius);
+  flex-grow: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.title div {
-  margin: auto 0;
-}
-
-.card-content {
-  padding: 0.8rem;
+.content {
+  flex-grow: 1;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
 }

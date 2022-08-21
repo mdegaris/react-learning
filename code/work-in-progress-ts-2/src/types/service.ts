@@ -30,6 +30,7 @@ export type ServiceItem = {
   deadlineDate: DateString;
   compounds: number;
   delivered: number;
+  undelivered: number;
   variables: ServiceVariable[];
 };
 

@@ -1,31 +1,12 @@
 .container {
-  width: auto;
-  display: grid;
-  grid-template-columns: auto 30rem;
-  grid-template-rows: auto auto;
-  gap: 1rem;
-  grid-template-areas:
-    'work-filter work-filter'
-    'service-list service-detail';
+  height: 100%;
   padding: 1.5rem;
-  justify-content: left;
-}
-
-.header {
-  background-color: var(--wip-blue-grey);
-  border-bottom: 1px solid var(--wip-accent-grey);
-  padding: 0.8rem 3rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: max-content 31rem;
+  grid-template-rows: 4rem auto;
   gap: 1rem;
-}
-
-.title {
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.subtitle {
-  font-style: italic;
-  line-height: 1.7rem;
-  color: var(--wip-strong-grey);
+  justify-content: left;
+  grid-template-areas:
+    "work-filter work-filter"
+    "service-list service-detail";
 }

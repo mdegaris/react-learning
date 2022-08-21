@@ -19,13 +19,11 @@ const ServiceDetail = (props: ServiceDetailsProps) => {
   );
 
   const displayLoading = props.isLoading && !props.service;
-  // const displayNoServiceSelected = !props.isLoading && !props.service;
   const displaySelectedService = !displayLoading;
 
   return (
     <div className={styles.container}>
       {displayLoading && <div>Loading...</div>}
-      {/* {displayNoServiceSelected && <div>No service selected</div>} */}
       {displaySelectedService && props.service && (
         <SelectedService service={props.service} title={title} />
       )}

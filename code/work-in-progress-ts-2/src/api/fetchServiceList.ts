@@ -75,6 +75,7 @@ const fetchServiceData = async (
           deadlineDate: serv.deadlineDate,
           compounds: serv.noOfCompounds,
           delivered: serv.deliveredCompounds,
+          undelivered: serv.noOfCompounds - serv.deliveredCompounds,
           variables: buildVariablesList(serv.supplementalId)
         };
       })

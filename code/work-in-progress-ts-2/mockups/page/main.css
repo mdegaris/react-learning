@@ -68,9 +68,9 @@ button {
   grid-template-columns: 12rem auto;
   grid-template-rows: 3rem auto 3rem;
   grid-template-areas:
-    'header header'
-    'navbar content'
-    'footer footer';
+    "header header"
+    "navbar content"
+    "footer footer";
 }
 
 .card {
@@ -114,8 +114,8 @@ button {
   grid-template-rows: auto;
   gap: 1rem;
   grid-template-areas:
-    'main-filter main-filter'
-    'service-list service-detail';
+    "main-filter main-filter"
+    "service-list service-detail";
 }
 
 .main-filter {
@@ -465,8 +465,8 @@ table th {
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: auto;
   grid-template-areas:
-    'service-matrix ful-matrix details'
-    'extract extract extract';
+    "service-matrix ful-matrix details"
+    "extract extract extract";
 }
 
 #service-matrix {

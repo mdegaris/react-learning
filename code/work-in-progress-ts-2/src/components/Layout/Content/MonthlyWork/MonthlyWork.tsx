@@ -49,18 +49,16 @@ const MonthlyWork = (props: Props) => {
   }, [isLoading, postLoadServiceSelect]);
 
   return (
-    <React.Fragment>
-      <div className={styles.container}>
-        <WorkFilter />
-        <ServiceList
-          serviceList={serviceList}
-          selectService={selectServiceHandler}
-          selectedService={selectedService}
-          isLoading={isLoading}
-        />
-        <ServiceDetail service={selectedService} isLoading={isLoading} />
-      </div>
-    </React.Fragment>
+    <div className={styles.container}>
+      <WorkFilter />
+      <ServiceList
+        serviceList={serviceList}
+        selectService={selectServiceHandler}
+        selectedService={selectedService}
+        isLoading={isLoading}
+      />
+      <ServiceDetail service={selectedService} isLoading={isLoading} />
+    </div>
   );
 };
 

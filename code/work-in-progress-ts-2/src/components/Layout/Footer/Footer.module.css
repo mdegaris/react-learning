@@ -1,6 +1,6 @@
 .footer {
   grid-area: footer;
-  background-color: var(--wip-heavy-blue);
+  background-color: #5b8dd7;
   color: white;
   display: flex;
   flex-direction: row;

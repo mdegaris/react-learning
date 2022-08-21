@@ -1,10 +1,17 @@
 .container {
   grid-area: service-list;
-  width: fit-content;
+  height: inherit;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .filter {
-  margin-bottom: 0.5rem;
+  flex-grow: 0;
+  height: 2.5rem;
 }
 
 .filter input {

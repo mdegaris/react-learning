@@ -1,0 +1,29 @@
+.container {
+  border: 1px solid black;
+  height: 98vh;
+  display: grid;
+  grid-template-rows: 5rem auto 5rem;
+}
+
+.header {
+  background-color: bisque;
+}
+
+.footer {
+  background-color: cadetblue;
+}
+
+.content {
+  background-color: seagreen;
+  display: grid;
+  grid-template-columns: 20rem 20rem;
+  gap: 1rem;
+}
+
+.card1 {
+  background-color: sandybrown;
+}
+
+.card2 {
+  background-color: darkkhaki;
+}

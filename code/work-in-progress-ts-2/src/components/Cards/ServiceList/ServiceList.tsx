@@ -35,7 +35,7 @@ const ServiceList = (props: ServiceListProps) => {
 
   return (
     <div className={styles.container}>
-      <Card title={title} className={styles.card}>
+      <Card title={title}>
         <div className={styles.content}>
           <div className={styles.filter}>
             <input
@@ -45,6 +45,7 @@ const ServiceList = (props: ServiceListProps) => {
               onChange={filterChangeHandler}
             />
           </div>
+
           <ServiceListTable
             isLoading={props.isLoading}
             queryValue={queryValue}

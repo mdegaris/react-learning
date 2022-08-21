@@ -19,18 +19,14 @@ function App() {
     let interval = setInterval(() => {
       console.log("Periodically fetching data...");
       dispatch(fetchServiceList({ month, year }));
-    }, 10000);
+    }, 100000);
 
     return () => {
       clearInterval(interval);
     };
   }, [month, year, dispatch]);
 
-  return (
-    <div className="App">
-      <Layout />
-    </div>
-  );
+  return <Layout />;
 }
 
 export default App;

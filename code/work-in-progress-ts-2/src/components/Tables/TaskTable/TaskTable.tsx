@@ -1,38 +1,55 @@
 import React, { useMemo } from "react";
-import { useTable, Column, useFlexLayout } from "react-table";
-import { AppProps, ServiceVariable } from "../../../types";
-import styles from "./ServiceVariablesTable.module.css";
+import { useTable, Column, useFlexLayout, useBlockLayout } from "react-table";
+import { AppProps } from "../../../types";
+import styles from "./TaskTable.module.css";
 
 // ========================================================
 
-interface ServiceVariableTableProps extends AppProps {
-  title: string;
-  variables: ServiceVariable[];
-}
-
-// ========================================================
-
-const ServiceVariablesTable = (props: ServiceVariableTableProps) => {
-  const columns: Column<ServiceVariable>[] = useMemo(
+const TaskTable = (props: AppProps) => {
+  const columns: Column[] = useMemo(
     () => [
       {
-        Header: "Variable",
-        accessor: "name",
-        id: "col-name",
+        Header: "Task",
+        accessor: "taskId",
+        id: "col-task",
+        width: 1,
       },
       {
-        Header: "Value",
-        accessor: "value",
-        id: "col-value",
+        Header: "SOP",
+        accessor: "sop",
+        id: "col-sop",
+        width: 1,
+      },
+      {
+        Header: "Compounds",
+        accessor: "compounds",
+        id: "col-compounds",
+        width: 1,
+      },
+      {
+        Header: "Locked",
+        accessor: "isLocked",
+        id: "col-locked",
+        width: 1,
       },
     ],
     []
   );
 
-  const data = useMemo(() => props.variables, [props.variables]);
+  const data = useMemo(
+    () => [
+      { taskId: 12345, sop: "P067", compounds: 1, isLocked: "YES" },
+      { taskId: 12344, sop: "P067", compounds: 10, isLocked: "YES" },
+      { taskId: 12333, sop: "P067", compounds: 11, isLocked: "NO" },
+      { taskId: 12322, sop: "P067", compounds: 11, isLocked: "NO" },
+      { taskId: 12311, sop: "P067", compounds: 11, isLocked: "NO" },
+      { taskId: 12300, sop: "P067", compounds: 11, isLocked: "NO" },
+    ],
+    []
+  );
 
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    useTable<ServiceVariable>(
+    useTable(
       {
         columns,
         data,
@@ -43,7 +60,6 @@ const ServiceVariablesTable = (props: ServiceVariableTableProps) => {
   // Render the UI for your table
   return (
     <div>
-      <div className={styles.th}>{props.title}</div>
       <div className={styles.table} {...getTableProps()}>
         <div className={styles.thead}>
           {headerGroups.map((headerGroup) => (
@@ -81,4 +97,4 @@ const ServiceVariablesTable = (props: ServiceVariableTableProps) => {
   );
 };
 
-export default ServiceVariablesTable;
+export default TaskTable;

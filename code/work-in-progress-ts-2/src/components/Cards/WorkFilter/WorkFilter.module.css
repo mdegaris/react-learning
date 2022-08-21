@@ -2,7 +2,7 @@
   grid-area: work-filter;
 }
 
-.card {
+.content {
   grid-area: work-filter;
   display: flex;
   flex-direction: row;
