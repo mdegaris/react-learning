@@ -22,7 +22,7 @@
 }
 
 .tbody {
-  max-height: 7rem;
+  max-height: 6rem;
   overflow-x: clip;
   overflow-y: auto;
   overflow: overlay;

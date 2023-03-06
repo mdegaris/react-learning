@@ -3,8 +3,10 @@ import { AppProps, ServiceItem } from "../../../types";
 import CompoundCountTable from "../../Tables/CompoundCountTable";
 import ServiceVariablesTable from "../../Tables/ServiceVariablesTable";
 import TaskTable from "../../Tables/TaskTable";
+import Button from "../../UI/Inputs/Button/Button";
 import Card from "../../UI/Card";
 import styles from "./ServiceDetail.module.css";
+import ExtractedReportsTable from "../../Tables/ExtractedReportsTable";
 
 interface SelectedServiceProps extends AppProps {
   service: ServiceItem;
@@ -23,12 +25,13 @@ function SelectedService(props: SelectedServiceProps) {
         <div className={styles.manager}>
           Study Manager: {props.service.studyManager}
         </div>
+        <CompoundCountTable service={props.service} />
         <ServiceVariablesTable
           title={variablesTitle}
           variables={props.service.variables}
         />
-        <CompoundCountTable service={props.service} />
         <TaskTable />
+        <ExtractedReportsTable service={props.service} />
       </div>
     </Card>
   );

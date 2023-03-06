@@ -1,0 +1,9 @@
+.button {
+  background-color: var(--wip-smooth-blue);
+  color: white;
+  width: fit-content;
+  padding: 0.2rem 1rem;
+  border: var(--wip-heavy-blue);
+  border-radius: 7px;
+  box-shadow: 0 0 3px var(--wip-strong-grey);
+}

@@ -1,5 +1,5 @@
-import urls from './remoteUrls';
-import { fetchJsonData } from './firebase/fetchJson';
+import urls from "./remoteUrls";
+import { fetchJsonData } from "./firebase/fetchJson";
 import {
   Study,
   StudyManager,
@@ -11,7 +11,7 @@ import {
   MonthAbbreviation,
   ServiceItem,
   ServiceVariable,
-} from '../types';
+} from "../types";
 
 export type APIServiceListType = {
   serviceList: [];
@@ -20,37 +20,38 @@ export type APIServiceListType = {
 type RoundJson = {
   id: string;
   contractId: string;
-  studyId: Study;
-  round: Round;
-  studyManager: StudyManager;
-  expectedReceiptDate: DateString;
+  // studyId: Study;
+  studyIdx: string;
+  round: string;
+  studyManager: string;
+  expectedReceiptDate: string;
   isCompleted: boolean;
   services: ServiceJson[];
 };
 
 type ServiceJson = {
   serviceNo: number;
-  serviceCode: ServiceCode;
-  serviceName: ServiceName;
+  serviceCode: string;
+  serviceName: string;
   supplementalId: string;
   hashNumber: number;
   noOfCompounds: number;
   deliveredCompounds: number;
-  deadlineDate: DateString;
+  deadlineDate: string;
 };
 
-const buildVariablesList = (supplementalId: string) :  ServiceVariable[] => {
-  const nameValues = supplementalId.split('|').filter(s => s.match(/.+=.+/g));
-  const variablesList  : ServiceVariable[] = nameValues.map(nv => {
-    const nameValuePair = nv.split('=');
+const buildVariablesList = (supplementalId: string): ServiceVariable[] => {
+  const nameValues = supplementalId.split("|").filter((s) => s.match(/.+=.+/g));
+  const variablesList: ServiceVariable[] = nameValues.map((nv) => {
+    const nameValuePair = nv.split("=");
     return {
       name: nameValuePair[0],
-      value: nameValuePair[1]
-    }
-   });
+      value: nameValuePair[1],
+    };
+  });
 
-   return variablesList;
-}
+  return variablesList;
+};
 
 const fetchServiceData = async (
   month: MonthAbbreviation,
@@ -58,25 +59,27 @@ const fetchServiceData = async (
   studyId?: Study,
   studyManager?: StudyManager
 ): Promise<ServiceItem[]> => {
-  const roundJsonObjects = await fetchJsonData<RoundJson[]>(urls.ROUNDS_DATA);
+  // const s : Study = "CYP0244";
 
+  const roundJsonObjects = await fetchJsonData<RoundJson[]>(urls.ROUNDS_DATA);
   const services: ServiceItem[] = roundJsonObjects
     .map((rnd: RoundJson) =>
       rnd.services.map((serv: ServiceJson) => {
         return {
-          id: rnd.id + '-' + serv.serviceNo,
+          id: rnd.id + "-" + serv.serviceNo,
           studyManager: rnd.studyManager,
-          study: rnd.studyId,
-          round: rnd.round,
+          // study: rnd.studyId as Study,
+          // study: s,
+          round: rnd.round as Round,
           serviceName: serv.serviceName,
-          serviceCode: serv.serviceCode,
+          serviceCode: serv.serviceCode as ServiceCode,
           supplementalId: serv.supplementalId,
-          receiptDate: rnd.expectedReceiptDate,
-          deadlineDate: serv.deadlineDate,
+          receiptDate: rnd.expectedReceiptDate as DateString,
+          deadlineDate: serv.deadlineDate as DateString,
           compounds: serv.noOfCompounds,
           delivered: serv.deliveredCompounds,
           undelivered: serv.noOfCompounds - serv.deliveredCompounds,
-          variables: buildVariablesList(serv.supplementalId)
+          variables: buildVariablesList(serv.supplementalId),
         };
       })
     )

@@ -21,7 +21,7 @@ export type ServiceVariable = {
 export type ServiceItem = {
   id: string;
   studyManager: StudyManager;
-  study: Study;
+  study?: Study;
   round: Round;
   serviceName: ServiceName;
   serviceCode: ServiceCode;
