@@ -1,6 +1,6 @@
 import axios from "axios";
-import { json } from "stream/consumers";
-import { z, ZodType, ZodError } from "zod";
+// import { json } from "stream/consumers";
+// import { z, ZodType } from "zod";
 import urls from "../remoteUrls";
 
 // Create http server connection.
@@ -27,15 +27,15 @@ export const fetchJsonData = async <T>(url: string): Promise<T> => {
     throw new Error(`SERVER ERROR: Could not fetch data from ${url}.`);
   }
 
-  try {
-    type Q = z.infer<typeof response.data>;
-    const jsonSchema: ZodType<T> = z.lazy(() => z.object(response.data));
-    jsonSchema.parse(response.data);
-  } catch (error) {
-    if (error instanceof Error) {
-      console.log(error.message);
-    }
-  }
+  // try {
+  //   type Q = z.infer<typeof response.data>;
+  //   const jsonSchema: ZodType<T> = z.lazy(() => z.object(response.data));
+  //   jsonSchema.parse(response.data);
+  // } catch (error) {
+  //   if (error instanceof Error) {
+  //     console.log(error.message);
+  //   }
+  // }
 
   // console.log(typeof response.data);
   // const data: T = response.data;

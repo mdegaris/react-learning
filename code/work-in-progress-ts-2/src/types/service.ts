@@ -34,4 +34,4 @@ export type ServiceItem = {
   variables: ServiceVariable[];
 };
 
-// export type ServiceList = ServiceItem[];
+export type ServiceList = ServiceItem[];

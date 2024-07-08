@@ -1,0 +1,3948 @@
+{
+  "rounds": [
+    {
+      "contractId": "CYP0244-R89",
+      "expectedReceiptDate": "21-Sep-2022",
+      "id": "CYP0244-R89",
+      "isCompleted": false,
+      "round": "R89",
+      "services": [
+        {
+          "deadlineDate": "30-Sep-2022",
+          "deliveredCompounds": 11,
+          "hashNumber": 1,
+          "noOfCompounds": 21,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Rat|Sex=FEMALE|Strain=Sprague Dawley|Strain=Sprague Dawley|Strain=Sprague Dawley|Strain=Sprague Dawley|Strain=Sprague Dawley|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "30-Sep-2022",
+          "deliveredCompounds": 7,
+          "hashNumber": 1,
+          "noOfCompounds": 17,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP0244",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP1827-R62",
+      "expectedReceiptDate": "18-Oct-2022",
+      "id": "CYP1827-R62E",
+      "isCompleted": false,
+      "round": "R62E",
+      "services": [
+        {
+          "deadlineDate": "23-Oct-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 16,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "24-Oct-2022",
+          "deliveredCompounds": 9,
+          "hashNumber": 1,
+          "noOfCompounds": 12,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        }
+      ],
+      "studyId": "CYP1827",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1921-R82",
+      "expectedReceiptDate": "13-Nov-2022",
+      "id": "CYP1921-R82",
+      "isCompleted": false,
+      "round": "R82",
+      "services": [
+        {
+          "deadlineDate": "18-Nov-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 4,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1921",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1822-R78",
+      "expectedReceiptDate": "11-Oct-2022",
+      "id": "CYP1822-R78A",
+      "isCompleted": false,
+      "round": "R78A",
+      "services": [
+        {
+          "deadlineDate": "18-Oct-2022",
+          "deliveredCompounds": 7,
+          "hashNumber": 1,
+          "noOfCompounds": 15,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "27-Oct-2022",
+          "deliveredCompounds": 7,
+          "hashNumber": 1,
+          "noOfCompounds": 26,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP013|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "24-Oct-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 24,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "22-Oct-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 9,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP0323-R28",
+      "expectedReceiptDate": "17-Nov-2022",
+      "id": "CYP0323-R28",
+      "isCompleted": false,
+      "round": "R28",
+      "services": [
+        {
+          "deadlineDate": "29-Nov-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "25-Nov-2022",
+          "deliveredCompounds": 5,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "22-Nov-2022",
+          "deliveredCompounds": 13,
+          "hashNumber": 1,
+          "noOfCompounds": 17,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "26-Nov-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 4,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 3,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP0323",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP1454-R35",
+      "expectedReceiptDate": "22-Nov-2022",
+      "id": "CYP1454-R35C",
+      "isCompleted": false,
+      "round": "R35C",
+      "services": [
+        {
+          "deadlineDate": "30-Nov-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 28,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "28-Nov-2022",
+          "deliveredCompounds": 8,
+          "hashNumber": 1,
+          "noOfCompounds": 26,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "29-Nov-2022",
+          "deliveredCompounds": 8,
+          "hashNumber": 1,
+          "noOfCompounds": 13,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 2,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1454",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0323-R60",
+      "expectedReceiptDate": "18-Nov-2022",
+      "id": "CYP0323-R60B",
+      "isCompleted": true,
+      "round": "R60B",
+      "services": [
+        {
+          "deadlineDate": "30-Nov-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 3,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "25-Nov-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 3,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP0323",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP1827-R11",
+      "expectedReceiptDate": "08-Dec-2022",
+      "id": "CYP1827-R11C",
+      "isCompleted": false,
+      "round": "R11C",
+      "services": [
+        {
+          "deadlineDate": "22-Dec-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "25-Dec-2022",
+          "deliveredCompounds": 16,
+          "hashNumber": 1,
+          "noOfCompounds": 25,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP1827",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1676-R16",
+      "expectedReceiptDate": "01-Dec-2022",
+      "id": "CYP1676-R16A",
+      "isCompleted": false,
+      "round": "R16A",
+      "services": [
+        {
+          "deadlineDate": "19-Dec-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 21,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "12-Dec-2022",
+          "deliveredCompounds": 10,
+          "hashNumber": 1,
+          "noOfCompounds": 28,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "10-Dec-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 25,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 2,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "06-Dec-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 5,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1676",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1822-R92",
+      "expectedReceiptDate": "25-Sep-2022",
+      "id": "CYP1822-R92E",
+      "isCompleted": false,
+      "round": "R92E",
+      "services": [
+        {
+          "deadlineDate": "30-Sep-2022",
+          "deliveredCompounds": 19,
+          "hashNumber": 1,
+          "noOfCompounds": 29,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP0244-R68",
+      "expectedReceiptDate": "26-Sep-2022",
+      "id": "CYP0244-R68A",
+      "isCompleted": false,
+      "round": "R68A",
+      "services": [
+        {
+          "deadlineDate": "01-Oct-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 22,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "01-Oct-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 18,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP0244",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP0864-R61",
+      "expectedReceiptDate": "09-Oct-2022",
+      "id": "CYP0864-R61D",
+      "isCompleted": false,
+      "round": "R61D",
+      "services": [
+        {
+          "deadlineDate": "23-Oct-2022",
+          "deliveredCompounds": 7,
+          "hashNumber": 1,
+          "noOfCompounds": 16,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "27-Oct-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 26,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP013|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "24-Oct-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 2,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP0864",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP0864-R94",
+      "expectedReceiptDate": "17-Oct-2022",
+      "id": "CYP0864-R94D",
+      "isCompleted": false,
+      "round": "R94D",
+      "services": [
+        {
+          "deadlineDate": "26-Oct-2022",
+          "deliveredCompounds": 14,
+          "hashNumber": 1,
+          "noOfCompounds": 26,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "28-Oct-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 16,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "25-Oct-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 21,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 2,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP0864",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1827-R18",
+      "expectedReceiptDate": "06-Aug-2022",
+      "id": "CYP1827-R18A",
+      "isCompleted": false,
+      "round": "R18A",
+      "services": [
+        {
+          "deadlineDate": "27-Aug-2022",
+          "deliveredCompounds": 9,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "24-Aug-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "12-Aug-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 24,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP1827",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1827-R69",
+      "expectedReceiptDate": "16-Nov-2022",
+      "id": "CYP1827-R69A",
+      "isCompleted": false,
+      "round": "R69A",
+      "services": [
+        {
+          "deadlineDate": "27-Nov-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "24-Nov-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 4,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP1827",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1676-R77",
+      "expectedReceiptDate": "28-Sep-2022",
+      "id": "CYP1676-R77B",
+      "isCompleted": false,
+      "round": "R77B",
+      "services": [
+        {
+          "deadlineDate": "01-Oct-2022",
+          "deliveredCompounds": 8,
+          "hashNumber": 1,
+          "noOfCompounds": 16,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP1676",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0323-R99",
+      "expectedReceiptDate": "05-Oct-2022",
+      "id": "CYP0323-R99A",
+      "isCompleted": false,
+      "round": "R99A",
+      "services": [
+        {
+          "deadlineDate": "20-Oct-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 15,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "17-Oct-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 8,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP013|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "14-Oct-2022",
+          "deliveredCompounds": 11,
+          "hashNumber": 1,
+          "noOfCompounds": 21,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 2,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP0323",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP0323-R86",
+      "expectedReceiptDate": "10-Dec-2022",
+      "id": "CYP0323-R86E",
+      "isCompleted": false,
+      "round": "R86E",
+      "services": [
+        {
+          "deadlineDate": "17-Dec-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 13,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "25-Dec-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 17,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "22-Dec-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 5,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 2,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP0323",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP1454-R46",
+      "expectedReceiptDate": "17-Oct-2022",
+      "id": "CYP1454-R46B",
+      "isCompleted": false,
+      "round": "R46B",
+      "services": [
+        {
+          "deadlineDate": "26-Oct-2022",
+          "deliveredCompounds": 11,
+          "hashNumber": 1,
+          "noOfCompounds": 25,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "26-Oct-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 21,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 1,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "27-Oct-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 7,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 2,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP1454",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1676-R32",
+      "expectedReceiptDate": "08-Nov-2022",
+      "id": "CYP1676-R32F",
+      "isCompleted": false,
+      "round": "R32F",
+      "services": [
+        {
+          "deadlineDate": "23-Nov-2022",
+          "deliveredCompounds": 12,
+          "hashNumber": 1,
+          "noOfCompounds": 13,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "16-Nov-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 9,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "29-Nov-2022",
+          "deliveredCompounds": 20,
+          "hashNumber": 1,
+          "noOfCompounds": 25,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 2,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "14-Nov-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 19,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP013|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP1676",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0694-R24",
+      "expectedReceiptDate": "05-Nov-2022",
+      "id": "CYP0694-R24B",
+      "isCompleted": false,
+      "round": "R24B",
+      "services": [
+        {
+          "deadlineDate": "24-Nov-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 24,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        }
+      ],
+      "studyId": "CYP0694",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0244-R46",
+      "expectedReceiptDate": "20-Nov-2022",
+      "id": "CYP0244-R46A",
+      "isCompleted": false,
+      "round": "R46A",
+      "services": [
+        {
+          "deadlineDate": "25-Nov-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 12,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "25-Nov-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 23,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 1,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "26-Nov-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 3,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "25-Nov-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 19,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "29-Nov-2022",
+          "deliveredCompounds": 16,
+          "hashNumber": 1,
+          "noOfCompounds": 22,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 4,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP0244",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP1676-R79",
+      "expectedReceiptDate": "17-Aug-2022",
+      "id": "CYP1676-R79",
+      "isCompleted": false,
+      "round": "R79",
+      "services": [
+        {
+          "deadlineDate": "23-Aug-2022",
+          "deliveredCompounds": 13,
+          "hashNumber": 1,
+          "noOfCompounds": 15,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1676",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0864-R26",
+      "expectedReceiptDate": "13-Sep-2022",
+      "id": "CYP0864-R26A",
+      "isCompleted": false,
+      "round": "R26A",
+      "services": [
+        {
+          "deadlineDate": "20-Sep-2022",
+          "deliveredCompounds": 12,
+          "hashNumber": 1,
+          "noOfCompounds": 13,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "28-Sep-2022",
+          "deliveredCompounds": 5,
+          "hashNumber": 1,
+          "noOfCompounds": 13,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "23-Sep-2022",
+          "deliveredCompounds": 4,
+          "hashNumber": 1,
+          "noOfCompounds": 9,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 2,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "27-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 1,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 3,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "23-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 3,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 4,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        }
+      ],
+      "studyId": "CYP0864",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP0244-R30",
+      "expectedReceiptDate": "11-Oct-2022",
+      "id": "CYP0244-R30C",
+      "isCompleted": false,
+      "round": "R30C",
+      "services": [
+        {
+          "deadlineDate": "23-Oct-2022",
+          "deliveredCompounds": 4,
+          "hashNumber": 1,
+          "noOfCompounds": 7,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "17-Oct-2022",
+          "deliveredCompounds": 24,
+          "hashNumber": 1,
+          "noOfCompounds": 26,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 1,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP0244",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP1143-R30",
+      "expectedReceiptDate": "20-Sep-2022",
+      "id": "CYP1143-R30A",
+      "isCompleted": false,
+      "round": "R30A",
+      "services": [
+        {
+          "deadlineDate": "25-Sep-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 7,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "25-Sep-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 8,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "25-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 24,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP1143",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1822-R85",
+      "expectedReceiptDate": "18-Nov-2022",
+      "id": "CYP1822-R85A",
+      "isCompleted": false,
+      "round": "R85A",
+      "services": [
+        {
+          "deadlineDate": "27-Nov-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 7,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1676-R83",
+      "expectedReceiptDate": "20-Nov-2022",
+      "id": "CYP1676-R83D",
+      "isCompleted": false,
+      "round": "R83D",
+      "services": [
+        {
+          "deadlineDate": "25-Nov-2022",
+          "deliveredCompounds": 21,
+          "hashNumber": 1,
+          "noOfCompounds": 25,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "25-Nov-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 12,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "26-Nov-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 22,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "25-Nov-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 3,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1676",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1822-R18",
+      "expectedReceiptDate": "31-Aug-2022",
+      "id": "CYP1822-R18",
+      "isCompleted": false,
+      "round": "R18",
+      "services": [
+        {
+          "deadlineDate": "01-Sep-2022",
+          "deliveredCompounds": 10,
+          "hashNumber": 1,
+          "noOfCompounds": 15,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "04-Sep-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 14,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "02-Sep-2022",
+          "deliveredCompounds": 22,
+          "hashNumber": 1,
+          "noOfCompounds": 28,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1676-R34",
+      "expectedReceiptDate": "08-Aug-2022",
+      "id": "CYP1676-R34",
+      "isCompleted": false,
+      "round": "R34",
+      "services": [
+        {
+          "deadlineDate": "19-Aug-2022",
+          "deliveredCompounds": 18,
+          "hashNumber": 1,
+          "noOfCompounds": 23,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "20-Aug-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 14,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "27-Aug-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 2,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "19-Aug-2022",
+          "deliveredCompounds": 7,
+          "hashNumber": 1,
+          "noOfCompounds": 12,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "27-Aug-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 17,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 4,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP1676",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0244-R89",
+      "expectedReceiptDate": "26-Nov-2022",
+      "id": "CYP0244-R89A",
+      "isCompleted": false,
+      "round": "R89A",
+      "services": [
+        {
+          "deadlineDate": "01-Dec-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 6,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "01-Dec-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "01-Dec-2022",
+          "deliveredCompounds": 15,
+          "hashNumber": 1,
+          "noOfCompounds": 19,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP0244",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP1921-R81",
+      "expectedReceiptDate": "21-Sep-2022",
+      "id": "CYP1921-R81C",
+      "isCompleted": false,
+      "round": "R81C",
+      "services": [
+        {
+          "deadlineDate": "26-Sep-2022",
+          "deliveredCompounds": 5,
+          "hashNumber": 1,
+          "noOfCompounds": 17,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "29-Sep-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 18,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "27-Sep-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 7,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "27-Sep-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 12,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 3,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP1921",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP0864-R31",
+      "expectedReceiptDate": "08-Nov-2022",
+      "id": "CYP0864-R31D",
+      "isCompleted": false,
+      "round": "R31D",
+      "services": [
+        {
+          "deadlineDate": "19-Nov-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 1,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP0864",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP0750-R96",
+      "expectedReceiptDate": "13-Sep-2022",
+      "id": "CYP0750-R96A",
+      "isCompleted": false,
+      "round": "R96A",
+      "services": [
+        {
+          "deadlineDate": "24-Sep-2022",
+          "deliveredCompounds": 8,
+          "hashNumber": 1,
+          "noOfCompounds": 20,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP0750",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP1676-R34",
+      "expectedReceiptDate": "28-Aug-2022",
+      "id": "CYP1676-R34B",
+      "isCompleted": false,
+      "round": "R34B",
+      "services": [
+        {
+          "deadlineDate": "31-Aug-2022",
+          "deliveredCompounds": 8,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "01-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 3,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "31-Aug-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 6,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 2,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "31-Aug-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 7,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 3,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP1676",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0323-R81",
+      "expectedReceiptDate": "04-Sep-2022",
+      "id": "CYP0323-R81B",
+      "isCompleted": false,
+      "round": "R81B",
+      "services": [
+        {
+          "deadlineDate": "27-Sep-2022",
+          "deliveredCompounds": 4,
+          "hashNumber": 1,
+          "noOfCompounds": 29,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "16-Sep-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 13,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "21-Sep-2022",
+          "deliveredCompounds": 12,
+          "hashNumber": 1,
+          "noOfCompounds": 29,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "12-Sep-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 23,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "15-Sep-2022",
+          "deliveredCompounds": 11,
+          "hashNumber": 1,
+          "noOfCompounds": 13,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 4,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP0323",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP1822-R71",
+      "expectedReceiptDate": "17-Oct-2022",
+      "id": "CYP1822-R71B",
+      "isCompleted": false,
+      "round": "R71B",
+      "services": [
+        {
+          "deadlineDate": "24-Oct-2022",
+          "deliveredCompounds": 17,
+          "hashNumber": 1,
+          "noOfCompounds": 24,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "23-Oct-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 10,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1676-R21",
+      "expectedReceiptDate": "19-Aug-2022",
+      "id": "CYP1676-R21C",
+      "isCompleted": false,
+      "round": "R21C",
+      "services": [
+        {
+          "deadlineDate": "27-Aug-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 12,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "24-Aug-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 9,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "24-Aug-2022",
+          "deliveredCompounds": 8,
+          "hashNumber": 1,
+          "noOfCompounds": 28,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 2,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "29-Aug-2022",
+          "deliveredCompounds": 12,
+          "hashNumber": 1,
+          "noOfCompounds": 16,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 3,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "28-Aug-2022",
+          "deliveredCompounds": 12,
+          "hashNumber": 1,
+          "noOfCompounds": 13,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 4,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP1676",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0694-R15",
+      "expectedReceiptDate": "05-Nov-2022",
+      "id": "CYP0694-R15B",
+      "isCompleted": false,
+      "round": "R15B",
+      "services": [
+        {
+          "deadlineDate": "19-Nov-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 5,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "17-Nov-2022",
+          "deliveredCompounds": 4,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "17-Nov-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 22,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP0694",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1143-R29",
+      "expectedReceiptDate": "06-Aug-2022",
+      "id": "CYP1143-R29D",
+      "isCompleted": false,
+      "round": "R29D",
+      "services": [
+        {
+          "deadlineDate": "25-Aug-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 17,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "23-Aug-2022",
+          "deliveredCompounds": 13,
+          "hashNumber": 1,
+          "noOfCompounds": 15,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 1,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP1143",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP0244-R39",
+      "expectedReceiptDate": "11-Dec-2022",
+      "id": "CYP0244-R39F",
+      "isCompleted": false,
+      "round": "R39F",
+      "services": [
+        {
+          "deadlineDate": "26-Dec-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 12,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP0244",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP0267-R51",
+      "expectedReceiptDate": "27-Sep-2022",
+      "id": "CYP0267-R51F",
+      "isCompleted": true,
+      "round": "R51F",
+      "services": [
+        {
+          "deadlineDate": "01-Oct-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "01-Oct-2022",
+          "deliveredCompounds": 10,
+          "hashNumber": 1,
+          "noOfCompounds": 13,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP013|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP0267",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP0750-R25",
+      "expectedReceiptDate": "19-Aug-2022",
+      "id": "CYP0750-R25E",
+      "isCompleted": false,
+      "round": "R25E",
+      "services": [
+        {
+          "deadlineDate": "24-Aug-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 1,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "29-Aug-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 12,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "25-Aug-2022",
+          "deliveredCompounds": 9,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 2,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP0750",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP0323-R37",
+      "expectedReceiptDate": "05-Sep-2022",
+      "id": "CYP0323-R37A",
+      "isCompleted": false,
+      "round": "R37A",
+      "services": [
+        {
+          "deadlineDate": "24-Sep-2022",
+          "deliveredCompounds": 7,
+          "hashNumber": 1,
+          "noOfCompounds": 19,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP0323",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP0244-R65",
+      "expectedReceiptDate": "26-Nov-2022",
+      "id": "CYP0244-R65C",
+      "isCompleted": false,
+      "round": "R65C",
+      "services": [
+        {
+          "deadlineDate": "01-Dec-2022",
+          "deliveredCompounds": 21,
+          "hashNumber": 1,
+          "noOfCompounds": 24,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "01-Dec-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 12,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "01-Dec-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 5,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 2,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "01-Dec-2022",
+          "deliveredCompounds": 10,
+          "hashNumber": 1,
+          "noOfCompounds": 26,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP0244",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP1921-R97",
+      "expectedReceiptDate": "27-Aug-2022",
+      "id": "CYP1921-R97E",
+      "isCompleted": false,
+      "round": "R97E",
+      "services": [
+        {
+          "deadlineDate": "31-Aug-2022",
+          "deliveredCompounds": 12,
+          "hashNumber": 1,
+          "noOfCompounds": 20,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "31-Aug-2022",
+          "deliveredCompounds": 7,
+          "hashNumber": 1,
+          "noOfCompounds": 27,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP1921",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP0694-R91",
+      "expectedReceiptDate": "15-Sep-2022",
+      "id": "CYP0694-R91C",
+      "isCompleted": false,
+      "round": "R91C",
+      "services": [
+        {
+          "deadlineDate": "24-Sep-2022",
+          "deliveredCompounds": 9,
+          "hashNumber": 1,
+          "noOfCompounds": 19,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP0694",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1454-R86",
+      "expectedReceiptDate": "14-Sep-2022",
+      "id": "CYP1454-R86",
+      "isCompleted": true,
+      "round": "R86",
+      "services": [
+        {
+          "deadlineDate": "27-Sep-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 6,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP1454",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0694-R32",
+      "expectedReceiptDate": "30-Sep-2022",
+      "id": "CYP0694-R32C",
+      "isCompleted": false,
+      "round": "R32C",
+      "services": [
+        {
+          "deadlineDate": "04-Oct-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP0694",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0267-R55",
+      "expectedReceiptDate": "02-Oct-2022",
+      "id": "CYP0267-R55F",
+      "isCompleted": false,
+      "round": "R55F",
+      "services": [
+        {
+          "deadlineDate": "24-Oct-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 4,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "28-Oct-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 19,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "29-Oct-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 1,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 2,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "26-Oct-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 27,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 3,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "13-Oct-2022",
+          "deliveredCompounds": 16,
+          "hashNumber": 1,
+          "noOfCompounds": 27,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 4,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP0267",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP0323-R33",
+      "expectedReceiptDate": "11-Dec-2022",
+      "id": "CYP0323-R33F",
+      "isCompleted": false,
+      "round": "R33F",
+      "services": [
+        {
+          "deadlineDate": "22-Dec-2022",
+          "deliveredCompounds": 9,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "16-Dec-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 4,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "26-Dec-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 5,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 2,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP0323",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP0864-R19",
+      "expectedReceiptDate": "02-Aug-2022",
+      "id": "CYP0864-R19A",
+      "isCompleted": false,
+      "round": "R19A",
+      "services": [
+        {
+          "deadlineDate": "25-Aug-2022",
+          "deliveredCompounds": 8,
+          "hashNumber": 1,
+          "noOfCompounds": 26,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "17-Aug-2022",
+          "deliveredCompounds": 15,
+          "hashNumber": 1,
+          "noOfCompounds": 28,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP0864",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1454-R87",
+      "expectedReceiptDate": "08-Oct-2022",
+      "id": "CYP1454-R87E",
+      "isCompleted": false,
+      "round": "R87E",
+      "services": [
+        {
+          "deadlineDate": "29-Oct-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 8,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "13-Oct-2022",
+          "deliveredCompounds": 11,
+          "hashNumber": 1,
+          "noOfCompounds": 23,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 1,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "22-Oct-2022",
+          "deliveredCompounds": 7,
+          "hashNumber": 1,
+          "noOfCompounds": 18,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP1454",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0694-R23",
+      "expectedReceiptDate": "20-Aug-2022",
+      "id": "CYP0694-R23A",
+      "isCompleted": false,
+      "round": "R23A",
+      "services": [
+        {
+          "deadlineDate": "25-Aug-2022",
+          "deliveredCompounds": 4,
+          "hashNumber": 1,
+          "noOfCompounds": 17,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "26-Aug-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 4,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP0694",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0694-R25",
+      "expectedReceiptDate": "07-Oct-2022",
+      "id": "CYP0694-R25B",
+      "isCompleted": false,
+      "round": "R25B",
+      "services": [
+        {
+          "deadlineDate": "21-Oct-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 1,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "16-Oct-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 27,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP0694",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0323-R79",
+      "expectedReceiptDate": "09-Aug-2022",
+      "id": "CYP0323-R79C",
+      "isCompleted": false,
+      "round": "R79C",
+      "services": [
+        {
+          "deadlineDate": "23-Aug-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 14,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP0323",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP0694-R22",
+      "expectedReceiptDate": "08-Nov-2022",
+      "id": "CYP0694-R22F",
+      "isCompleted": false,
+      "round": "R22F",
+      "services": [
+        {
+          "deadlineDate": "16-Nov-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 18,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "15-Nov-2022",
+          "deliveredCompounds": 12,
+          "hashNumber": 1,
+          "noOfCompounds": 24,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "14-Nov-2022",
+          "deliveredCompounds": 4,
+          "hashNumber": 1,
+          "noOfCompounds": 26,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 2,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "30-Nov-2022",
+          "deliveredCompounds": 9,
+          "hashNumber": 1,
+          "noOfCompounds": 13,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 3,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP0694",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1921-R80",
+      "expectedReceiptDate": "27-Sep-2022",
+      "id": "CYP1921-R80B",
+      "isCompleted": true,
+      "round": "R80B",
+      "services": [
+        {
+          "deadlineDate": "01-Oct-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 3,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        }
+      ],
+      "studyId": "CYP1921",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP0694-R12",
+      "expectedReceiptDate": "07-Nov-2022",
+      "id": "CYP0694-R12A",
+      "isCompleted": false,
+      "round": "R12A",
+      "services": [
+        {
+          "deadlineDate": "23-Nov-2022",
+          "deliveredCompounds": 23,
+          "hashNumber": 1,
+          "noOfCompounds": 28,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "22-Nov-2022",
+          "deliveredCompounds": 4,
+          "hashNumber": 1,
+          "noOfCompounds": 8,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "24-Nov-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 21,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 2,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "19-Nov-2022",
+          "deliveredCompounds": 4,
+          "hashNumber": 1,
+          "noOfCompounds": 18,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP0694",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1454-R68",
+      "expectedReceiptDate": "17-Nov-2022",
+      "id": "CYP1454-R68F",
+      "isCompleted": false,
+      "round": "R68F",
+      "services": [
+        {
+          "deadlineDate": "26-Nov-2022",
+          "deliveredCompounds": 13,
+          "hashNumber": 1,
+          "noOfCompounds": 28,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "22-Nov-2022",
+          "deliveredCompounds": 4,
+          "hashNumber": 1,
+          "noOfCompounds": 16,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1454",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0267-R83",
+      "expectedReceiptDate": "02-Oct-2022",
+      "id": "CYP0267-R83C",
+      "isCompleted": false,
+      "round": "R83C",
+      "services": [
+        {
+          "deadlineDate": "17-Oct-2022",
+          "deliveredCompounds": 11,
+          "hashNumber": 1,
+          "noOfCompounds": 19,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "13-Oct-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 8,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP0267",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1822-R60",
+      "expectedReceiptDate": "19-Aug-2022",
+      "id": "CYP1822-R60D",
+      "isCompleted": false,
+      "round": "R60D",
+      "services": [
+        {
+          "deadlineDate": "28-Aug-2022",
+          "deliveredCompounds": 9,
+          "hashNumber": 1,
+          "noOfCompounds": 15,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP0750-R26",
+      "expectedReceiptDate": "25-Aug-2022",
+      "id": "CYP0750-R26A",
+      "isCompleted": false,
+      "round": "R26A",
+      "services": [
+        {
+          "deadlineDate": "30-Aug-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "30-Aug-2022",
+          "deliveredCompounds": 11,
+          "hashNumber": 1,
+          "noOfCompounds": 26,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 1,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP0750",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP0694-R86",
+      "expectedReceiptDate": "21-Oct-2022",
+      "id": "CYP0694-R86C",
+      "isCompleted": false,
+      "round": "R86C",
+      "services": [
+        {
+          "deadlineDate": "27-Oct-2022",
+          "deliveredCompounds": 10,
+          "hashNumber": 1,
+          "noOfCompounds": 28,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "26-Oct-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 14,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 1,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "26-Oct-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "27-Oct-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 4,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 3,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "29-Oct-2022",
+          "deliveredCompounds": 10,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 4,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP0694",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1822-R83",
+      "expectedReceiptDate": "03-Dec-2022",
+      "id": "CYP1822-R83D",
+      "isCompleted": false,
+      "round": "R83D",
+      "services": [
+        {
+          "deadlineDate": "17-Dec-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 3,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "25-Dec-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1827-R62",
+      "expectedReceiptDate": "13-Nov-2022",
+      "id": "CYP1827-R62",
+      "isCompleted": false,
+      "round": "R62",
+      "services": [
+        {
+          "deadlineDate": "23-Nov-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 4,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "23-Nov-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 9,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 1,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "24-Nov-2022",
+          "deliveredCompounds": 26,
+          "hashNumber": 1,
+          "noOfCompounds": 29,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "24-Nov-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 3,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1827",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1676-R53",
+      "expectedReceiptDate": "01-Dec-2022",
+      "id": "CYP1676-R53D",
+      "isCompleted": false,
+      "round": "R53D",
+      "services": [
+        {
+          "deadlineDate": "12-Dec-2022",
+          "deliveredCompounds": 10,
+          "hashNumber": 1,
+          "noOfCompounds": 18,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "27-Dec-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 22,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP1676",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0323-R16",
+      "expectedReceiptDate": "05-Aug-2022",
+      "id": "CYP0323-R16F",
+      "isCompleted": false,
+      "round": "R16F",
+      "services": [
+        {
+          "deadlineDate": "23-Aug-2022",
+          "deliveredCompounds": 16,
+          "hashNumber": 1,
+          "noOfCompounds": 21,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "11-Aug-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 13,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "29-Aug-2022",
+          "deliveredCompounds": 8,
+          "hashNumber": 1,
+          "noOfCompounds": 25,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 2,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        }
+      ],
+      "studyId": "CYP0323",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP1827-R56",
+      "expectedReceiptDate": "06-Aug-2022",
+      "id": "CYP1827-R56E",
+      "isCompleted": false,
+      "round": "R56E",
+      "services": [
+        {
+          "deadlineDate": "24-Aug-2022",
+          "deliveredCompounds": 16,
+          "hashNumber": 1,
+          "noOfCompounds": 18,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "11-Aug-2022",
+          "deliveredCompounds": 12,
+          "hashNumber": 1,
+          "noOfCompounds": 15,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "11-Aug-2022",
+          "deliveredCompounds": 5,
+          "hashNumber": 1,
+          "noOfCompounds": 8,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 2,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP1827",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1827-R22",
+      "expectedReceiptDate": "28-Aug-2022",
+      "id": "CYP1827-R22",
+      "isCompleted": false,
+      "round": "R22",
+      "services": [
+        {
+          "deadlineDate": "01-Sep-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 6,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP1827",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1827-R39",
+      "expectedReceiptDate": "25-Sep-2022",
+      "id": "CYP1827-R39D",
+      "isCompleted": false,
+      "round": "R39D",
+      "services": [
+        {
+          "deadlineDate": "30-Sep-2022",
+          "deliveredCompounds": 21,
+          "hashNumber": 1,
+          "noOfCompounds": 28,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "30-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 9,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "30-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 4,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 2,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "30-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 1,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 3,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP1827",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1143-R42",
+      "expectedReceiptDate": "12-Aug-2022",
+      "id": "CYP1143-R42B",
+      "isCompleted": false,
+      "round": "R42B",
+      "services": [
+        {
+          "deadlineDate": "19-Aug-2022",
+          "deliveredCompounds": 15,
+          "hashNumber": 1,
+          "noOfCompounds": 21,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "25-Aug-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 7,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        }
+      ],
+      "studyId": "CYP1143",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1676-R71",
+      "expectedReceiptDate": "08-Aug-2022",
+      "id": "CYP1676-R71B",
+      "isCompleted": false,
+      "round": "R71B",
+      "services": [
+        {
+          "deadlineDate": "22-Aug-2022",
+          "deliveredCompounds": 27,
+          "hashNumber": 1,
+          "noOfCompounds": 29,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "19-Aug-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 1,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 1,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "28-Aug-2022",
+          "deliveredCompounds": 9,
+          "hashNumber": 1,
+          "noOfCompounds": 15,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP1676",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1822-R69",
+      "expectedReceiptDate": "28-Nov-2022",
+      "id": "CYP1822-R69D",
+      "isCompleted": false,
+      "round": "R69D",
+      "services": [
+        {
+          "deadlineDate": "01-Dec-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "02-Dec-2022",
+          "deliveredCompounds": 22,
+          "hashNumber": 1,
+          "noOfCompounds": 29,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 1,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "02-Dec-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 2,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1921-R68",
+      "expectedReceiptDate": "04-Aug-2022",
+      "id": "CYP1921-R68B",
+      "isCompleted": false,
+      "round": "R68B",
+      "services": [
+        {
+          "deadlineDate": "17-Aug-2022",
+          "deliveredCompounds": 8,
+          "hashNumber": 1,
+          "noOfCompounds": 18,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "23-Aug-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 16,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "12-Aug-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 8,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 2,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "23-Aug-2022",
+          "deliveredCompounds": 15,
+          "hashNumber": 1,
+          "noOfCompounds": 25,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 3,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP1921",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1143-R40",
+      "expectedReceiptDate": "25-Aug-2022",
+      "id": "CYP1143-R40B",
+      "isCompleted": false,
+      "round": "R40B",
+      "services": [
+        {
+          "deadlineDate": "30-Aug-2022",
+          "deliveredCompounds": 11,
+          "hashNumber": 1,
+          "noOfCompounds": 16,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "30-Aug-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 25,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "30-Aug-2022",
+          "deliveredCompounds": 8,
+          "hashNumber": 1,
+          "noOfCompounds": 24,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 2,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "30-Aug-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 14,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 3,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP1143",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1454-R35",
+      "expectedReceiptDate": "14-Aug-2022",
+      "id": "CYP1454-R35",
+      "isCompleted": false,
+      "round": "R35",
+      "services": [
+        {
+          "deadlineDate": "24-Aug-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 24,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "19-Aug-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 4,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP1454",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP0864-R32",
+      "expectedReceiptDate": "22-Nov-2022",
+      "id": "CYP0864-R32D",
+      "isCompleted": false,
+      "round": "R32D",
+      "services": [
+        {
+          "deadlineDate": "29-Nov-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 5,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "28-Nov-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 22,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 1,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "27-Nov-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 9,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "28-Nov-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 14,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP0864",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1454-R22",
+      "expectedReceiptDate": "09-Sep-2022",
+      "id": "CYP1454-R22E",
+      "isCompleted": false,
+      "round": "R22E",
+      "services": [
+        {
+          "deadlineDate": "23-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 5,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "29-Sep-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 23,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP013|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "16-Sep-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 10,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 2,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "15-Sep-2022",
+          "deliveredCompounds": 7,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 3,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP1454",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1676-R22",
+      "expectedReceiptDate": "06-Sep-2022",
+      "id": "CYP1676-R22E",
+      "isCompleted": false,
+      "round": "R22E",
+      "services": [
+        {
+          "deadlineDate": "19-Sep-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 12,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "15-Sep-2022",
+          "deliveredCompounds": 8,
+          "hashNumber": 1,
+          "noOfCompounds": 22,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "13-Sep-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 16,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 2,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "16-Sep-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 3,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        }
+      ],
+      "studyId": "CYP1676",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1143-R51",
+      "expectedReceiptDate": "22-Oct-2022",
+      "id": "CYP1143-R51E",
+      "isCompleted": false,
+      "round": "R51E",
+      "services": [
+        {
+          "deadlineDate": "29-Oct-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 8,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "29-Oct-2022",
+          "deliveredCompounds": 12,
+          "hashNumber": 1,
+          "noOfCompounds": 21,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "27-Oct-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 2,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP1143",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP0694-R34",
+      "expectedReceiptDate": "22-Aug-2022",
+      "id": "CYP0694-R34",
+      "isCompleted": false,
+      "round": "R34",
+      "services": [
+        {
+          "deadlineDate": "29-Aug-2022",
+          "deliveredCompounds": 12,
+          "hashNumber": 1,
+          "noOfCompounds": 25,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "30-Aug-2022",
+          "deliveredCompounds": 11,
+          "hashNumber": 1,
+          "noOfCompounds": 17,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "27-Aug-2022",
+          "deliveredCompounds": 17,
+          "hashNumber": 1,
+          "noOfCompounds": 23,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "29-Aug-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 9,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 3,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP0694",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1822-R34",
+      "expectedReceiptDate": "10-Sep-2022",
+      "id": "CYP1822-R34A",
+      "isCompleted": false,
+      "round": "R34A",
+      "services": [
+        {
+          "deadlineDate": "23-Sep-2022",
+          "deliveredCompounds": 5,
+          "hashNumber": 1,
+          "noOfCompounds": 8,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "23-Sep-2022",
+          "deliveredCompounds": 7,
+          "hashNumber": 1,
+          "noOfCompounds": 26,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "17-Sep-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 8,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1143-R25",
+      "expectedReceiptDate": "12-Oct-2022",
+      "id": "CYP1143-R25A",
+      "isCompleted": false,
+      "round": "R25A",
+      "services": [
+        {
+          "deadlineDate": "23-Oct-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 9,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "19-Oct-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 25,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 1,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "27-Oct-2022",
+          "deliveredCompounds": 10,
+          "hashNumber": 1,
+          "noOfCompounds": 15,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 2,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "23-Oct-2022",
+          "deliveredCompounds": 16,
+          "hashNumber": 1,
+          "noOfCompounds": 20,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1143",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1143-R63",
+      "expectedReceiptDate": "23-Oct-2022",
+      "id": "CYP1143-R63E",
+      "isCompleted": false,
+      "round": "R63E",
+      "services": [
+        {
+          "deadlineDate": "28-Oct-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 28,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "29-Oct-2022",
+          "deliveredCompounds": 7,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1143",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1822-R43",
+      "expectedReceiptDate": "18-Sep-2022",
+      "id": "CYP1822-R43A",
+      "isCompleted": false,
+      "round": "R43A",
+      "services": [
+        {
+          "deadlineDate": "30-Sep-2022",
+          "deliveredCompounds": 5,
+          "hashNumber": 1,
+          "noOfCompounds": 20,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "24-Sep-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 7,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "25-Sep-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 8,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 2,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "28-Sep-2022",
+          "deliveredCompounds": 15,
+          "hashNumber": 1,
+          "noOfCompounds": 24,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "29-Sep-2022",
+          "deliveredCompounds": 13,
+          "hashNumber": 1,
+          "noOfCompounds": 29,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 4,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1143-R14",
+      "expectedReceiptDate": "20-Sep-2022",
+      "id": "CYP1143-R14D",
+      "isCompleted": false,
+      "round": "R14D",
+      "services": [
+        {
+          "deadlineDate": "27-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 25,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "26-Sep-2022",
+          "deliveredCompounds": 17,
+          "hashNumber": 1,
+          "noOfCompounds": 28,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 1,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "30-Sep-2022",
+          "deliveredCompounds": 4,
+          "hashNumber": 1,
+          "noOfCompounds": 11,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 2,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "27-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 1,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1143",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1143-R47",
+      "expectedReceiptDate": "27-Oct-2022",
+      "id": "CYP1143-R47A",
+      "isCompleted": false,
+      "round": "R47A",
+      "services": [
+        {
+          "deadlineDate": "30-Oct-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 24,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "31-Oct-2022",
+          "deliveredCompounds": 18,
+          "hashNumber": 1,
+          "noOfCompounds": 23,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "30-Oct-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 20,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 2,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "31-Oct-2022",
+          "deliveredCompounds": 21,
+          "hashNumber": 1,
+          "noOfCompounds": 22,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 3,
+          "supplementalId": "BP135|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "31-Oct-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 6,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 4,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1143",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1822-R33",
+      "expectedReceiptDate": "20-Nov-2022",
+      "id": "CYP1822-R33B",
+      "isCompleted": false,
+      "round": "R33B",
+      "services": [
+        {
+          "deadlineDate": "25-Nov-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 4,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "27-Nov-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 7,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "29-Nov-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "27-Nov-2022",
+          "deliveredCompounds": 16,
+          "hashNumber": 1,
+          "noOfCompounds": 22,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "27-Nov-2022",
+          "deliveredCompounds": 4,
+          "hashNumber": 1,
+          "noOfCompounds": 6,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 4,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1454-R37",
+      "expectedReceiptDate": "20-Aug-2022",
+      "id": "CYP1454-R37B",
+      "isCompleted": false,
+      "round": "R37B",
+      "services": [
+        {
+          "deadlineDate": "27-Aug-2022",
+          "deliveredCompounds": 6,
+          "hashNumber": 1,
+          "noOfCompounds": 15,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "29-Aug-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 10,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "28-Aug-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 24,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "26-Aug-2022",
+          "deliveredCompounds": 13,
+          "hashNumber": 1,
+          "noOfCompounds": 15,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 3,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "25-Aug-2022",
+          "deliveredCompounds": 10,
+          "hashNumber": 1,
+          "noOfCompounds": 20,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 4,
+          "supplementalId": "BP007|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP1454",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1822-R98",
+      "expectedReceiptDate": "02-Dec-2022",
+      "id": "CYP1822-R98A",
+      "isCompleted": false,
+      "round": "R98A",
+      "services": [
+        {
+          "deadlineDate": "19-Dec-2022",
+          "deliveredCompounds": 4,
+          "hashNumber": 1,
+          "noOfCompounds": 9,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "24-Dec-2022",
+          "deliveredCompounds": 10,
+          "hashNumber": 1,
+          "noOfCompounds": 14,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 1,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1676-R30",
+      "expectedReceiptDate": "04-Sep-2022",
+      "id": "CYP1676-R30D",
+      "isCompleted": false,
+      "round": "R30D",
+      "services": [
+        {
+          "deadlineDate": "21-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 1,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "13-Sep-2022",
+          "deliveredCompounds": 9,
+          "hashNumber": 1,
+          "noOfCompounds": 23,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        }
+      ],
+      "studyId": "CYP1676",
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "contractId": "CYP1143-R96",
+      "expectedReceiptDate": "08-Dec-2022",
+      "id": "CYP1143-R96E",
+      "isCompleted": false,
+      "round": "R96E",
+      "services": [
+        {
+          "deadlineDate": "28-Dec-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "27-Dec-2022",
+          "deliveredCompounds": 9,
+          "hashNumber": 1,
+          "noOfCompounds": 23,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1143",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1827-R30",
+      "expectedReceiptDate": "28-Aug-2022",
+      "id": "CYP1827-R30C",
+      "isCompleted": false,
+      "round": "R30C",
+      "services": [
+        {
+          "deadlineDate": "01-Sep-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "01-Sep-2022",
+          "deliveredCompounds": 11,
+          "hashNumber": 1,
+          "noOfCompounds": 12,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        },
+        {
+          "deadlineDate": "31-Aug-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 5,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1827",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP0244-R34",
+      "expectedReceiptDate": "24-Sep-2022",
+      "id": "CYP0244-R34B",
+      "isCompleted": false,
+      "round": "R34B",
+      "services": [
+        {
+          "deadlineDate": "30-Sep-2022",
+          "deliveredCompounds": 3,
+          "hashNumber": 1,
+          "noOfCompounds": 17,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 0,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP0244",
+      "studyManager": "Darren Jones"
+    },
+    {
+      "contractId": "CYP1822-R26",
+      "expectedReceiptDate": "15-Sep-2022",
+      "id": "CYP1822-R26F",
+      "isCompleted": false,
+      "round": "R26F",
+      "services": [
+        {
+          "deadlineDate": "28-Sep-2022",
+          "deliveredCompounds": 9,
+          "hashNumber": 1,
+          "noOfCompounds": 12,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "27-Sep-2022",
+          "deliveredCompounds": 9,
+          "hashNumber": 1,
+          "noOfCompounds": 10,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "21-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 5,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 2,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "29-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP013|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1827-R63",
+      "expectedReceiptDate": "06-Sep-2022",
+      "id": "CYP1827-R63",
+      "isCompleted": false,
+      "round": "R63",
+      "services": [
+        {
+          "deadlineDate": "14-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 1,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "14-Sep-2022",
+          "deliveredCompounds": 27,
+          "hashNumber": 1,
+          "noOfCompounds": 28,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 1,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        },
+        {
+          "deadlineDate": "14-Sep-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 23,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 2,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "21-Sep-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 4,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 3,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        },
+        {
+          "deadlineDate": "24-Sep-2022",
+          "deliveredCompounds": 7,
+          "hashNumber": 1,
+          "noOfCompounds": 14,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 4,
+          "supplementalId": "BP007|Species=Rat|Sex=MALE|Strain=Sprague Dawley|"
+        }
+      ],
+      "studyId": "CYP1827",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1822-R75",
+      "expectedReceiptDate": "11-Sep-2022",
+      "id": "CYP1822-R75E",
+      "isCompleted": false,
+      "round": "R75E",
+      "services": [
+        {
+          "deadlineDate": "17-Sep-2022",
+          "deliveredCompounds": 12,
+          "hashNumber": 1,
+          "noOfCompounds": 13,
+          "serviceCode": "BP111",
+          "serviceName": "Caco",
+          "serviceNo": 0,
+          "supplementalId": "BP111|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        }
+      ],
+      "studyId": "CYP1822",
+      "studyManager": "Rosie Scaril"
+    },
+    {
+      "contractId": "CYP1827-R82",
+      "expectedReceiptDate": "24-Nov-2022",
+      "id": "CYP1827-R82C",
+      "isCompleted": false,
+      "round": "R82C",
+      "services": [
+        {
+          "deadlineDate": "30-Nov-2022",
+          "deliveredCompounds": 7,
+          "hashNumber": 1,
+          "noOfCompounds": 20,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 0,
+          "supplementalId": "BP112|Design1=A2B|Design2=B2A|Inhibitor=Verapamil|"
+        }
+      ],
+      "studyId": "CYP1827",
+      "studyManager": "James Harrison"
+    },
+    {
+      "contractId": "CYP1921-R28",
+      "expectedReceiptDate": "01-Dec-2022",
+      "id": "CYP1921-R28C",
+      "isCompleted": false,
+      "round": "R28C",
+      "services": [
+        {
+          "deadlineDate": "24-Dec-2022",
+          "deliveredCompounds": 2,
+          "hashNumber": 1,
+          "noOfCompounds": 3,
+          "serviceCode": "BP135",
+          "serviceName": "Matrix Matched Protein Binding",
+          "serviceNo": 0,
+          "supplementalId": "BP135|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "29-Dec-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 2,
+          "serviceCode": "BP112",
+          "serviceName": "MDCK",
+          "serviceNo": 1,
+          "supplementalId": "BP112|Design1=A2B|Design2=None|Inhibitor=None|"
+        },
+        {
+          "deadlineDate": "08-Dec-2022",
+          "deliveredCompounds": 1,
+          "hashNumber": 1,
+          "noOfCompounds": 7,
+          "serviceCode": "BP013",
+          "serviceName": "Metabolic Stability",
+          "serviceNo": 2,
+          "supplementalId": "BP013|Species=Mouse|Sex=MALE|Strain=CD1|"
+        },
+        {
+          "deadlineDate": "22-Dec-2022",
+          "deliveredCompounds": 0,
+          "hashNumber": 1,
+          "noOfCompounds": 1,
+          "serviceCode": "BP007",
+          "serviceName": "Hepatocyte Stability",
+          "serviceNo": 3,
+          "supplementalId": "BP007|Species=Human|Sex=MALE|Strain=Mixed|"
+        }
+      ],
+      "studyId": "CYP1921",
+      "studyManager": "Rosie Scaril"
+    }
+  ],
+  "studies": [
+    {
+      "studies": [
+        "CYP0244",
+        "CYP0323",
+        "CYP0750"
+      ],
+      "studyManager": "Darren Jones"
+    },
+    {
+      "studies": [
+        "CYP0694",
+        "CYP1676",
+        "CYP1454"
+      ],
+      "studyManager": "Adrian Walker"
+    },
+    {
+      "studies": [
+        "CYP1827",
+        "CYP1143",
+        "CYP0864"
+      ],
+      "studyManager": "James Harrison"
+    },
+    {
+      "studies": [
+        "CYP0267",
+        "CYP1822",
+        "CYP1921"
+      ],
+      "studyManager": "Rosie Scaril"
+    }
+  ]
+}
